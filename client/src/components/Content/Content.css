@@ -1,0 +1,33 @@
+/*************
+Typography
+**************/
+
+header {
+  z-index: 999999;
+}
+
+.bird {
+  margin: 0 auto;
+  color: var(--text);
+  font-size: 1rem;
+  grid-area: 1 / 2 / 3 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+/*************
+Media Queries
+**************/
+
+@media only screen and (min-width: 600px) {
+  .bird {
+    grid-area: 5 / 4 / 6 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-right: 1.5rem;
+    color: var(--text);
+    font-size: xx-large;
+  }
+}

@@ -1,0 +1,85 @@
+/*************
+Mobile Nav 
+**************/
+
+.logo {
+  width: 80px;
+  margin-right: 4rem;
+}
+
+.bar {
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  width: 10%;
+  margin: 0 auto;
+  width: 16%;
+  box-shadow: 0px 2px 7px rgb(231, 107, 73);
+  border-radius: 10px;
+}
+
+.bar:hover {
+  background-color: var(--bacgroundContainer);
+}
+
+.HAMBURGER-ICON span {
+  background-color: var(--darkBackground);
+}
+
+.cross {
+  color: var(--text);
+}
+
+.hideMenuNav {
+  display: none;
+}
+
+/*************
+Desktop Nav 
+**************/
+
+.showMenuNav {
+  background-color: var(--darkBackground);
+  color: #fff;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.DESKTOP-MENU {
+  background-color: var(--bacgroundContainer);
+  border-radius: 30px;
+  display: flex;
+  padding: 1rem;
+  color: #fff;
+}
+
+.DESKTOP-MENU:hover {
+  background-color: var(--darkBackground);
+}
+
+/*************
+Media Queries
+**************/
+
+@media only screen and (max-width: 600px) {
+  .DESKTOP-MENU {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .MOBILE-MENU {
+    display: none;
+  }
+  .header {
+    grid-area: 1 / 1 / 2 / 6;
+  }
+}
