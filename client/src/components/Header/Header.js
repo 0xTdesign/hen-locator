@@ -13,7 +13,7 @@ export default function Header() {
             <section className="MOBILE-MENU flex lg:hidden">
               <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
                 <img className="bar pulse" src={logo} alt="" />
-                <p>Menu</p>
+                <p className="menu">Menu</p>
               </div>
 
               <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>

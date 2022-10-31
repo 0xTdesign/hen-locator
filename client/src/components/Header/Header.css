@@ -34,6 +34,10 @@ Mobile Nav
   display: none;
 }
 
+.menu {
+  text-align: center;
+}
+
 /*************
 Desktop Nav 
 **************/
@@ -79,7 +83,7 @@ Media Queries
   .MOBILE-MENU {
     display: none;
   }
-  .header {
+  header {
     grid-area: 1 / 1 / 2 / 6;
   }
 }
