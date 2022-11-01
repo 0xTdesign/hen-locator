@@ -1,0 +1,45 @@
+/*************
+General Elements
+**************/
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.tokens ol {
+  display: flex;
+}
+
+.token-1 {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.token-1 img {
+  margin-left: 5px;
+  align-self: center;
+  width: 16px;
+}
+
+span {
+  margin-left: 10px;
+}
+
+/*************
+Media Queries
+**************/
+
+@media only screen and (min-width: 600px) {
+  .price {
+    margin-top: 35px;
+    grid-area: 1 / 1 / 2 / 6;
+  }
+  .tokens ol {
+    position: relative;
+    top: 20px;
+  }
+}

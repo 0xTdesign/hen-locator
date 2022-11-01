@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header>
       <div className="header">
-        <div className=" flex items-center justify-center py-8">
+        <div className=" flex items-center justify-center py-4">
           <nav>
             <section className="MOBILE-MENU flex lg:hidden">
               <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
@@ -52,7 +52,6 @@ export default function Header() {
                   <li className="border-b  my-8 uppercase">
                     <a href="/contact">Coop</a>
                   </li>
-                  <img src={logo} alt="Chicken" />
                 </ul>
               </div>
             </section>

@@ -35,6 +35,7 @@ Mobile Nav
 }
 
 .menu {
+  color: var(--text);
   text-align: center;
 }
 
@@ -43,6 +44,7 @@ Desktop Nav
 **************/
 
 .showMenuNav {
+  border-radius: 20px;
   background-color: var(--darkBackground);
   color: #fff;
   display: block;
