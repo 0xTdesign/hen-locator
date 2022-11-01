@@ -1,15 +1,22 @@
 /*************
 General Elements
 **************/
+
+.header-items {
+  padding-top: 1rem;
+}
+
 .price {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: var(--text);
+  color: var(--icons);
 }
 
 .tokens ol {
+  background-color: var(--lightBackground);
+  border-radius: 10px;
   display: flex;
 }
 
@@ -33,9 +40,9 @@ span {
 Media Queries
 **************/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 999px) {
   .price {
-    margin-top: 35px;
+    margin-top: 4rem;
     grid-area: 1 / 1 / 2 / 6;
   }
   .tokens ol {

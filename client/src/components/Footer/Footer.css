@@ -12,16 +12,22 @@ General Elements
   width: 100%;
 }
 
+.links {
+  margin-bottom: 10px;
+  background-color: var(--lightBackground);
+  border-radius: 10px;
+}
+
 .links i {
-  padding: 20px;
-  color: var(--text);
+  padding: 15px;
+  color: var(--icons);
 }
 
 /*************
 Media Queries
 **************/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 999px) {
   footer {
     flex-direction: column;
     grid-area: 3 / 2 / 3 / 1;
@@ -30,6 +36,10 @@ Media Queries
   .links i {
     padding: 20px;
     display: block;
+  }
+
+  .links {
+    margin-left: 5px;
   }
 
   .footer-icons {

@@ -9,13 +9,13 @@ html {
 }
 
 :root {
-  --wht: #f8f8f8;
-  --blk: #28282b;
   --background: #6c85e2;
-  --darkBackground: #e76b49;
-  --bacgroundContainer: #e76b4999;
+  --darkBackground: #e4917a;
+  --backgroundContainer: #e76b4999;
+  --lightBackground: #ffdecd62;
   --border: #d9f4ff;
   --text: #fff;
+  --icons: #df3a2d;
 }
 
 * {
@@ -67,6 +67,13 @@ General Elements
   box-shadow: 0px 7px 4px 4px #505acb;
 }
 
+.design {
+  color: #4753d5;
+  position: fixed;
+  bottom: 0;
+  font-size: 5px;
+}
+
 /*************
 Images
 **************/
@@ -87,7 +94,7 @@ Layout
 Media Queries
 **************/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 999px) {
   .mainContainer {
     display: grid;
     grid-template-columns: 10% repeat(3, 1fr) 10%;

@@ -9,27 +9,27 @@ export default function Price() {
   return (
     <>
       <div className="price">
-        <div class="tokens">
+        <div className="tokens">
           <ol>
-            <div class="token-1">
+            <div className="token-1">
               <li>
                 <img src={egg} alt="Egg logo"></img>
               </li>
               <span id="egg">$</span>
             </div>
-            <div class="token-1">
+            <div className="token-1">
               <li>
                 <img src={feed} alt="Feed logo"></img>
               </li>
               <span id="feed">$</span>
             </div>
-            <div class="token-1">
+            <div className="token-1">
               <li>
                 <img src={fert} alt="Fert logo"></img>
               </li>
               <span id="fert">$</span>
             </div>
-            <div class="token-1">
+            <div className="token-1">
               <li>
                 <img src={worm} alt="Worm logo"></img>
               </li>

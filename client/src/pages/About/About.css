@@ -1,0 +1,9 @@
+.about {
+  background: url(../../assets/background.jpg) no-repeat center center fixed;
+  border-radius: 40px;
+  background-position: 25% 75%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

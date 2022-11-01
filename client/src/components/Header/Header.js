@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header>
       <div className="header">
-        <div className=" flex items-center justify-center py-4">
+        <div className=" header-items flex items-center justify-center ">
           <nav>
             <section className="MOBILE-MENU flex lg:hidden">
               <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
@@ -36,21 +36,19 @@ export default function Header() {
                     <a href="/">Home</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
-                    <a href="/" target="blank">
-                      About
-                    </a>
+                    <a href="/">About</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
-                    <a href="/">Chikn</a>
+                    <a href="/Chikn">Chikn</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
-                    <a href="/contact">Edgyeggs</a>
+                    <a href="/Edgyeggs">Edgyeggs</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
-                    <a href="/contact">Hen Creator</a>
+                    <a href="/Create">Hen Creator</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
-                    <a href="/contact">Coop</a>
+                    <a href="/Coop">Coop</a>
                   </li>
                 </ul>
               </div>
@@ -60,19 +58,19 @@ export default function Header() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/">About</a>
+                <a href="/About">About</a>
               </li>
               <li>
-                <a href="/">Chikn</a>
+                <a href="/Chikn">Chikn</a>
               </li>
               <li>
-                <a href="/">Edgyeggs</a>
+                <a href="/Edgyeggs">Edgyeggs</a>
               </li>
               <li>
-                <a href="/">Hen Creator </a>
+                <a href="/Create">Hen Creator </a>
               </li>
               <li>
-                <a href="/">Coop</a>
+                <a href="/Coop">Coop</a>
               </li>
             </ul>
           </nav>

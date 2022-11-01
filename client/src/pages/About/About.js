@@ -1,6 +1,10 @@
-import React from "react";
 import "./About.css";
+import { useEffect } from "react";
 
-export default function About() {
-  return <div>About</div>;
+export default function About({ setpageClass }) {
+  useEffect(() => {
+    setpageClass("about");
+  }, []);
+
+  return <section className="about"></section>;
 }

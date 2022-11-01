@@ -1,0 +1,150 @@
+.chikn {
+  background: url(../../assets/backgroundata.jpg) no-repeat center center fixed;
+  border-radius: 40px;
+  background-position: 25% 75%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bird {
+  display: none;
+}
+
+.feed-stats {
+  display: none;
+}
+
+.worm-stats {
+  display: none;
+}
+
+.egg-stats {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 350px;
+  height: 200px;
+  background-color: var(--backgroundContainer);
+  border-radius: 15px;
+  align-items: center;
+  align-self: center;
+}
+
+.search {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 350px;
+  height: 200px;
+  background-color: var(--backgroundContainer);
+  border-radius: 15px;
+  align-items: center;
+  align-self: center;
+}
+
+.topContainer {
+  font-size: 1.2rem;
+  color: var(--text);
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid;
+  border-color: var(--border);
+}
+
+.bottomContainer {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.space {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+form input {
+  width: 180px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+form {
+  text-align: center;
+  margin: 10px;
+}
+
+/*************
+Media Queries
+**************/
+
+@media only screen and (min-width: 999px) {
+  .feed-stats {
+    grid-area: 1 / 3 / 5 / 2;
+    position: relative;
+    top: 0px;
+  }
+  .worm-stats {
+    grid-area: 4 / 3 / 5 / 2;
+    position: relative;
+    top: 0px;
+  }
+  .egg-stats {
+    grid-area: 1 / 3 / 5 / 3;
+    position: relative;
+    top: 0px;
+  }
+
+  .search {
+    grid-area: 4 / 3 / 5 / 3;
+    position: relative;
+    top: 0px;
+  }
+
+  .bird {
+    display: block;
+  }
+
+  .worm-stats {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    background-color: var(--backgroundContainer);
+    border-radius: 15px;
+    align-items: center;
+    align-self: center;
+  }
+
+  .feed-stats {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    background-color: var(--backgroundContainer);
+    border-radius: 15px;
+    align-items: center;
+    align-self: center;
+  }
+
+  .egg-stats {
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    max-width: 350px;
+    background-color: var(--backgroundContainer);
+    border-radius: 15px;
+    align-items: center;
+    align-self: center;
+  }
+
+  .search {
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    max-width: 350px;
+    background-color: var(--backgroundContainer);
+    border-radius: 15px;
+    align-items: center;
+    align-self: center;
+  }
+}

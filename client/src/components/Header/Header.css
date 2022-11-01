@@ -12,6 +12,7 @@ Mobile Nav
   position: relative;
   padding: 8px;
   width: 10%;
+  max-width: 350px;
   margin: 0 auto;
   width: 16%;
   box-shadow: 0px 2px 7px rgb(231, 107, 73);
@@ -19,7 +20,7 @@ Mobile Nav
 }
 
 .bar:hover {
-  background-color: var(--bacgroundContainer);
+  background-color: var(--backgroundContainer);
 }
 
 .HAMBURGER-ICON span {
@@ -44,6 +45,7 @@ Desktop Nav
 **************/
 
 .showMenuNav {
+  cursor: pointer;
   border-radius: 20px;
   background-color: var(--darkBackground);
   color: #fff;
@@ -60,28 +62,36 @@ Desktop Nav
 }
 
 .DESKTOP-MENU {
-  background-color: var(--bacgroundContainer);
-  border-radius: 30px;
+  cursor: pointer;
+  background-color: var(--lightBackground);
+  border-radius: 15px;
   display: flex;
   padding: 1rem;
-  color: #fff;
+  color: var(--icons);
+}
+
+.DESKTOP-MENU li :hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: var(--text);
 }
 
 .DESKTOP-MENU:hover {
   background-color: var(--darkBackground);
+  color: var(--text);
 }
 
 /*************
 Media Queries
 **************/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 999px) {
   .DESKTOP-MENU {
     display: none;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 999px) {
   .MOBILE-MENU {
     display: none;
   }

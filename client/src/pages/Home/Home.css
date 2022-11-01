@@ -1,0 +1,68 @@
+.home {
+  background: url(../../assets/background.jpg) no-repeat center center fixed;
+  border-radius: 40px;
+  background-position: 25% 75%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  top: 30px;
+  background-color: var(--backgroundContainer);
+  border-radius: 15px;
+  align-items: center;
+  align-self: center;
+}
+
+.topContainer {
+  font-size: 2.5rem;
+  color: var(--text);
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid;
+  border-color: var(--border);
+}
+
+.bottomContainer {
+  font-size: 1.2rem;
+  color: var(--text);
+  line-height: 1.4;
+  padding: 20px;
+}
+
+/*************
+Buttons / Links
+**************/
+
+.welcome-btn {
+  cursor: pointer;
+  margin: 0 auto;
+  border: 2px solid;
+  border-color: var(--border);
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  text-align: center;
+  display: flex;
+}
+
+.welcome-btn:hover {
+  background-color: var(--icons);
+}
+
+/*************
+Media Queries
+**************/
+
+@media only screen and (min-width: 600px) {
+  .main {
+    grid-area: 2 / 2 / 5 / 5;
+    position: relative;
+    top: 0px;
+  }
+}
