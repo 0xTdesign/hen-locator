@@ -11,7 +11,7 @@ html {
 :root {
   --background: #6c85e2;
   --darkBackground: #e4917a;
-  --backgroundContainer: #e76b4999;
+  --backgroundContainer: #e76b49be;
   --lightBackground: #ffdecd62;
   --border: #d9f4ff;
   --text: #fff;
@@ -45,6 +45,7 @@ General Elements
 **************/
 
 .mainContainer {
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   width: 95%;

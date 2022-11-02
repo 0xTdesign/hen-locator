@@ -11,33 +11,49 @@
   display: none;
 }
 
-.feed-stats {
-  display: none;
+/*************
+Egg Stats
+**************/
+
+.egg-stats {
+  margin: 0 auto;
+  width: 96%;
+  max-width: 350px;
+  height: 150px;
+  background-color: var(--backgroundContainer);
+  border-radius: 12px;
+  text-align: center;
 }
+
+/*************
+Worm Stats
+**************/
 
 .worm-stats {
   display: none;
 }
 
-.egg-stats {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 350px;
-  height: 150px;
-  background-color: var(--backgroundContainer);
-  border-radius: 15px;
-  text-align: center;
+.feed-stats {
+  display: none;
 }
+
+/*************
+Search 
+**************/
 
 .search {
   margin: 0 auto;
-  width: 80%;
+  width: 96%;
   max-width: 350px;
   height: 200px;
   background-color: var(--backgroundContainer);
-  border-radius: 15px;
+  border-radius: 12px;
   text-align: center;
 }
+
+/*************
+Containers
+**************/
 
 .topContainer {
   font-size: 1.2rem;
@@ -119,15 +135,14 @@ Image show
 **************/
 
 .imageShow {
-  width: 80%;
+  margin: 0.8rem auto;
+  width: 96%;
   max-width: 350px;
-  height: 260px;
-  max-height: 360px;
+  height: 240px;
   background-color: var(--backgroundContainer);
-  border-radius: 15px;
+  border-radius: 12px;
   text-align: center;
-  align-items: center;
-  align-self: center;
+  margin-bottom: 70px;
 }
 
 .imageBottomContainer {
@@ -137,7 +152,7 @@ Image show
 
 .rooster-image-container {
   padding: 10px;
-  width: 80%;
+  width: 40%;
   text-align: center;
   color: var(--text);
   font-size: 1.1rem;
@@ -145,7 +160,7 @@ Image show
 
 .chikn-image-container {
   padding: 10px;
-  width: 80%;
+  width: 40%;
   text-align: center;
   color: var(--text);
   font-size: 1.1rem;
@@ -165,21 +180,79 @@ Media Queries
 **************/
 
 @media only screen and (min-width: 999px) {
+  .bird {
+    display: block;
+  }
+
+  .space {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  /*************
+Feed Stats
+**************/
   .feed-stats {
     grid-area: 1 / 3 / 5 / 2;
     position: relative;
     top: 0px;
   }
+  .feed-stats {
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    height: 180px;
+    background-color: var(--backgroundContainer);
+    border-radius: 12px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+  }
+  /*************
+Worm Stats
+**************/
+
   .worm-stats {
     grid-area: 4 / 3 / 5 / 2;
     position: relative;
     top: 0px;
   }
+
+  .worm-stats {
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    height: 200px;
+    background-color: var(--backgroundContainer);
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  /*************
+Eggs Stats
+**************/
+
   .egg-stats {
     grid-area: 1 / 3 / 5 / 3;
     position: relative;
     top: 0px;
+    width: 80%;
   }
+
+  .egg-stats {
+    margin: 0 auto;
+    width: 80%;
+    height: 180px;
+    max-width: 350px;
+    background-color: var(--backgroundContainer);
+    border-radius: 12px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  /*************
+Search
+**************/
 
   .search {
     grid-area: 4 / 3 / 5 / 3;
@@ -187,52 +260,6 @@ Media Queries
     top: 0px;
   }
 
-  .imageShow {
-    grid-area: 1 / 6 / 6 / 4;
-    position: relative;
-    top: 20px;
-  }
-
-  .bird {
-    display: block;
-  }
-
-  .worm-stats {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    height: 200px;
-    background-color: var(--backgroundContainer);
-    border-radius: 15px;
-    text-align: center;
-    /* align-items: center;
-    align-self: center; */
-  }
-
-  .feed-stats {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    height: 200px;
-    background-color: var(--backgroundContainer);
-    border-radius: 15px;
-    text-align: center;
-    align-items: center;
-    align-self: center;
-  }
-
-  .egg-stats {
-    margin: 0 auto;
-    width: 80%;
-    height: 200px;
-    max-width: 350px;
-    background-color: var(--backgroundContainer);
-    border-radius: 15px;
-    text-align: center;
-    align-items: center;
-    align-self: center;
-  }
-
   .search {
     margin: 0 auto;
     width: 80%;
@@ -242,5 +269,36 @@ Media Queries
     border-radius: 15px;
     align-items: center;
     align-self: center;
+  }
+
+  /*************
+Image Show Container
+**************/
+
+  .imageShow {
+    grid-area: 1 / 6 / 6 / 4;
+    position: relative;
+    top: 20px;
+  }
+
+  .imageShow {
+    width: 80%;
+    max-width: 350px;
+    height: 260px;
+    max-height: 360px;
+    background-color: var(--backgroundContainer);
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .rooster-image-container img {
+    width: 100%;
+    border: 2px solid var(--border);
+  }
+  .chikn-image-container img {
+    width: 100%;
+    border: 2px solid var(--border);
   }
 }
