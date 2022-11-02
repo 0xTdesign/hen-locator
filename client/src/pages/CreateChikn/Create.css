@@ -1,0 +1,112 @@
+.create {
+  background: url(../../assets/createBackground.jpg) no-repeat center center fixed;
+  border-radius: 40px;
+  background-position: 25% 75%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.createChikn {
+  display: block;
+  margin: 0 auto;
+  width: 96%;
+  height: 350px;
+  max-width: 350px;
+  background-color: var(--backgroundContainer);
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+}
+
+.createRooster {
+  display: block;
+  margin: 0 auto;
+  width: 96%;
+  height: 350px;
+  max-width: 350px;
+  background-color: var(--backgroundContainer);
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+}
+
+.space {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+/*************
+Form
+**************/
+
+.form-create {
+  margin-top: 10px;
+  display: block;
+}
+
+.createRooster input,
+.createChikn input {
+  margin: 4px;
+  width: 80%;
+  font-size: 1rem;
+  border-radius: 3px;
+  padding: 2px;
+  background-color: var(--darkBackground);
+  border: 1px solid #fff;
+}
+
+.createChikn img,
+.createRooster img {
+  margin: 10px;
+}
+
+.topContainer {
+  font-size: 1.2rem;
+  color: var(--text);
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid;
+  border-color: var(--border);
+}
+
+/*************
+Recent added Coqs
+**************/
+
+.showCreate {
+  display: block;
+  margin: 0 auto;
+  width: 96%;
+  max-width: 350px;
+  background-color: var(--backgroundContainer);
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
+/*************
+Media Queries
+**************/
+
+@media only screen and (min-width: 999px) {
+  .createChikn {
+    grid-area: 3 / 2 / 4 / 2;
+  }
+
+  .createRooster {
+    grid-area: 3 / 3 / 5 / 3;
+  }
+
+  .showCreate {
+    grid-area: 5 / 4 / 2 / 5;
+    display: block;
+    max-width: 460px;
+    background-color: var(--backgroundContainer);
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+  }
+}

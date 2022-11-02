@@ -47,7 +47,7 @@ export default function Chikn({ setpageClass }) {
         <div className="chikn-container">
           {/* {!chiknChosen ? <h1 className="popup">Enter Id to see stats</h1> : <h1>{chikn.name}</h1>} */}
           <div className="chikn-search">
-            <form action="">
+            <form className="form-search">
               <input onChange="" name="name" type="text" placeholder="Chikn Id" />
               <button onClick="" type="submit">
                 <img className="enter-btn" src={chicken} alt="Chikn" />
@@ -56,7 +56,7 @@ export default function Chikn({ setpageClass }) {
             <div className={chicken.img ? "" : "hide"}></div>
           </div>
           <div className="chikn-search">
-            <form>
+            <form className="form-search">
               <input onChange="" name="name" type="text" placeholder="Rooster Id" />
               <button onClick="" type="submit">
                 <img className="enter-btn" src={rooster} alt="Rooster" />

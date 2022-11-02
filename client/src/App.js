@@ -11,6 +11,7 @@ import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import Chikn from "./pages/Chikn/Chikn";
 import Edgyeggs from "./pages/Edgyeggs/Edgyeggs";
+import Create from "./pages/CreateChikn/Create";
 
 function App() {
   const [pageClass, setpageClass] = useState("home");
@@ -21,7 +22,7 @@ function App() {
         <a href="https://www.freepik.com">Image designed by Upklyak - Freepik.com</a>
       </p>
       <div className={`App mainContainer ${pageClass}`}>
-        <Header />
+        <Header pageClass={pageClass} />
         <Price />
         <Content />
         <Footer />
@@ -30,6 +31,7 @@ function App() {
           <Route path="/About" element={<About setpageClass={setpageClass} />} />
           <Route path="/Chikn" element={<Chikn setpageClass={setpageClass} />} />
           <Route path="/Edgyeggs" element={<Edgyeggs setpageClass={setpageClass} />} />
+          <Route path="/Create" element={<Create setpageClass={setpageClass} />} />
         </Routes>
       </div>
     </BrowserRouter>

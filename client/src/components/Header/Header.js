@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./Header.css";
 import logo from "../../assets/logo.svg";
+import logoWhite from "../../assets/logoWhite.svg";
 
-export default function Header() {
+export default function Header({ pageClass }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
@@ -12,7 +13,13 @@ export default function Header() {
           <nav>
             <section className="MOBILE-MENU flex lg:hidden">
               <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
-                <img className="bar pulse" src={logo} alt="" />
+                {pageClass === "home" && <img className="bar pulse" src={logo} alt="Logo" />}
+                {pageClass === "about" && <img className="bar pulse" src={logo} alt="Logo" />}
+                {pageClass === "chikn" && <img className="bar pulse" src={logo} alt="Logo" />}
+                {pageClass === "edgyeggs" && <img className="bar pulse" src={logo} alt="Logo" />}
+                {pageClass === "create" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
+                {pageClass === "coop" && <img className="bar pulse" src={logo} alt="Logo" />}
+
                 <p className="menu">Menu</p>
               </div>
 

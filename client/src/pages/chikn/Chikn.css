@@ -84,10 +84,11 @@ Containers
 Form
 **************/
 
-form {
+.form-search {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .chikn-search {
@@ -95,7 +96,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .chikn-search input {
@@ -207,6 +208,7 @@ Feed Stats
     align-items: center;
     align-self: center;
   }
+
   /*************
 Worm Stats
 **************/
@@ -240,7 +242,7 @@ Eggs Stats
 
   .egg-stats {
     margin: 0 auto;
-    width: 80%;
+    width: 96%;
     height: 180px;
     max-width: 350px;
     background-color: var(--backgroundContainer);
@@ -262,7 +264,7 @@ Search
 
   .search {
     margin: 0 auto;
-    width: 80%;
+    width: 96%;
     height: 200px;
     max-width: 350px;
     background-color: var(--backgroundContainer);
