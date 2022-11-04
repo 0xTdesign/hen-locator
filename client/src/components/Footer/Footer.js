@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-export default function Footer() {
+export default function Footer({ pageClass }) {
   return (
     <footer>
       <div className="footer-icons">

@@ -19,8 +19,26 @@ General Elements
 }
 
 .links i {
+  cursor: pointer;
   padding: 15px;
   color: var(--icons);
+}
+
+.links i:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/*************
+Other pages
+**************/
+
+.create .links i {
+  color: var(--text);
+}
+
+.coop .links i {
+  color: var(--text);
 }
 
 /*************
@@ -33,6 +51,7 @@ Media Queries
     grid-area: 3 / 2 / 3 / 1;
     top: 1.5rem;
     left: 0.6rem;
+    bottom: 0;
     position: absolute;
   }
 
@@ -53,5 +72,17 @@ Media Queries
     left: 0;
     bottom: 0rem;
     height: 100%;
+  }
+
+  .chikn footer {
+    top: 4.5rem;
+  }
+
+  .create footer {
+    top: 6.5rem;
+  }
+
+  .coop footer {
+    bottom: 4.5rem;
   }
 }

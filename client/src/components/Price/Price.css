@@ -32,8 +32,20 @@ General Elements
   width: 16px;
 }
 
-span {
+/* span {
   margin-left: 10px;
+} */
+
+/*************
+Other pages
+**************/
+
+.create .price {
+  color: var(--text);
+}
+
+.coop .price {
+  color: var(--text);
 }
 
 /*************

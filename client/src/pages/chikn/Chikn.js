@@ -3,41 +3,49 @@ import { useEffect } from "react";
 import "./Chikn.css";
 import chicken from "../../assets/chicken.svg";
 import rooster from "../../assets/rooster.svg";
-import chiknNFT from "../../assets/chiknNFT.jpeg";
-import roosterNFT from "../../assets/roosterNFT.jpeg";
 
-export default function Chikn({ setpageClass }) {
+export default function Chikn({
+  setpageClass,
+  handleSearch,
+  getSearchChikn,
+  getSearchRoostr,
+  roostrSearch,
+  chiknSearch,
+  formChiknSearch,
+  getReports,
+  reports,
+}) {
   useEffect(() => {
     setpageClass("chikn");
   }, []);
 
   return (
     <>
-      <div className="feed-stats space">
+      <div className="feed-stats ">
         <div className="topContainer">
           <h2>Feed</h2>
         </div>
         <div className="bottomContainer">
-          <p>Feed:12345678</p>
-          <p>Burn:1234567 </p>
+          <p>Minted: {Math.ceil(reports.feedMinted)}</p>
+          <p>Burn: {Math.ceil(reports.feedBurned)}</p>
         </div>
       </div>
-      <div className="worm-stats space">
+      <div className="worm-stats ">
         <div className="topContainer">
           <h2>Worm</h2>
         </div>
         <div className="bottomContainer">
-          <p>Worm: 1234567</p>
-          <p>Burn: 12345678 </p>
+          <p>Worm: </p>
+          <p>Burn: </p>
         </div>
       </div>
-      <div className="egg-stats space">
+      <div className="egg-stats ">
         <div className="topContainer">
           <h2>Egg</h2>
         </div>
         <div className="bottomContainer">
-          <p>Egg: 12345678 </p>
-          <p>Burn: 123456789 </p>
+          <p>Minted: {Math.ceil(reports.eggMinted)} </p>
+          <p>Burn: {Math.ceil(reports.eggBurned)} </p>
         </div>
       </div>
       <div className="search">
@@ -47,53 +55,51 @@ export default function Chikn({ setpageClass }) {
         <div className="chikn-container">
           {/* {!chiknChosen ? <h1 className="popup">Enter Id to see stats</h1> : <h1>{chikn.name}</h1>} */}
           <div className="chikn-search">
-            <form className="form-search">
-              <input onChange="" name="name" type="text" placeholder="Chikn Id" />
-              <button onClick="" type="submit">
+            <form className="form-search" onSubmit={getSearchChikn}>
+              <input
+                onChange={handleSearch}
+                value={formChiknSearch.chiknId}
+                name="chiknId"
+                type="text"
+                placeholder="Chikn Id"
+              />
+              <button type="submit">
                 <img className="enter-btn" src={chicken} alt="Chikn" />
               </button>
             </form>
-            <div className={chicken.img ? "" : "hide"}></div>
           </div>
           <div className="chikn-search">
-            <form className="form-search">
-              <input onChange="" name="name" type="text" placeholder="Rooster Id" />
-              <button onClick="" type="submit">
+            <form className="form-search" onSubmit={getSearchRoostr}>
+              <input
+                onChange={handleSearch}
+                value={formChiknSearch.roostrId}
+                name="roostrId"
+                type="text"
+                placeholder="Rooster Id"
+              />
+              <button type="submit">
                 <img className="enter-btn" src={rooster} alt="Rooster" />
               </button>
             </form>
           </div>
         </div>
       </div>
-      <div className="imageShow space">
+      <div className="imageShow ">
         <div className="topContainer">
           <h2>Coq Show</h2>
         </div>
         <div className="imageBottomContainer">
           <div className="chikn-image-container">
             <p>Chikn</p>
-            <img src={chiknNFT} alt="Chikn NFT" />
-            {/* <img
-              onClick={() => {
-                handleModal(chikn);
-              }}
-              className="chikn-found"
-              src={chikn.img}
-              alt="chikn"
-            /> */}
+            <div className={chiknSearch.image ? "" : "hide"}>
+              <img src={chiknSearch.image} alt="Chikn NFT" />
+            </div>
           </div>
-          {/* <div className={rooster.img ? "" : "hide"}> */}
           <div className="rooster-image-container">
             <p>Rooster</p>
-            <img src={roosterNFT} alt="Rooster NFT" />
-            {/* <img
-              onClick={() => {
-                handleModal(chikn);
-              }}
-              className="chikn-found"
-              src={rooster.img}
-              alt="rooster"
-            /> */}
+            <div className={roostrSearch.image ? "" : "hide"}>
+              <img src={roostrSearch.image} alt="Rooster NFT" />
+            </div>
           </div>
         </div>
       </div>

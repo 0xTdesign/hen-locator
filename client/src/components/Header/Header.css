@@ -44,8 +44,18 @@ Mobile Nav
   text-align: center;
 }
 
-.create .menu {
+/*************
+Other pages
+**************/
+
+.create .menu,
+.coop .menu {
   color: var(--text);
+}
+
+.create .bar,
+.coop .bar {
+  box-shadow: 0px 2px 7px rgb(255, 255, 255);
 }
 
 /*************
@@ -82,11 +92,6 @@ Desktop Nav
   text-decoration: underline;
   text-underline-offset: 2px;
   color: var(--text);
-}
-
-.DESKTOP-MENU:hover {
-  background-color: var(--darkBackground);
-  color: var(--icons);
 }
 
 /*************

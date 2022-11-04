@@ -1,0 +1,31 @@
+.card {
+  color: rgb(223 63 62);
+  font-size: 1rem;
+}
+
+.entrys p {
+  font-size: 0.8rem;
+}
+
+/*************
+Media Queries
+**************/
+
+@media only screen and (min-width: 999px) {
+  .entrys {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    gap: 30px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .entrys p {
+    font-size: 1rem;
+  }
+
+  .card {
+    font-size: 1.2rem;
+  }
+}

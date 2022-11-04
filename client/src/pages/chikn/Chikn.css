@@ -11,12 +11,16 @@
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
 /*************
 Egg Stats
 **************/
 
 .egg-stats {
-  margin: 0 auto;
+  margin: 0.8rem auto;
   width: 96%;
   max-width: 350px;
   height: 150px;
@@ -42,7 +46,7 @@ Search
 **************/
 
 .search {
-  margin: 0 auto;
+  margin: 0.8rem auto;
   width: 96%;
   max-width: 350px;
   height: 200px;
@@ -73,11 +77,6 @@ Containers
 
 .bottomContainer p {
   margin-top: 5px;
-}
-
-.space {
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
 }
 
 /*************
@@ -125,7 +124,7 @@ Buttons
 .enter-btn {
   border: 1px solid #fff;
   border-radius: 10px;
-  background-color: #2a2c54ca;
+  background-color: #2a2c54;
   padding: 5px;
   width: 50px;
   box-shadow: 0px 2px 7px rgb(231, 107, 73);
@@ -169,11 +168,13 @@ Image show
 
 .rooster-image-container img {
   width: 100%;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
+  border-radius: 6px;
 }
 .chikn-image-container img {
   width: 100%;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
+  border-radius: 6px;
 }
 
 /*************
@@ -185,19 +186,12 @@ Media Queries
     display: block;
   }
 
-  .space {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-  }
   /*************
 Feed Stats
 **************/
+
   .feed-stats {
     grid-area: 1 / 3 / 5 / 2;
-    position: relative;
-    top: 0px;
-  }
-  .feed-stats {
     display: block;
     margin: 0 auto;
     width: 96%;
@@ -215,11 +209,6 @@ Worm Stats
 
   .worm-stats {
     grid-area: 4 / 3 / 5 / 2;
-    position: relative;
-    top: 0px;
-  }
-
-  .worm-stats {
     display: block;
     margin: 0 auto;
     width: 96%;
@@ -235,12 +224,6 @@ Eggs Stats
 
   .egg-stats {
     grid-area: 1 / 3 / 5 / 3;
-    position: relative;
-    top: 0px;
-    width: 80%;
-  }
-
-  .egg-stats {
     margin: 0 auto;
     width: 96%;
     height: 180px;
@@ -258,11 +241,6 @@ Search
 
   .search {
     grid-area: 4 / 3 / 5 / 3;
-    position: relative;
-    top: 0px;
-  }
-
-  .search {
     margin: 0 auto;
     width: 96%;
     height: 200px;
@@ -279,11 +257,6 @@ Image Show Container
 
   .imageShow {
     grid-area: 1 / 6 / 6 / 4;
-    position: relative;
-    top: 20px;
-  }
-
-  .imageShow {
     width: 80%;
     max-width: 350px;
     height: 260px;

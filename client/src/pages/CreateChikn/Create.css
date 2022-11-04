@@ -10,7 +10,7 @@
 
 .createChikn {
   display: block;
-  margin: 0 auto;
+  margin: 0.8rem auto;
   width: 96%;
   height: 350px;
   max-width: 350px;
@@ -18,11 +18,12 @@
   border-radius: 12px;
   text-align: center;
   padding: 15px;
+  border: 1px solid var(--border);
 }
 
 .createRooster {
   display: block;
-  margin: 0 auto;
+  margin: 0.8rem auto;
   width: 96%;
   height: 350px;
   max-width: 350px;
@@ -30,11 +31,7 @@
   border-radius: 12px;
   text-align: center;
   padding: 15px;
-}
-
-.space {
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  border: 1px solid var(--border);
 }
 
 /*************
@@ -53,8 +50,8 @@ Form
   font-size: 1rem;
   border-radius: 3px;
   padding: 2px;
-  background-color: var(--darkBackground);
-  border: 1px solid #fff;
+  background-color: var(--card);
+  border: 1px solid var(--text);
 }
 
 .createChikn img,
@@ -82,9 +79,26 @@ Recent added Coqs
   max-width: 350px;
   background-color: var(--backgroundContainer);
   border-radius: 12px;
-  text-align: center;
   padding: 15px;
   margin-bottom: 100px;
+  border: 1px solid var(--border);
+}
+
+.entryChikn {
+  color: var(--text);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: 96%;
+}
+
+.entryChiknImg img {
+  border-radius: 6px;
+}
+
+.entryChiknData {
+  padding: 5px;
 }
 
 /*************
@@ -100,13 +114,21 @@ Media Queries
     grid-area: 3 / 3 / 5 / 3;
   }
 
+  .bird {
+    display: none;
+  }
+
   .showCreate {
-    grid-area: 5 / 4 / 2 / 5;
+    overflow: scroll;
+    position: absolute;
+    grid-area: 4 / 4 / 3 / 4;
     display: block;
-    max-width: 460px;
+    max-width: 350px;
+    height: 500px;
     background-color: var(--backgroundContainer);
     border-radius: 12px;
     text-align: center;
     padding: 15px;
+    margin: 0.8rem auto;
   }
 }

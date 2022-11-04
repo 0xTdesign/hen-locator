@@ -18,7 +18,7 @@ export default function Header({ pageClass }) {
                 {pageClass === "chikn" && <img className="bar pulse" src={logo} alt="Logo" />}
                 {pageClass === "edgyeggs" && <img className="bar pulse" src={logo} alt="Logo" />}
                 {pageClass === "create" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
-                {pageClass === "coop" && <img className="bar pulse" src={logo} alt="Logo" />}
+                {pageClass === "coop" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
 
                 <p className="menu">Menu</p>
               </div>
@@ -48,9 +48,9 @@ export default function Header({ pageClass }) {
                   <li className="border-b  my-8 uppercase">
                     <a href="/Chikn">Chikn</a>
                   </li>
-                  <li className="border-b  my-8 uppercase">
+                  {/* <li className="border-b  my-8 uppercase">
                     <a href="/Edgyeggs">Edgyeggs</a>
-                  </li>
+                  </li> */}
                   <li className="border-b  my-8 uppercase">
                     <a href="/Create">Hen Creator</a>
                   </li>
@@ -70,9 +70,9 @@ export default function Header({ pageClass }) {
               <li>
                 <a href="/Chikn">Chikn</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/Edgyeggs">Edgyeggs</a>
-              </li>
+              </li> */}
               <li>
                 <a href="/Create">Hen Creator </a>
               </li>

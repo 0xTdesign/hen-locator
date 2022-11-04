@@ -6,6 +6,8 @@ html {
   scroll-behavior: smooth;
   font-family: "Space Mono", monospace;
   background-color: #6c85e2;
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
 }
 
 :root {
@@ -16,6 +18,7 @@ html {
   --border: #d9f4ff;
   --text: #fff;
   --icons: #df3a2d;
+  --card: #404161;
 }
 
 * {
@@ -38,6 +41,18 @@ body {
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.6;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 
 /*************
@@ -73,6 +88,10 @@ General Elements
   position: fixed;
   bottom: 0;
   font-size: 5px;
+}
+
+span {
+  color: var(--text);
 }
 
 /*************
