@@ -30,7 +30,7 @@
   border-color: var(--border);
 }
 
-.bottomContainer {
+.bottomContainer-coop {
   font-size: 1.2rem;
   color: var(--text);
   position: relative;
@@ -51,5 +51,12 @@ Media Queries
     grid-area: 3 / 5 / 4 / 2;
     max-width: 1100px;
     margin-bottom: 0px;
+  }
+
+  .bird-container {
+    flex-direction: column;
+    columns: 5;
+    text-align: center;
+    width: 100%;
   }
 }

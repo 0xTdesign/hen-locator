@@ -14,10 +14,12 @@ export default function Coop({ setpageClass, offersRoostr, offersChikn }) {
         <div className="topContainer">
           <h2>Hen Coop</h2>
         </div>
-        <div className="bottomContainer">
+        <div className="bottomContainer-coop">
           <div className="entrys">
-            <CardChikn offersChikn={offersChikn} />
-            <CardRoostr offersRoostr={offersRoostr} />
+            <div className="bird-container">
+              <CardChikn offersChikn={offersChikn} />
+              <CardRoostr offersRoostr={offersRoostr} />
+            </div>
           </div>
         </div>
       </div>

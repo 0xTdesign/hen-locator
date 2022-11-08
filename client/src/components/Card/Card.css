@@ -15,7 +15,6 @@ Media Queries
   .entrys {
     margin: 0 auto;
     display: grid;
-    /* grid-template-columns: 320px 320px 320px; */
     gap: 30px;
     padding: 10px;
     width: 100%;
