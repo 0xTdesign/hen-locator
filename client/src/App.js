@@ -13,7 +13,8 @@ import Chikn from "./pages/Chikn/Chikn";
 import Edgyeggs from "./pages/Edgyeggs/Edgyeggs";
 import Create from "./pages/CreateChikn/Create";
 import Coop from "./pages/Coop/Coop";
-import { SEARCH_API, DETAILS_API, REPORT_API } from "./api";
+
+import { SEARCH_API, DETAILS_API, REPORT_API, API_URL } from "./api";
 
 function App() {
   /**************
@@ -29,6 +30,7 @@ function App() {
     avax: "",
     feed: "",
     fert: "",
+    egg: "",
   });
 
   const [formChiknSearch, setformChiknSearch] = useState({
@@ -45,17 +47,79 @@ function App() {
     image: "",
   });
 
+  const [chiknDetails, setchiknDetails] = useState({
+    token: "",
+    kg: "",
+    rarity: "",
+    score: "",
+    forSale: "",
+    salePrice: "",
+  });
+
+  const [roostrDetails, setroostrDetails] = useState({
+    token: "",
+    kg: "",
+    rarity: "",
+    score: "",
+    forSale: "",
+    salePrice: "",
+  });
+
+  const [createChiknForm, setcreateChiknForm] = useState({
+    note: "",
+    price: "",
+    contact: "",
+  });
+
+  const [createRoostrForm, setcreateRoostrForm] = useState({
+    note: "",
+    price: "",
+    contact: "",
+  });
+
+  const [allBirds, setallBirds] = useState([]);
+
   /**************
   useEffect form 
   *************/
 
   useEffect(() => {
     getReports();
+    getAllBirds();
   }, []);
 
   /**************
   form functions
    *************/
+
+  const handleChangeCreate = (e) => {
+    setcreateChiknForm({ ...createChiknForm, [e.target.name]: e.target.value });
+  };
+
+  const createNewChikn = async (e) => {
+    e.preventDefault();
+    const API = `${API_URL}/chikn`;
+    const res = await axios.post(API, createChiknForm);
+
+    setcreateChiknForm({ note: "", price: "", contact: "" });
+    setallBirds([...allBirds, res.data]);
+  };
+
+  const createNewRoostr = async (e) => {
+    e.preventDefault();
+    const API = `${API_URL}/chikn`;
+    const res = await axios.post(API, createRoostrForm);
+
+    setcreateRoostrForm({ note: "", price: "", contact: "" });
+
+    setallBirds([...allBirds, res.data]);
+  };
+
+  const getAllBirds = async () => {
+    const API = `${API_URL}/chikn`;
+    const res = await axios.get(API);
+    setallBirds(res.data);
+  };
 
   const updateRooster = async (e) => {
     e.preventDefault();
@@ -64,10 +128,6 @@ function App() {
   const updateChikn = async (e) => {
     e.preventDefault();
   };
-
-  const getAllChikn = async () => {};
-
-  const getAllRooster = async () => {};
 
   /**************
   functions Chikn 
@@ -94,11 +154,12 @@ function App() {
       avax: resPrice.data.quotes.AVAX.quote,
       feed: resPrice.data.quotes.FEED.quote,
       fert: resPrice.data.quotes.FERT.quote,
+      egg: resPrice.data.quotes.EGG.quote,
     });
   };
 
   const getSearchChikn = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const API = SEARCH_API("chikn", formChiknSearch.chiknId);
     const res = await axios.get(API);
     setChiknSearch({ image: res.data.image, name: res.data.name });
@@ -107,20 +168,38 @@ function App() {
   };
 
   const getSearchRoostr = async (e) => {
-    e.preventDefault();
     const API = SEARCH_API("roostr", formChiknSearch.roostrId);
     const res = await axios.get(API);
     setRoostrSearch({ image: res.data.image, name: res.data.name });
     setformChiknSearch({ ...formChiknSearch, roostrId: "" });
   };
+
   const getDetailsChikn = async () => {
-    const API = DETAILS_API("chikn");
+    const API = DETAILS_API("chikn", formChiknSearch.chiknId);
     const res = await axios.get(API);
+    setchiknDetails({
+      token: res.data.token,
+      kg: res.data.kg,
+      rarity: res.data.rarity,
+      score: res.data.score,
+      forSale: res.data.forSale,
+      salePrice: res.data.salePrice,
+    });
+    setformChiknSearch({ ...formChiknSearch, chiknId: "" });
   };
 
   const getDetailsRooster = async () => {
-    const API = DETAILS_API("rooster");
+    const API = DETAILS_API("roostr", formChiknSearch.roostrId);
     const res = await axios.get(API);
+    setroostrDetails({
+      token: res.data.token,
+      kg: res.data.kg,
+      rarity: res.data.rarity,
+      score: res.data.score,
+      forSale: res.data.forSale,
+      salePrice: res.data.salePrice,
+    });
+    setformChiknSearch({ ...formChiknSearch, roostrId: "" });
   };
 
   return (
@@ -130,7 +209,7 @@ function App() {
       </p>
       <div className={`App mainContainer ${pageClass}`}>
         <Header pageClass={pageClass} />
-        <Price pageClass={pageClass} />
+        <Price pageClass={pageClass} reports={reports} />
         <Content />
         <Footer pageClass={pageClass} />
         <Routes>
@@ -148,11 +227,33 @@ function App() {
                 roostrSearch={roostrSearch}
                 formChiknSearch={formChiknSearch}
                 reports={reports}
+                chiknDetails={chiknDetails}
+                getDetailsChikn={getDetailsChikn}
+                getDetailsRooster={getDetailsRooster}
+                roostrDetails={roostrDetails}
               />
             }
           />
           <Route path="/Edgyeggs" element={<Edgyeggs setpageClass={setpageClass} />} />
-          <Route path="/Create" element={<Create setpageClass={setpageClass} />} />
+          <Route
+            path="/Create"
+            element={
+              <Create
+                setpageClass={setpageClass}
+                getSearchRoostr={getSearchRoostr}
+                getSearchChikn={getSearchChikn}
+                formChiknSearch={formChiknSearch}
+                handleChangeCreate={handleChangeCreate}
+                createNewChikn={createNewChikn}
+                createNewRoostr={createNewRoostr}
+                createChiknForm={createChiknForm}
+                createRoostrForm={createRoostrForm}
+                handleSearch={handleSearch}
+                allBirds={allBirds}
+                chiknSearch={chiknSearch}
+              />
+            }
+          />
           <Route path="/Coop" element={<Coop setpageClass={setpageClass} />} />
         </Routes>
       </div>

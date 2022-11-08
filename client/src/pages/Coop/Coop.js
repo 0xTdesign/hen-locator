@@ -1,7 +1,7 @@
 import React from "react";
 import "./Coop.css";
 import { useEffect } from "react";
-import Card from "../../components/Card/Card";
+import Card from "../../components/Card/CardChikn";
 
 export default function Coop({ setpageClass }) {
   useEffect(() => {

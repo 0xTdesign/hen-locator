@@ -12,11 +12,15 @@
   margin: 0 auto;
   width: 80%;
   position: relative;
-  top: 15%;
+  top: 2%;
   background-color: var(--backgroundContainer);
   border-radius: 15px;
   align-items: center;
   align-self: center;
+}
+
+.welcome {
+  font-size: 2rem;
 }
 
 .topContainer {

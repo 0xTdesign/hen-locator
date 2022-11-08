@@ -1,15 +1,14 @@
 import React from "react";
 import "./Card.css";
-import roosterNFT from "../../assets/roosterNFT.jpeg";
 
-export default function Card() {
+export default function CardRoostr({ allBirds, roostrSearch }) {
   return (
     <>
       <div className="entrys"></div>
       <div className="createdEntry">
         <div className="entryChikn">
           <div className="entryChiknImg">
-            <img src={roosterNFT} alt="" />
+            <img src={roostrSearch.image} alt="Rooster NFT" />
           </div>
           <div className="entryChiknData">
             <p>

@@ -6,5 +6,5 @@ export default function About({ setpageClass }) {
     setpageClass("about");
   }, []);
 
-  return <section className="about"></section>;
+  return <div></div>;
 }

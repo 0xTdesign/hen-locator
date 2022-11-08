@@ -1,7 +1,7 @@
-// const LIVE_API_URL = "/.netlify/functions/api";
-// const DEV_API_URL = "http://localhost:9000/.netlify/functions/api";
+const LIVE_API_URL = "/.netlify/functions/api";
+const DEV_API_URL = "http://localhost:9000/.netlify/functions/api";
 
-// export const API_URL = LIVE_API_URL;
+export const API_URL = DEV_API_URL;
 
 export const DETAILS_API = (type, details) => `https://api.chikn.farm/api/${type}/details/${details}`;
 

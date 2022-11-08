@@ -46,7 +46,7 @@ export default function Header({ pageClass }) {
                     <a href="/">About</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
-                    <a href="/Chikn">Chikn</a>
+                    <a href="/Chikn">Coq Search</a>
                   </li>
                   {/* <li className="border-b  my-8 uppercase">
                     <a href="/Edgyeggs">Edgyeggs</a>
@@ -68,7 +68,7 @@ export default function Header({ pageClass }) {
                 <a href="/About">About</a>
               </li>
               <li>
-                <a href="/Chikn">Chikn</a>
+                <a href="/Chikn">Coq Search</a>
               </li>
               {/* <li>
                 <a href="/Edgyeggs">Edgyeggs</a>

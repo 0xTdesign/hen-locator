@@ -5,12 +5,15 @@ export default function Home() {
   return (
     <div className="main">
       <div className="topContainer">
-        <h1>Welcome </h1>
+        <h1 className="welcome">Welcome to Hen locator </h1>
       </div>
       <div className="bottomContainer">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non amet modi voluptatem ullam nihil nobis</p>
+        <p>
+          This website is designed to try and match you with your favorite Coq. Everything on this site is for entertainment
+          purpose only. Please make sure you always do your own research and diligence.
+        </p>
         <button type="button" className="welcome-btn">
-          <a href="/Chikn">Explore</a>
+          <a href="/Coop">Enter the Coop</a>
         </button>
       </div>
     </div>

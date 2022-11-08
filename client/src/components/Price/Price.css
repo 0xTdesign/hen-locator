@@ -27,14 +27,18 @@ General Elements
 }
 
 .token-1 img {
-  margin-left: 5px;
+  margin-right: 5px;
   align-self: center;
   width: 16px;
 }
 
-/* span {
-  margin-left: 10px;
-} */
+.feed {
+  display: none;
+}
+
+.fert {
+  display: none;
+}
 
 /*************
 Other pages
@@ -48,17 +52,28 @@ Other pages
   color: var(--text);
 }
 
+.chikn .price {
+  color: var(--icons);
+}
 /*************
 Media Queries
 **************/
 
 @media only screen and (min-width: 999px) {
   .price {
-    margin-top: 4rem;
+    margin-top: 5rem;
     grid-area: 1 / 1 / 2 / 6;
   }
   .tokens ol {
     position: relative;
     top: 20px;
+  }
+
+  .feed {
+    display: flex;
+  }
+
+  .fert {
+    display: flex;
   }
 }

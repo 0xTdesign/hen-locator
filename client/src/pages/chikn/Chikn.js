@@ -1,8 +1,10 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Chikn.css";
 import chicken from "../../assets/chicken.svg";
 import rooster from "../../assets/rooster.svg";
+import SelectedChikn from "../../components/SelectedBird/SelectedChikn";
+import SelectedRoostr from "../../components/SelectedBird/SelectedRoostr";
 
 export default function Chikn({
   setpageClass,
@@ -12,15 +14,51 @@ export default function Chikn({
   roostrSearch,
   chiknSearch,
   formChiknSearch,
-  getReports,
   reports,
+  chiknDetails,
+  getDetailsChikn,
+  getDetailsRooster,
+  roostrDetails,
 }) {
+  const [showModalChikn, setshowModalChikn] = useState(false);
+  const [showModalRoostr, setshowModalRoostr] = useState(false);
+
+  const [activeChikn, setactiveChikn] = useState({});
+
+  const [activeRoostr, setactiveRoostr] = useState({});
+
   useEffect(() => {
     setpageClass("chikn");
   }, []);
 
+  const formSubmitChikn = (event) => {
+    console.log(event);
+    event.preventDefault();
+    getDetailsChikn();
+    getSearchChikn();
+    getDetailsRooster();
+    getSearchRoostr();
+  };
+
+  const handleModalChikn = (event) => {
+    event.preventDefault();
+    setshowModalChikn(!showModalChikn);
+    setactiveChikn({
+      ...chiknDetails,
+      ...chiknSearch,
+    });
+  };
+
+  const handleModalRoostr = (event) => {
+    event.preventDefault();
+    setshowModalRoostr(!showModalRoostr);
+    setactiveRoostr({ ...roostrDetails, ...roostrSearch });
+  };
+
   return (
     <>
+      {showModalChikn && <SelectedChikn activeChikn={activeChikn} handleModalChikn={handleModalChikn} />}
+      {showModalRoostr && <SelectedRoostr activeRoostr={activeRoostr} handleModalRoostr={handleModalRoostr} />}
       <div className="feed-stats ">
         <div className="topContainer">
           <h2>Feed</h2>
@@ -32,11 +70,14 @@ export default function Chikn({
       </div>
       <div className="worm-stats ">
         <div className="topContainer">
-          <h2>Worm</h2>
+          <h2>Quick Stats</h2>
         </div>
         <div className="bottomContainer">
-          <p>Worm: </p>
-          <p>Burn: </p>
+          <p>Chikn KG:{chiknDetails.kg} </p>
+          <p>Chikn Rarity: {chiknDetails.rarity}</p>
+          <div className="line"></div>
+          <p>Roostr KG:{roostrDetails.kg} </p>
+          <p>Roostr Rarity: {roostrDetails.rarity}</p>
         </div>
       </div>
       <div className="egg-stats ">
@@ -53,9 +94,8 @@ export default function Chikn({
           <h2>Coq Search</h2>
         </div>
         <div className="chikn-container">
-          {/* {!chiknChosen ? <h1 className="popup">Enter Id to see stats</h1> : <h1>{chikn.name}</h1>} */}
           <div className="chikn-search">
-            <form className="form-search" onSubmit={getSearchChikn}>
+            <form className="form-search" onSubmit={formSubmitChikn}>
               <input
                 onChange={handleSearch}
                 value={formChiknSearch.chiknId}
@@ -69,7 +109,7 @@ export default function Chikn({
             </form>
           </div>
           <div className="chikn-search">
-            <form className="form-search" onSubmit={getSearchRoostr}>
+            <form className="form-search" onSubmit={formSubmitChikn}>
               <input
                 onChange={handleSearch}
                 value={formChiknSearch.roostrId}
@@ -90,15 +130,25 @@ export default function Chikn({
         </div>
         <div className="imageBottomContainer">
           <div className="chikn-image-container">
-            <p>Chikn</p>
             <div className={chiknSearch.image ? "" : "hide"}>
-              <img src={chiknSearch.image} alt="Chikn NFT" />
+              <p>
+                Chikn <br />#{chiknDetails.token}
+              </p>
+              <div className="click" onClick={handleModalChikn}>
+                <img src={chiknSearch.image} alt="Chikn NFT" />
+                <p>Click</p>
+              </div>
             </div>
           </div>
           <div className="rooster-image-container">
-            <p>Rooster</p>
             <div className={roostrSearch.image ? "" : "hide"}>
-              <img src={roostrSearch.image} alt="Rooster NFT" />
+              <p>
+                Roostr <br />#{roostrDetails.token}
+              </p>
+              <div className="click" onClick={handleModalRoostr}>
+                <img src={roostrSearch.image} alt="Rooster NFT" />
+                <p>Click</p>
+              </div>
             </div>
           </div>
         </div>
