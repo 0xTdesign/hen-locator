@@ -1,5 +1,5 @@
 const LIVE_API_URL = "/.netlify/functions/api";
-const DEV_API_URL = "http://localhost:9000/.netlify/functions/api";
+const DEV_API_URL = "http://localhost:9000";
 
 export const API_URL = DEV_API_URL;
 

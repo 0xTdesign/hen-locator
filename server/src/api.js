@@ -3,10 +3,12 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const axios = require("axios");
 const bp = require("body-parser");
 require("dotenv").config();
 
 const Chikn = require("./Models/chikn");
+const Roostr = require("./Models/roostr");
 
 const app = express();
 app.use(cors());
@@ -17,14 +19,14 @@ const PORT = process.env.PORT || 9000;
 
 mongoose.connect(process.env.DATABASE_URL);
 
-app.get("/netlify/function/api", (req, res) => {
+app.get("/", (req, res) => {
   res.json("HOME MA BRU");
 });
 
 // netlify/function/api
 
-// create chikn
-app.get("./netlify/function/api/chikn", async (req, res) => {
+// Display Chikns
+app.get("/chikn", async (req, res) => {
   try {
     const allChikns = await Chikn.find();
     res.status(200).json(allChikns);
@@ -34,9 +36,45 @@ app.get("./netlify/function/api/chikn", async (req, res) => {
   }
 });
 
+app.get("/roostr", async (req, res) => {
+  try {
+    const allRoostrs = await Roostr.find();
+    res.status(200).json(allRoostrs);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+// Create Chikn
+app.post("/chikn/:id", async (req, res) => {
+  try {
+    const API = `https://api.chikn.farm/api/chikn/metadata/${req.params.id}`;
+    const res = await axios.get(API);
+    const newChikn = await Chikn.create({ ...req.body, image: res.data.image });
+    res.status(200).json(newChikn);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+// Create Roostr
+app.post("/roostr/:id", async (req, res) => {
+  try {
+    const API = `https://api.chikn.farm/api/roostr/metadata/${req.params.id}`;
+    const res = await axios.get(API);
+    const newRoostr = await Roostr.create({ ...req.body, image: res.data.image });
+    res.status(200).json(newRoostr);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 //update chikn
 
-app.put("chikn/id"),
+app.put("chikn/:id"),
   async (req, res) => {
     try {
       const chiknToUpdate = req.params.id;
@@ -50,7 +88,7 @@ app.put("chikn/id"),
 
 //Deleted Chikn
 
-app.delete("/chikn/id", async (req, res) => {
+app.delete("/chikn/:id", async (req, res) => {
   try {
     const chiknToDelete = req.params.id;
     const deleteChikn = await Chikn.deleteOne({ _id: chiknToDelete });

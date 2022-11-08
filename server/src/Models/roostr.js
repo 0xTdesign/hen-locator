@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const roostrSchema = new Schema({
+  image: String,
   tokenId: String,
   note: String,
   price: String,

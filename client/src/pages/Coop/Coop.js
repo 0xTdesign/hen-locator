@@ -1,9 +1,10 @@
 import React from "react";
 import "./Coop.css";
 import { useEffect } from "react";
-import Card from "../../components/Card/CardChikn";
+import CardChikn from "../../components/Card/CardChikn";
+import CardRoostr from "../../components/Card/CardRoostr";
 
-export default function Coop({ setpageClass }) {
+export default function Coop({ setpageClass, offersRoostr, offersChikn }) {
   useEffect(() => {
     setpageClass("coop");
   }, []);
@@ -15,7 +16,8 @@ export default function Coop({ setpageClass }) {
         </div>
         <div className="bottomContainer">
           <div className="entrys">
-            <Card />
+            <CardChikn offersChikn={offersChikn} />
+            <CardRoostr offersRoostr={offersRoostr} />
           </div>
         </div>
       </div>

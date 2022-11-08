@@ -8,25 +8,23 @@ import CardRoostr from "../../components/Card/CardRoostr";
 
 export default function Create({
   setpageClass,
-  getSearchChikn,
-  getSearchRoostr,
-  formChiknSearch,
-  handleChangeCreate,
   createNewRoostr,
   createNewChikn,
   createChiknForm,
   createRoostrForm,
-  handleSearch,
-  allBirds,
-  roostrSearch,
-  chiknSearch,
+  offersChikn,
+  offersRoostr,
+  handleChangeCreateChikn,
+  handleChangeCreateRoostr,
 }) {
-  const submitCreateBird = (e) => {
+  const submitCreateChikn = (e) => {
     e.preventDefault();
-    getSearchChikn();
-    getSearchRoostr();
-    createNewRoostr();
     createNewChikn();
+  };
+
+  const submitCreateRoostr = (e) => {
+    e.preventDefault();
+    createNewRoostr();
   };
 
   useEffect(() => {
@@ -38,40 +36,40 @@ export default function Create({
         <div className="topContainer">
           <h2>Locate a Coq </h2>
         </div>
-        <form className="form-create" onSubmit={submitCreateBird}>
+        <form className="form-create" onSubmit={submitCreateChikn}>
           <input
-            onChange={handleSearch}
+            onChange={handleChangeCreateChikn}
             name="chiknId"
             type="text"
             placeholder="Chikn Id"
-            maxlength="20"
-            value={formChiknSearch.chiknId}
+            maxLength="20"
+            value={createChiknForm.chiknId}
           />
           <input
-            onChange={handleChangeCreate}
+            onChange={handleChangeCreateChikn}
             name="note"
             value={createChiknForm.note}
             type="text"
             placeholder="Note to holder"
-            maxlength="20"
+            maxLength="20"
           />
           <input
-            onChange={handleChangeCreate}
+            onChange={handleChangeCreateChikn}
             value={createChiknForm.price}
             name="price"
             type="text"
             placeholder="Offer price (Avax)"
-            maxlength="20"
+            maxLength="20"
           />
           <input
-            onChange={handleChangeCreate}
+            onChange={handleChangeCreateChikn}
             name="contact"
             type="text"
             placeholder="Contact(Discord/Twitter)"
-            maxlength="20"
+            maxLength="20"
             value={createChiknForm.contact}
           />
-          <button onClick="" type="submit">
+          <button type="submit">
             <img className="enter-btn" src={chicken} alt="Rooster" />
           </button>
         </form>
@@ -80,33 +78,40 @@ export default function Create({
         <div className="topContainer">
           <h2>Locate a Rooster </h2>
         </div>
-        <form className="form-create" onSubmit={submitCreateBird}>
+        <form className="form-create" onSubmit={submitCreateRoostr}>
           <input
-            onChange={handleSearch}
-            name="name"
+            onChange={handleChangeCreateRoostr}
+            name="roostrId"
             type="text"
             placeholder="Rooster Id"
-            maxlength="20"
-            value={formChiknSearch.roostrId}
+            maxLength="20"
+            value={createRoostrForm.roostrId}
           />
           <input
-            onChange={handleChangeCreate}
-            name="name"
+            onChange={handleChangeCreateRoostr}
+            name="note"
             type="text"
             placeholder="Note to holder"
-            maxlength="20"
+            maxLength="20"
             value={createRoostrForm.note}
           />
-          <input onChange={handleChangeCreate} name="name" type="text" placeholder="Offer price (Avax)" maxlength="20" />
           <input
-            onChange={handleChangeCreate}
-            name="name"
+            onChange={handleChangeCreateRoostr}
+            name="price"
             type="text"
-            placeholder="Contact(Discord/Twitter)"
-            maxlength="20"
+            placeholder="Offer price (Avax)"
+            maxLength="20"
             value={createRoostrForm.price}
           />
-          <button onClick="" type="submit">
+          <input
+            onChange={handleChangeCreateRoostr}
+            name="contact"
+            type="text"
+            placeholder="Contact(Discord/Twitter)"
+            maxLength="20"
+            value={createRoostrForm.contact}
+          />
+          <button type="submit">
             <img className="enter-btn" src={rooster} alt="Rooster" />
           </button>
         </form>
@@ -115,8 +120,8 @@ export default function Create({
         <div className="topContainer">
           <h2>Recent Added Coqs</h2>
         </div>
-        <CardChikn allBirds={allBirds} chiknSearch={chiknSearch} />
-        <CardRoostr allBirds={allBirds} roostrSearch={roostrSearch} />
+        <CardChikn offersChikn={offersChikn} />
+        <CardRoostr offersRoostr={offersRoostr} />
       </div>
     </>
   );

@@ -66,18 +66,22 @@ function App() {
   });
 
   const [createChiknForm, setcreateChiknForm] = useState({
+    chiknId: "",
     note: "",
     price: "",
     contact: "",
   });
 
   const [createRoostrForm, setcreateRoostrForm] = useState({
+    roostrId: "",
     note: "",
     price: "",
     contact: "",
   });
 
-  const [allBirds, setallBirds] = useState([]);
+  const [offersChikn, setoffersChikn] = useState([]);
+
+  const [offersRoostr, setoffersRoostr] = useState([]);
 
   /**************
   useEffect form 
@@ -92,33 +96,40 @@ function App() {
   form functions
    *************/
 
-  const handleChangeCreate = (e) => {
+  const handleChangeCreateChikn = (e) => {
     setcreateChiknForm({ ...createChiknForm, [e.target.name]: e.target.value });
   };
 
+  const handleChangeCreateRoostr = (e) => {
+    setcreateRoostrForm({ ...createRoostrForm, [e.target.name]: e.target.value });
+  };
+
   const createNewChikn = async (e) => {
-    e.preventDefault();
-    const API = `${API_URL}/chikn`;
+    console.log(createChiknForm);
+    const API = `${API_URL}/chikn/${createChiknForm.chiknId}`;
     const res = await axios.post(API, createChiknForm);
 
-    setcreateChiknForm({ note: "", price: "", contact: "" });
-    setallBirds([...allBirds, res.data]);
+    setcreateChiknForm({ tokenId: "", note: "", price: "", contact: "" });
+    setoffersChikn([...offersChikn, res.data]);
   };
 
   const createNewRoostr = async (e) => {
-    e.preventDefault();
-    const API = `${API_URL}/chikn`;
+    console.log(createRoostrForm);
+    const API = `${API_URL}/roostr/${createRoostrForm.roostrId}`;
     const res = await axios.post(API, createRoostrForm);
 
-    setcreateRoostrForm({ note: "", price: "", contact: "" });
+    setcreateRoostrForm({ tokenId: "", note: "", price: "", contact: "" });
 
-    setallBirds([...allBirds, res.data]);
+    setoffersRoostr([...offersRoostr, res.data]);
   };
 
   const getAllBirds = async () => {
     const API = `${API_URL}/chikn`;
     const res = await axios.get(API);
-    setallBirds(res.data);
+    const API2 = `${API_URL}/roostr`;
+    const res2 = await axios.get(API2);
+    setoffersChikn(res.data);
+    setoffersRoostr(res2.data);
   };
 
   const updateRooster = async (e) => {
@@ -159,7 +170,6 @@ function App() {
   };
 
   const getSearchChikn = async (e) => {
-    // e.preventDefault();
     const API = SEARCH_API("chikn", formChiknSearch.chiknId);
     const res = await axios.get(API);
     setChiknSearch({ image: res.data.image, name: res.data.name });
@@ -243,18 +253,22 @@ function App() {
                 getSearchRoostr={getSearchRoostr}
                 getSearchChikn={getSearchChikn}
                 formChiknSearch={formChiknSearch}
-                handleChangeCreate={handleChangeCreate}
+                handleChangeCreateChikn={handleChangeCreateChikn}
                 createNewChikn={createNewChikn}
                 createNewRoostr={createNewRoostr}
                 createChiknForm={createChiknForm}
                 createRoostrForm={createRoostrForm}
                 handleSearch={handleSearch}
-                allBirds={allBirds}
-                chiknSearch={chiknSearch}
+                offersRoostr={offersRoostr}
+                offersChikn={offersChikn}
+                handleChangeCreateRoostr={handleChangeCreateRoostr}
               />
             }
           />
-          <Route path="/Coop" element={<Coop setpageClass={setpageClass} />} />
+          <Route
+            path="/Coop"
+            element={<Coop setpageClass={setpageClass} offersChikn={offersChikn} offersRoostr={offersRoostr} />}
+          />
         </Routes>
       </div>
     </BrowserRouter>
