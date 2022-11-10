@@ -43,7 +43,7 @@ export default function Header({ pageClass }) {
                     <a href="/">Home</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
-                    <a href="/">About</a>
+                    <a href="/About">About</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
                     <a href="/Chikn">Coq Search</a>

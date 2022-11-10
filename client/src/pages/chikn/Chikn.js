@@ -63,7 +63,7 @@ export default function Chikn({
         <div className="topContainer">
           <h2>Feed</h2>
         </div>
-        <div className="bottomContainer">
+        <div className="bottomContainer-chikn">
           <p>Minted: {Math.ceil(reports.feedMinted)}</p>
           <p>Burn: {Math.ceil(reports.feedBurned)}</p>
         </div>
@@ -72,7 +72,7 @@ export default function Chikn({
         <div className="topContainer">
           <h2>Quick Stats</h2>
         </div>
-        <div className="bottomContainer">
+        <div className="bottomContainer-chikn">
           <p>Chikn KG:{chiknDetails.kg} </p>
           <p>Chikn Rarity: {chiknDetails.rarity}</p>
           <div className="line"></div>
@@ -84,7 +84,7 @@ export default function Chikn({
         <div className="topContainer">
           <h2>Egg</h2>
         </div>
-        <div className="bottomContainer">
+        <div className="bottomContainer-chikn">
           <p>Minted: {Math.ceil(reports.eggMinted)} </p>
           <p>Burn: {Math.ceil(reports.eggBurned)} </p>
         </div>

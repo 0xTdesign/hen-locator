@@ -48,7 +48,7 @@ function App() {
   });
 
   const [chiknDetails, setchiknDetails] = useState({
-    token: "",
+    tokenId: "",
     kg: "",
     rarity: "",
     score: "",
@@ -57,7 +57,7 @@ function App() {
   });
 
   const [roostrDetails, setroostrDetails] = useState({
-    token: "",
+    tokenId: "",
     kg: "",
     rarity: "",
     score: "",
@@ -98,6 +98,7 @@ function App() {
 
   const handleChangeCreateChikn = (e) => {
     setcreateChiknForm({ ...createChiknForm, [e.target.name]: e.target.value });
+    console.log(createChiknForm);
   };
 
   const handleChangeCreateRoostr = (e) => {
@@ -108,9 +109,9 @@ function App() {
     console.log(createChiknForm);
     const API = `${API_URL}/chikn/${createChiknForm.chiknId}`;
     const res = await axios.post(API, createChiknForm);
-
-    setcreateChiknForm({ tokenId: "", note: "", price: "", contact: "" });
-    setoffersChikn([...offersChikn, res.data]);
+    console.log(res);
+    setcreateChiknForm({ chiknId: "", note: "", price: "", contact: "" });
+    setoffersChikn([res.data, ...offersChikn]);
   };
 
   const createNewRoostr = async (e) => {
@@ -118,9 +119,9 @@ function App() {
     const API = `${API_URL}/roostr/${createRoostrForm.roostrId}`;
     const res = await axios.post(API, createRoostrForm);
 
-    setcreateRoostrForm({ tokenId: "", note: "", price: "", contact: "" });
+    setcreateRoostrForm({ roostrId: "", note: "", price: "", contact: "" });
 
-    setoffersRoostr([...offersRoostr, res.data]);
+    setoffersRoostr([res.data, ...offersRoostr]);
   };
 
   const getAllBirds = async () => {
@@ -130,6 +131,36 @@ function App() {
     const res2 = await axios.get(API2);
     setoffersChikn(res.data);
     setoffersRoostr(res2.data);
+  };
+
+  const deleteChikn = async (chiknObj) => {
+    const check = window.confirm(`Are you sure you want to delete ${chiknObj.chiknId}?`);
+
+    if (!check) {
+      return;
+    }
+    const API = `${API_URL}/chikn/${chiknObj._id}`;
+    const res = await axios.delete(API);
+    if (res.data.deletedCount === 1) {
+      getAllBirds();
+    } else {
+      alert("There was a problem deleteing that Bird");
+    }
+  };
+
+  const deleteRoostr = async (roostrObj) => {
+    const check = window.confirm(`Are you sure you want to delete ${roostrObj.roostrId}?`);
+
+    if (!check) {
+      return;
+    }
+    const API = `${API_URL}/roostr/${roostrObj._id}`;
+    const res = await axios.delete(API);
+    if (res.data.deletedCount === 1) {
+      getAllBirds();
+    } else {
+      alert("There was a problem deleteing that Bird");
+    }
   };
 
   const updateRooster = async (e) => {
@@ -215,7 +246,9 @@ function App() {
   return (
     <BrowserRouter>
       <p className="design">
-        <a href="https://www.freepik.com">Image designed by Upklyak - Freepik.com</a>
+        <a target="_blank" href="https://www.freepik.com">
+          Image designed by Upklyak - Freepik.com
+        </a>
       </p>
       <div className={`App mainContainer ${pageClass}`}>
         <Header pageClass={pageClass} />
@@ -262,12 +295,22 @@ function App() {
                 offersRoostr={offersRoostr}
                 offersChikn={offersChikn}
                 handleChangeCreateRoostr={handleChangeCreateRoostr}
+                deleteChikn={deleteChikn}
+                deleteRoostr={deleteRoostr}
               />
             }
           />
           <Route
             path="/Coop"
-            element={<Coop setpageClass={setpageClass} offersChikn={offersChikn} offersRoostr={offersRoostr} />}
+            element={
+              <Coop
+                setpageClass={setpageClass}
+                offersChikn={offersChikn}
+                offersRoostr={offersRoostr}
+                deleteChikn={deleteChikn}
+                deleteRoostr={deleteRoostr}
+              />
+            }
           />
         </Routes>
       </div>

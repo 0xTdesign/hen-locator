@@ -6,5 +6,35 @@ export default function About({ setpageClass }) {
     setpageClass("about");
   }, []);
 
-  return <div></div>;
+  return (
+    <>
+      <div className="about-content">
+        <div className="about-container">
+          <div className="top-about-container">
+            <h2>About</h2>
+          </div>
+          <div className="bottom-about-container">
+            <p>
+              All you need to do is find the ID of the NFT you want to try and buy and then create a post in hopes the holder
+              will see. If you would like to remove your post there is an option to delete if needs be. Once you have made a
+              post you will be able to view yours and others in the section called the Coop. Hope you find the Coq you have
+              always wanted. Good luck and have fun. Bok Bok
+            </p>
+            <br />
+            <div className="line"></div>
+            <br />
+            <h2 className="tc">T&C</h2>
+            <p>
+              This website is designed to try and match you with your favorite Coq. Everything on this site is for
+              entertainment purpose only. Please make sure you always do your own research and diligence. Its always best to
+              buy from a market place. Watch out for scam Dms.
+            </p>
+            <button type="button" className="welcome-btn">
+              <a href="/Coop">Create a Coq</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

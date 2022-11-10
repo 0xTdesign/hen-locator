@@ -45,6 +45,7 @@ Form
 
 .createRooster input,
 .createChikn input {
+  color: var(--text);
   margin: 4px;
   width: 80%;
   font-size: 1rem;
@@ -88,7 +89,7 @@ Recent added Coqs
   margin: 0 auto;
   color: var(--text);
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   border: 1px solid var(--border);
   border-radius: 12px;
   width: 96%;
@@ -100,6 +101,28 @@ Recent added Coqs
 
 .entryChiknData {
   padding: 5px;
+}
+
+.create .coop .createdEntry {
+  width: 100%;
+}
+
+.button-coop {
+  color: var(--text);
+  margin: 0 auto;
+  position: relative;
+  bottom: 70px;
+  margin-bottom: 20px;
+}
+
+.coop-btn {
+  border: 1px solid var(--text);
+  padding: 10px;
+  background-color: var(--card);
+}
+
+.coop-btn:hover {
+  color: var(--icons);
 }
 
 /*************
@@ -115,10 +138,6 @@ Media Queries
     grid-area: 3 / 3 / 5 / 3;
   }
 
-  .bird {
-    display: none;
-  }
-
   .showCreate {
     overflow: scroll;
     position: absolute;
@@ -131,5 +150,13 @@ Media Queries
     text-align: center;
     padding: 15px;
     margin: 0.8rem auto;
+  }
+
+  .button-coop {
+    grid-area: 4 / 3 / 4 / 3;
+    position: relative;
+    right: 70px;
+    margin: 20px -10px;
+    bottom: 0px;
   }
 }

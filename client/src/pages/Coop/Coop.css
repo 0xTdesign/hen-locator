@@ -9,7 +9,7 @@
 }
 
 .showAllCoop {
-  overflow: auto;
+  overflow: scroll;
   display: block;
   margin: 0.8rem auto;
   width: 96%;
@@ -41,6 +41,10 @@
   background-color: var(--card);
 }
 
+.coop .createdEntry {
+  width: 100%;
+}
+
 /*************
 Media Queries
 **************/
@@ -54,9 +58,15 @@ Media Queries
   }
 
   .bird-container {
-    flex-direction: column;
-    columns: 5;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* columns: 2; */
     text-align: center;
     width: 100%;
+  }
+  .coop .createdEntry {
+    width: 50%;
   }
 }

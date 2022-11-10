@@ -43,6 +43,7 @@
   font-size: 0.8rem;
   line-height: 2.6;
   color: var(--text);
+  text-transform: capitalize;
 }
 
 .modal__box img {
@@ -60,6 +61,8 @@
   border-color: var(--border);
   padding: 2px 5px 2px 5px;
   margin-top: 15px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .modal__btn:hover {

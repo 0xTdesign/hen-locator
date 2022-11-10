@@ -8,7 +8,7 @@ export default function SelectedRoostr({ activeRoostr, handleModalRoostr }) {
         <div className="modal__data">
           <img title={activeRoostr.roostrId} src={activeRoostr.image} alt={activeRoostr.roostrId} />
           <div className="content">
-            <h2>Roostr ID:{activeRoostr.name}</h2>
+            <h2>{activeRoostr.name}</h2>
             <p>KG:{activeRoostr.kg}</p>
             <p>Rarity:{activeRoostr.rarity}</p>
             <p>Sale Price:{activeRoostr.salePrice ? "" : <p> Not for sale</p>}</p>

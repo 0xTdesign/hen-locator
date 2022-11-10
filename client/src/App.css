@@ -41,17 +41,17 @@ body {
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.6;
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--thumbBG) var (--scrollbarBG);
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--scrollbarBG);
+  background: var(--scrollbarBG) !important;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--thumbBG);
-  border-radius: 6px;
+  background-color: var(--thumbBG) !important;
+  border-radius: 6px !important;
   border: 3px solid var(--scrollbarBG);
 }
 

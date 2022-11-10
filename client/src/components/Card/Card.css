@@ -7,6 +7,16 @@
   font-size: 0.8rem;
 }
 
+.delete-btn:hover {
+  text-decoration: underline;
+  color: var(--icons);
+}
+
+.delete-btn {
+  display: flex;
+  justify-content: center;
+}
+
 /*************
 Media Queries
 **************/

@@ -7,9 +7,6 @@
   -o-background-size: cover;
   background-size: cover;
 }
-.bird {
-  display: none;
-}
 
 .hide {
   display: none;
@@ -59,7 +56,7 @@ Search
 Containers
 **************/
 
-.topContainer {
+.topContainer-chikn {
   font-size: 1.2rem;
   color: var(--text);
   text-align: center;
@@ -68,11 +65,12 @@ Containers
   border-color: var(--border);
 }
 
-.bottomContainer {
+.bottomContainer-chikn {
   font-size: 1.2rem;
   color: var(--text);
   /* position: relative;
-  bottom: 6px; */
+  top: 10px; */
+  padding: 14px;
 }
 
 .bottomContainer p {
@@ -192,8 +190,13 @@ Media Queries
 **************/
 
 @media only screen and (min-width: 999px) {
-  .bird {
+  /* .bird {
     display: block;
+  } */
+
+  .bottomContainer-chikn {
+    font-size: 1rem;
+    color: var(--text);
   }
 
   /*************
@@ -290,5 +293,16 @@ Image Show Container
   .chikn-image-container img {
     width: 100%;
     border: 2px solid var(--border);
+  }
+}
+
+@media only screen and (width: 1024px) {
+  .bottomContainer-chikn {
+    font-size: 1rem;
+    color: var(--text);
+  }
+
+  .chikn .bird h1 {
+    color: var(--text);
   }
 }

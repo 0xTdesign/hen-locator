@@ -13,7 +13,7 @@ export default function Footer({ pageClass }) {
             <i className="fab fa-discord fa-1x"></i>
           </a>
           <a href="https://chikn.farm/" target="__blank">
-            <i className="fa-solid fa-egg fa-1x"></i>
+            <i className="fa-solid fa-earth-asia"></i>
           </a>
 
           {/* <i className="fa-brands fa-github fa-1x"></i>

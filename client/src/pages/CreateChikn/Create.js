@@ -16,6 +16,8 @@ export default function Create({
   offersRoostr,
   handleChangeCreateChikn,
   handleChangeCreateRoostr,
+  deleteChikn,
+  deleteRoostr,
 }) {
   const submitCreateChikn = (e) => {
     e.preventDefault();
@@ -120,8 +122,15 @@ export default function Create({
         <div className="topContainer">
           <h2>Recent Added Coqs</h2>
         </div>
-        <CardChikn offersChikn={offersChikn} />
-        <CardRoostr offersRoostr={offersRoostr} />
+
+        <CardChikn offersChikn={offersChikn} deleteChikn={deleteChikn} />
+        <CardRoostr offersRoostr={offersRoostr} deleteRoostr={deleteRoostr} />
+      </div>
+
+      <div className="button-coop">
+        <a href="/Coop">
+          <button className="coop-btn">Enter the Coop</button>
+        </a>
       </div>
     </>
   );
