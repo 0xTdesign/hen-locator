@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const chiknSchema = new Schema({
   image: String,
-  tokenId: String,
+  chiknId: String,
   note: String,
   price: String,
   contact: String,

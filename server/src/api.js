@@ -49,9 +49,10 @@ app.get("/roostr", async (req, res) => {
 // Create Chikn
 app.post("/chikn/:id", async (req, res) => {
   try {
+    console.log(req.body);
     const API = `https://api.chikn.farm/api/chikn/metadata/${req.params.id}`;
-    const res = await axios.get(API);
-    const newChikn = await Chikn.create({ ...req.body, image: res.data.image });
+    const APIRES = await axios.get(API);
+    const newChikn = await Chikn.create({ ...req.body, image: APIRES.data.image });
     res.status(200).json(newChikn);
   } catch (err) {
     console.log(err);
@@ -63,8 +64,8 @@ app.post("/chikn/:id", async (req, res) => {
 app.post("/roostr/:id", async (req, res) => {
   try {
     const API = `https://api.chikn.farm/api/roostr/metadata/${req.params.id}`;
-    const res = await axios.get(API);
-    const newRoostr = await Roostr.create({ ...req.body, image: res.data.image });
+    const APIRES = await axios.get(API);
+    const newRoostr = await Roostr.create({ ...req.body, image: APIRES.data.image });
     res.status(200).json(newRoostr);
   } catch (err) {
     console.log(err);
@@ -93,6 +94,17 @@ app.delete("/chikn/:id", async (req, res) => {
     const chiknToDelete = req.params.id;
     const deleteChikn = await Chikn.deleteOne({ _id: chiknToDelete });
     res.status(200).json(deleteChikn);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+app.delete("/roostr/:id", async (req, res) => {
+  try {
+    const roostrToDelete = req.params.id;
+    const deleteRoostr = await Roostr.deleteOne({ _id: roostrToDelete });
+    res.status(200).json(deleteRoostr);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

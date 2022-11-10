@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const roostrSchema = new Schema({
   image: String,
-  tokenId: String,
+  roostrId: String,
   note: String,
   price: String,
   contact: String,
