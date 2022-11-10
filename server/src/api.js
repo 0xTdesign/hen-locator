@@ -99,7 +99,7 @@ app.delete("/.netlify/functions/api/chikn/:id", async (req, res) => {
   }
 });
 
-app.delete("/roostr/:id", async (req, res) => {
+app.delete("/.netlify/functions/api/roostr/:id", async (req, res) => {
   try {
     const roostrToDelete = req.params.id;
     const deleteRoostr = await Roostr.deleteOne({ _id: roostrToDelete });
