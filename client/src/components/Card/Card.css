@@ -37,4 +37,10 @@ Media Queries
   .card {
     font-size: 1.2rem;
   }
+
+  .delete-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
