@@ -54,6 +54,8 @@ function App() {
     score: "",
     forSale: "",
     salePrice: "",
+    fertPerDay: "",
+    eggPerDay: "",
   });
 
   const [roostrDetails, setroostrDetails] = useState({
@@ -63,6 +65,7 @@ function App() {
     score: "",
     forSale: "",
     salePrice: "",
+    fertPerDay: "",
   });
 
   const [createChiknForm, setcreateChiknForm] = useState({
@@ -225,6 +228,7 @@ function App() {
       score: res.data.score,
       forSale: res.data.forSale,
       salePrice: res.data.salePrice,
+      eggPerDay: res.data.eggPerDay,
     });
     setformChiknSearch({ ...formChiknSearch, chiknId: "" });
   };
@@ -239,6 +243,7 @@ function App() {
       score: res.data.score,
       forSale: res.data.forSale,
       salePrice: res.data.salePrice,
+      fertPerDay: res.data.fertPerDay,
     });
     setformChiknSearch({ ...formChiknSearch, roostrId: "" });
   };

@@ -11,7 +11,8 @@ export default function SelectedChikn({ activeChikn, handleModalChikn }) {
             <h2>{activeChikn.name}</h2>
             <p>KG:{activeChikn.kg}</p>
             <p>Rarity:{activeChikn.rarity}</p>
-            <p>Sale Price:{activeChikn.salePrice ? "" : <p> Not for sale</p>}</p>
+            <p>Sale Price:{activeChikn.forSale ? activeChikn.salePrice : <p> Not for sale</p>}</p>
+
             <button className="modal__btn" onClick={handleModalChikn}>
               close
             </button>

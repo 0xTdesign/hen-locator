@@ -1,10 +1,9 @@
-("use strict");
-
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const axios = require("axios");
 const bp = require("body-parser");
+const serverless = require("serverless-http");
 require("dotenv").config();
 
 const Chikn = require("./Models/chikn");
@@ -19,14 +18,14 @@ const PORT = process.env.PORT || 9000;
 
 mongoose.connect(process.env.DATABASE_URL);
 
-app.get("/", (req, res) => {
+app.get("/.netlify/functions/api", (req, res) => {
   res.json("HOME MA BRU");
 });
 
 // netlify/function/api
 
 // Display Chikns
-app.get("/chikn", async (req, res) => {
+app.get("/.netlify/functions/api/chikn", async (req, res) => {
   try {
     const allChikns = await Chikn.find();
     res.status(200).json(allChikns);
@@ -36,7 +35,7 @@ app.get("/chikn", async (req, res) => {
   }
 });
 
-app.get("/roostr", async (req, res) => {
+app.get("/.netlify/functions/api/roostr", async (req, res) => {
   try {
     const allRoostrs = await Roostr.find();
     res.status(200).json(allRoostrs);
@@ -47,7 +46,7 @@ app.get("/roostr", async (req, res) => {
 });
 
 // Create Chikn
-app.post("/chikn/:id", async (req, res) => {
+app.post("/.netlify/functions/api/chikn/:id", async (req, res) => {
   try {
     console.log(req.body);
     const API = `https://api.chikn.farm/api/chikn/metadata/${req.params.id}`;
@@ -61,7 +60,7 @@ app.post("/chikn/:id", async (req, res) => {
 });
 
 // Create Roostr
-app.post("/roostr/:id", async (req, res) => {
+app.post("/.netlify/functions/api/roostr/:id", async (req, res) => {
   try {
     const API = `https://api.chikn.farm/api/roostr/metadata/${req.params.id}`;
     const APIRES = await axios.get(API);
@@ -75,7 +74,7 @@ app.post("/roostr/:id", async (req, res) => {
 
 //update chikn
 
-app.put("chikn/:id"),
+app.put("/.netlify/functions/api/chikn/:id"),
   async (req, res) => {
     try {
       const chiknToUpdate = req.params.id;
@@ -89,7 +88,7 @@ app.put("chikn/:id"),
 
 //Deleted Chikn
 
-app.delete("/chikn/:id", async (req, res) => {
+app.delete("/.netlify/functions/api/chikn/:id", async (req, res) => {
   try {
     const chiknToDelete = req.params.id;
     const deleteChikn = await Chikn.deleteOne({ _id: chiknToDelete });
@@ -111,13 +110,11 @@ app.delete("/roostr/:id", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`App is listening on port ${PORT}`));
+// app.listen(PORT, () => console.log(`App is listening on port ${PORT}`));
 
-// module.exports.handler = serverless(app);
+const handler = serverless(app);
 
-// const handler = serverless(app);
-
-// module.exports.handler = async (event, context) => {
-//   const result = await this.handler(event, context);
-//   return result;
-// };
+module.exports.handler = async (event, context) => {
+  const result = await handler(event, context);
+  return result;
+};
