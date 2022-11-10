@@ -15,10 +15,10 @@ export default function About({ setpageClass }) {
           </div>
           <div className="bottom-about-container">
             <p>
-              All you need to do is find the ID of the NFT you want to try and buy and then create a post in hopes the holder
-              will see. If you would like to remove your post there is an option to delete if needs be. Once you have made a
-              post you will be able to view yours and others in the section called the Coop. Hope you find the Coq you have
-              always wanted. Good luck and have fun. Bok Bok
+              All you need to do is find the ID of the NFT you want to buy, once you've found it, create a post and send it
+              to the holder, claws crossed they see it. If you would like to remove your post there is an option to delete,
+              if needs be. You will be able to view your offer and other people's in a section called The Coop. Hope you find
+              the Coq you have always wanted. Good luck and have fun. Bok Bok
             </p>
             <br />
             <div className="line"></div>
