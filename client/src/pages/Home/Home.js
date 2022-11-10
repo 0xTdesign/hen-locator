@@ -9,8 +9,8 @@ export default function Home() {
       </div>
       <div className="home-bottomContainer">
         <p>
-          Have you ever sat there looking at all of the Chikn and Roostrs in the marketplace and seen one that's not for sale
-          and thought to yourself "Damn I want that Coq". Well, this is your time to do something about it. This website is
+          Have you ever sat there looking at the Chikn and Roostrs in the marketplace and seen one that's not for sale and
+          thought to yourself "Damn I want that Coq". Well, this is your time to do something about it. This website is
           designed to match you with your favorite Coq. Create a post, put a price and see if the holder gets in touch. Have
           fun! Bok Bok
         </p>
