@@ -1,4 +1,4 @@
-const LIVE_API_URL = "/.netlify/functions/api";
+const LIVE_API_URL = "https://hen-locator-api.netlify.app/.netlify/functions/api";
 const DEV_API_URL = "http://localhost:9000";
 
 export const API_URL = LIVE_API_URL;
