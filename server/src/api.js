@@ -46,12 +46,9 @@ app.get("/.netlify/functions/api/roostr", async (req, res) => {
 });
 
 // Create Chikn
-app.post("/.netlify/functions/api/chikn/:id", async (req, res) => {
+app.post("/.netlify/functions/api/chikn", async (req, res) => {
   try {
-    console.log(req.body);
-    const API = `https://api.chikn.farm/api/chikn/metadata/${req.params.id}`;
-    const APIRES = await axios.get(API);
-    const newChikn = await Chikn.create({ ...req.body, image: APIRES.data.image });
+    const newChikn = await Chikn.create(req.body);
     res.status(200).json(newChikn);
   } catch (err) {
     console.log(err);
@@ -60,11 +57,9 @@ app.post("/.netlify/functions/api/chikn/:id", async (req, res) => {
 });
 
 // Create Roostr
-app.post("/.netlify/functions/api/roostr/:id", async (req, res) => {
+app.post("/.netlify/functions/api/roostr", async (req, res) => {
   try {
-    const API = `https://api.chikn.farm/api/roostr/metadata/${req.params.id}`;
-    const APIRES = await axios.get(API);
-    const newRoostr = await Roostr.create({ ...req.body, image: APIRES.data.image });
+    const newRoostr = await Roostr.create(req.body);
     res.status(200).json(newRoostr);
   } catch (err) {
     console.log(err);

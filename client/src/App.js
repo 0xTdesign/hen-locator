@@ -110,8 +110,10 @@ function App() {
 
   const createNewChikn = async (e) => {
     console.log(createChiknForm);
-    const API = `${API_URL}/chikn/${createChiknForm.chiknId}`;
-    const res = await axios.post(API, createChiknForm);
+    const APIIMAGE = `https://api.chikn.farm/api/chikn/metadata/${createChiknForm.chiknId}`;
+    const APIIMAGERES = await axios.get(APIIMAGE);
+    const API = `${API_URL}/chikn`;
+    const res = await axios.post(API, { ...createChiknForm, image: APIIMAGERES.data.image });
     console.log(res);
     setcreateChiknForm({ chiknId: "", note: "", price: "", contact: "" });
     setoffersChikn([res.data, ...offersChikn]);
@@ -119,11 +121,12 @@ function App() {
 
   const createNewRoostr = async (e) => {
     console.log(createRoostrForm);
-    const API = `${API_URL}/roostr/${createRoostrForm.roostrId}`;
-    const res = await axios.post(API, createRoostrForm);
-
+    const APIIMAGE = `https://api.chikn.farm/api/roostr/metadata/${createRoostrForm.roostrId}`;
+    const APIIMAGERES = await axios.get(APIIMAGE);
+    const API = `${API_URL}/roostr`;
+    const res = await axios.post(API, { ...createRoostrForm, image: APIIMAGERES.data.image });
+    console.log(res);
     setcreateRoostrForm({ roostrId: "", note: "", price: "", contact: "" });
-
     setoffersRoostr([res.data, ...offersRoostr]);
   };
 
