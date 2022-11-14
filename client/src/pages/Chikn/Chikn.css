@@ -194,6 +194,10 @@ Media Queries
     display: block;
   } */
 
+  .form-search {
+    margin-top: 22px;
+  }
+
   .bottomContainer-chikn {
     font-size: 1rem;
     color: var(--text);

@@ -47,6 +47,7 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
         </div>
         <div className="imageBottomContainer-Edgyegg">
           <div className="edgyegg-image-container">
+            {/* <h2>Token ID:{edgyeggSearch.tokenId}</h2> */}
             <h2>{edgyeggSearch.name}</h2>
             <div>
               <div className="click" onClick={handleModalEdgyegg}>

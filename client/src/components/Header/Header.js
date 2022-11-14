@@ -71,7 +71,7 @@ export default function Header({ pageClass }) {
                 <a href="/Chikn">Coq Search</a>
               </li>
               <li>
-                <a href="/Edgyeggs">Edgyeggs</a>
+                <a href="/Edgyeggs">EdgyEggs</a>
               </li>
               <li>
                 <a href="/Create">Hen Creator </a>
