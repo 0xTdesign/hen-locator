@@ -43,7 +43,7 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
       </div>
       <div className={`edgyeggimageShow ${edgyeggSearch.image ? "" : "hide"}`}>
         <div className="topContainer">
-          <h2>Egg-cellent</h2>
+          <h2>That's a good looking Egg</h2>
         </div>
         <div className="imageBottomContainer-Edgyegg">
           <div className="edgyegg-image-container">
