@@ -48,9 +48,9 @@ export default function Header({ pageClass }) {
                   <li className="border-b  my-8 uppercase">
                     <a href="/Chikn">Coq Search</a>
                   </li>
-                  {/* <li className="border-b  my-8 uppercase">
-                    <a href="/Edgyeggs">Edgyeggs</a>
-                  </li> */}
+                  <li className="border-b  my-8 uppercase">
+                    <a href="/Edgyeggs">EdgyEggs</a>
+                  </li>
                   <li className="border-b  my-8 uppercase">
                     <a href="/Create">Hen Creator</a>
                   </li>
@@ -70,9 +70,9 @@ export default function Header({ pageClass }) {
               <li>
                 <a href="/Chikn">Coq Search</a>
               </li>
-              {/* <li>
+              <li>
                 <a href="/Edgyeggs">Edgyeggs</a>
-              </li> */}
+              </li>
               <li>
                 <a href="/Create">Hen Creator </a>
               </li>

@@ -251,6 +251,43 @@ function App() {
     setformChiknSearch({ ...formChiknSearch, roostrId: "" });
   };
 
+  /**************
+  functions EdgyEgg 
+   *************/
+
+  const [edgyeggSearch, setedgyeggSearch] = useState({
+    name: "",
+    image: "",
+    Score: "",
+    Rank: "",
+    Rarity: "",
+  });
+
+  const [formEdgyeggSearch, setformEdgyeggSearch] = useState({
+    tokenId: "",
+  });
+
+  const handleSearchEdgyegg = (e) => {
+    setformEdgyeggSearch({ ...formEdgyeggSearch, [e.target.name]: e.target.value });
+    console.log(formEdgyeggSearch);
+  };
+
+  const getSearchEdgyegg = async (e) => {
+    e.preventDefault();
+    const API = `https://s3.wasabisys.com/metadata.edgyeggs.wtf/${formEdgyeggSearch.tokenId}.json`;
+    const res = await axios.get(API);
+    console.log(res);
+    setedgyeggSearch({
+      name: res.data.name,
+      image: res.data.image,
+      Score: res.data.Score,
+      Rank: res.data.Rank,
+      Rarity: res.data.Rarity,
+    });
+    console.log(formEdgyeggSearch);
+    setformEdgyeggSearch({ ...formEdgyeggSearch, tokenId: "" });
+  };
+
   return (
     <BrowserRouter>
       <p className="design">
@@ -285,7 +322,18 @@ function App() {
               />
             }
           />
-          <Route path="/Edgyeggs" element={<Edgyeggs setpageClass={setpageClass} />} />
+          <Route
+            path="/Edgyeggs"
+            element={
+              <Edgyeggs
+                getSearchEdgyegg={getSearchEdgyegg}
+                handleSearchEdgyegg={handleSearchEdgyegg}
+                setpageClass={setpageClass}
+                formEdgyeggSearch={formEdgyeggSearch}
+                edgyeggSearch={edgyeggSearch}
+              />
+            }
+          />
           <Route
             path="/Create"
             element={

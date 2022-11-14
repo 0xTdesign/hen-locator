@@ -41,6 +41,20 @@ Other pages
   color: var(--text);
 }
 
+.edgyeggs .links i {
+  color: var(--text);
+}
+
+.edgyeggs footer {
+  flex-direction: column;
+  grid-area: 4 / 2 / 3 / 1;
+  top: 1.5rem;
+  left: 0.6rem;
+  bottom: 0;
+  position: absolute;
+  top: 176px;
+}
+
 /*************
 Media Queries
 **************/
