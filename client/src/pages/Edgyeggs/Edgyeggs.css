@@ -86,7 +86,6 @@
     width: 96%;
     height: 200px;
     max-width: 350px;
-    background-color: var(--backgroundContainer);
     border-radius: 15px;
     align-items: center;
     align-self: center;
@@ -97,7 +96,6 @@
     max-width: 600px;
     height: 400px;
     max-height: 500px;
-
     border-radius: 15px;
     text-align: center;
     align-items: center;
@@ -127,5 +125,15 @@
 
   .edgyegg-hide {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .edgyeggimageShow {
+    min-height: 550px;
+  }
+
+  .form-search {
+    margin-top: 20px;
   }
 }
