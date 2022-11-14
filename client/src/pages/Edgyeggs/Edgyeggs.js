@@ -52,7 +52,7 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
             <div>
               <div className="click" onClick={handleModalEdgyegg}>
                 <img src={edgyeggSearch.image} alt="EdgyEgg NFT" />
-                <p className="click">Click</p>
+                <p className="click">→ Click ←</p>
               </div>
             </div>
           </div>
