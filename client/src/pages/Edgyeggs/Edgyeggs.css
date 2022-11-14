@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .edgyegg-search input {
@@ -123,5 +123,9 @@
     position: relative;
     top: 67px;
     align-self: center;
+  }
+
+  .edgyegg-hide {
+    display: block;
   }
 }

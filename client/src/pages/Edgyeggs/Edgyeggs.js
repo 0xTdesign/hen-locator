@@ -41,14 +41,14 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
           </form>
         </div>
       </div>
-      <div className="edgyeggimageShow ">
+      <div className={`edgyeggimageShow ${edgyeggSearch.image ? "" : "hide"}`}>
         <div className="topContainer">
           <h2>Egg-cellent</h2>
         </div>
         <div className="imageBottomContainer-Edgyegg">
           <div className="edgyegg-image-container">
             <h2>{edgyeggSearch.name}</h2>
-            <div className={edgyeggSearch.image ? "" : "hide"}>
+            <div>
               <div className="click" onClick={handleModalEdgyegg}>
                 <img src={edgyeggSearch.image} alt="EdgyEgg NFT" />
                 <p>Click</p>
