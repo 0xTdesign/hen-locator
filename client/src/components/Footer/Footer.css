@@ -41,6 +41,10 @@ Other pages
   color: var(--text);
 }
 
+.edgyeggs .links i {
+  color: var(--text);
+}
+
 /*************
 Media Queries
 **************/

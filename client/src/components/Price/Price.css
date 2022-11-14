@@ -55,6 +55,10 @@ Other pages
 .chikn .price {
   color: var(--icons);
 }
+
+.edgyeggs .price {
+  color: var(--text);
+}
 /*************
 Media Queries
 **************/
