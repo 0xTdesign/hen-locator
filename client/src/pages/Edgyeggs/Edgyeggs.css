@@ -146,8 +146,8 @@
     margin-top: 15px;
   }
 }
-@media only screen and (min-width: 1899px) {
+@media only screen and (min-width: 1900px) {
   .edgyeggimageShow {
-    min-height: 450px;
+    min-height: 550px;
   }
 }
