@@ -85,7 +85,7 @@ Form
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .chikn-search {
@@ -304,5 +304,9 @@ Image Show Container
 
   .chikn .bird h1 {
     color: var(--text);
+  }
+
+  .form-search {
+    margin-top: 10px;
   }
 }
