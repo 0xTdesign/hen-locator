@@ -276,7 +276,7 @@ function App() {
     e.preventDefault();
     const API = `https://s3.wasabisys.com/metadata.edgyeggs.wtf/${formEdgyeggSearch.tokenId}.json`;
     const res = await axios.get(API);
-    console.log(res);
+    console.log(res.data);
     setedgyeggSearch({
       name: res.data.name,
       image: res.data.image,
