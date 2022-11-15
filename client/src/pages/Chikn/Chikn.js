@@ -95,7 +95,7 @@ export default function Chikn({
         </div>
         <div className="chikn-container">
           <div className="chikn-search">
-            <form className="form-search" onSubmit={formSubmitChikn}>
+            <form className="form-search-chikn" onSubmit={formSubmitChikn}>
               <input
                 onChange={handleSearch}
                 value={formChiknSearch.chiknId}
@@ -109,7 +109,7 @@ export default function Chikn({
             </form>
           </div>
           <div className="chikn-search">
-            <form className="form-search" onSubmit={formSubmitChikn}>
+            <form className="form-search-chikn" onSubmit={formSubmitChikn}>
               <input
                 onChange={handleSearch}
                 value={formChiknSearch.roostrId}

@@ -151,3 +151,16 @@
     min-height: 550px;
   }
 }
+
+@media only screen and (max-width: 1440px) {
+  .searchEdgyegg {
+    grid-area: 1 / 1 / 5 / 4;
+    margin: 0 auto;
+    width: 96%;
+    height: 130px;
+  }
+
+  .form-search {
+    margin-top: -6px;
+  }
+}

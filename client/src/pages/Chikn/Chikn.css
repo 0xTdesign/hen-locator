@@ -88,6 +88,13 @@ Form
   margin-bottom: 15px;
 }
 
+.form-search-chikn {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 .chikn-search {
   color: #fff;
   display: flex;
@@ -196,6 +203,10 @@ Media Queries
 
   .form-search {
     margin-top: 22px;
+  }
+
+  .form-search-chikn {
+    margin-top: 0px;
   }
 
   .bottomContainer-chikn {
@@ -311,6 +322,9 @@ Image Show Container
   }
 
   .form-search {
+    margin-top: 10px;
+  }
+  .form-search-chikn {
     margin-top: 10px;
   }
 }
