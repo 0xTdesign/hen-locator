@@ -15,6 +15,7 @@ import Create from "./pages/CreateChikn/Create";
 import Coop from "./pages/Coop/Coop";
 
 import { SEARCH_API, DETAILS_API, REPORT_API, API_URL } from "./api";
+import FarmersMarket from "./pages/FarmersMarket/FarmersMarket";
 
 function App() {
   /**************
@@ -255,13 +256,7 @@ function App() {
   functions EdgyEgg 
    *************/
 
-  const [edgyeggSearch, setedgyeggSearch] = useState({
-    name: "",
-    image: "",
-    Score: "",
-    Rank: "",
-    Rarity: "",
-  });
+  const [edgyeggSearch, setedgyeggSearch] = useState({});
 
   const [formEdgyeggSearch, setformEdgyeggSearch] = useState({
     tokenId: "",
@@ -277,13 +272,7 @@ function App() {
     const API = `https://s3.wasabisys.com/metadata.edgyeggs.wtf/${formEdgyeggSearch.tokenId}.json`;
     const res = await axios.get(API);
     console.log(res.data);
-    setedgyeggSearch({
-      name: res.data.name,
-      image: res.data.image,
-      Score: res.data.Score,
-      Rank: res.data.Rank,
-      Rarity: res.data.Rarity,
-    });
+    setedgyeggSearch({ ...res.data, tokenId: formEdgyeggSearch.tokenId });
     console.log(formEdgyeggSearch);
     setformEdgyeggSearch({ ...formEdgyeggSearch, tokenId: "" });
   };
@@ -368,6 +357,7 @@ function App() {
               />
             }
           />
+          <Route path="/FarmersMarket" element={<FarmersMarket setpageClass={setpageClass} />} />
         </Routes>
       </div>
     </BrowserRouter>

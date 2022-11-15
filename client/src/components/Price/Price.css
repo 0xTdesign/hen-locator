@@ -59,6 +59,10 @@ Other pages
 .edgyeggs .price {
   color: var(--text);
 }
+
+.farmersmarket .price {
+  color: var(--text);
+}
 /*************
 Media Queries
 **************/

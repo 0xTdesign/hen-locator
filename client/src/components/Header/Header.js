@@ -57,6 +57,9 @@ export default function Header({ pageClass }) {
                   <li className="border-b  my-8 uppercase">
                     <a href="/Coop">Coop</a>
                   </li>
+                  {/* <li className="border-b  my-8 uppercase">
+                    <a href="/FarmersMarket">Farmers Market</a>
+                  </li> */}
                 </ul>
               </div>
             </section>
@@ -79,6 +82,9 @@ export default function Header({ pageClass }) {
               <li>
                 <a href="/Coop">Coop</a>
               </li>
+              {/* <li>
+                <a href="/FarmersMarket">Farmers Market</a>
+              </li> */}
             </ul>
           </nav>
         </div>

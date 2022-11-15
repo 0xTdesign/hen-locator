@@ -70,10 +70,66 @@
 }
 
 .modal-btn:hover {
-  background-color: wheat;
   color: #333;
 }
-.modal {
+
+/*************
+DropDown
+**************/
+
+.dropbtn {
+  color: white;
+  padding: 8px;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  border: 1px solid var(--text);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.dropdown-content {
+  padding: 6px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  display: none;
+  position: absolute;
+  right: -165px;
+  border-radius: 4px;
+  background: var(--card);
+  min-width: 270px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--text);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: white;
+  background-color: var(--card);
+}
+
+.tokenId {
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 /*************
@@ -91,5 +147,21 @@ Media Queries
 
   .modal__box {
     width: 40%;
+  }
+
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .dropdown {
+    margin-bottom: -15px;
+  }
+  .modal__box img {
+    margin: 15px auto;
+  }
+
+  .dropdown-content {
+    min-width: 360px;
+    left: 0;
   }
 }

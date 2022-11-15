@@ -45,6 +45,10 @@ Other pages
   color: var(--text);
 }
 
+.farmersmarket .links i {
+  color: var(--text);
+}
+
 .edgyeggs footer {
   flex-direction: column;
   grid-area: 4 / 2 / 3 / 1;
