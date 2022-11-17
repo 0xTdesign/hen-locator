@@ -3,9 +3,9 @@ import "./FarmersMarket.css";
 import { useEffect, useState } from "react";
 
 export default function FarmersMarket({ setpageClass }) {
-  useEffect(() => {
-    setpageClass("farmersmarket");
-  }, []);
+  // useEffect(() => {
+  //   setpageClass("farmersmarket");
+  // }, []);
 
   return (
     <div className="farmmarket">
