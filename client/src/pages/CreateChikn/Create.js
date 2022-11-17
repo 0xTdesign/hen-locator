@@ -29,9 +29,9 @@ export default function Create({
     createNewRoostr();
   };
 
-  useEffect(() => {
-    setpageClass("create");
-  }, []);
+  // useEffect(() => {
+  //   setpageClass("create");
+  // }, []);
   return (
     <>
       <div className="createChikn space">

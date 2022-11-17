@@ -18,6 +18,7 @@ import { SEARCH_API, DETAILS_API, REPORT_API, API_URL } from "./api";
 import FarmersMarket from "./pages/FarmersMarket/FarmersMarket";
 
 function App() {
+  console.log(window.location.href.replace("http://localhost:3000/", "").replace("https://hen-locator.netlify.app/", ""));
   /**************
   usestate Chikn API 
   *************/
@@ -284,11 +285,32 @@ function App() {
           Image designed by Upklyak - Freepik.com
         </a>
       </p>
-      <div className={`App mainContainer ${pageClass}`}>
-        <Header pageClass={pageClass} />
-        <Price pageClass={pageClass} reports={reports} />
+      <div
+        className={`App mainContainer home ${window.location.href
+          .replace("http://localhost:3000/", "")
+          .replace("https://hen-locator.netlify.app/", "")
+          .toLowerCase()}`}
+      >
+        <Header
+          pageClass={window.location.href
+            .replace("http://localhost:3000/", "")
+            .replace("https://hen-locator.netlify.app/", "")
+            .toLowerCase()}
+        />
+        <Price
+          pageClass={window.location.href
+            .replace("http://localhost:3000/", "")
+            .replace("https://hen-locator.netlify.app/", "")
+            .toLowerCase()}
+          reports={reports}
+        />
         <Content />
-        <Footer pageClass={pageClass} />
+        <Footer
+          pageClass={window.location.href
+            .replace("http://localhost:3000/", "")
+            .replace("https://hen-locator.netlify.app/", "")
+            .toLowerCase()}
+        />
         <Routes>
           <Route path="/" element={<Home setpageClass={setpageClass} />} />
           <Route path="/About" element={<About setpageClass={setpageClass} />} />

@@ -27,9 +27,9 @@ export default function Chikn({
 
   const [activeRoostr, setactiveRoostr] = useState({});
 
-  useEffect(() => {
-    setpageClass("chikn");
-  }, []);
+  // useEffect(() => {
+  //   setpageClass("chikn");
+  // }, []);
 
   const formSubmitChikn = (event) => {
     console.log(event);

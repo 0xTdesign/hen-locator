@@ -8,7 +8,7 @@ import mintedEggs from "../../mintedeggs.json";
 
 export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpageClass, formEdgyeggSearch, edgyeggSearch }) {
   useEffect(() => {
-    setpageClass("edgyeggs");
+    // setpageClass("edgyeggs");
     getMintedRarities();
   }, []);
 

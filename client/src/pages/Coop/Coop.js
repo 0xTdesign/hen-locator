@@ -5,9 +5,9 @@ import CardChikn from "../../components/Card/CardChikn";
 import CardRoostr from "../../components/Card/CardRoostr";
 
 export default function Coop({ setpageClass, offersRoostr, offersChikn, deleteRoostr, deleteChikn }) {
-  useEffect(() => {
-    setpageClass("coop");
-  }, []);
+  // useEffect(() => {
+  //   setpageClass("coop");
+  // }, []);
   return (
     <>
       <div className="showAllCoop">
