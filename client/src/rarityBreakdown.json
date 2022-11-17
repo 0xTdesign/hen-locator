@@ -1,5 +1,6 @@
 [
-  "1 of 1",[
+  "1 of 1",
+  [
     {
       "trait": "Special 1",
       "count": 1,
@@ -101,7 +102,8 @@
       "occurrence": "0.01%"
     }
   ],
-  "Background",[
+  "Background",
+  [
     {
       "trait": "Retro Auburn",
       "count": 180,
@@ -328,7 +330,8 @@
       "occurrence": "0.15%"
     }
   ],
-  "Shell",[
+  "Shell",
+  [
     {
       "trait": "Full Black Shell",
       "count": 665,
@@ -510,7 +513,8 @@
       "occurrence": "0.19%"
     }
   ],
-  "Shell Extras",[
+  "Shell Extras",
+  [
     {
       "trait": "Clean Shell",
       "count": 7905,
@@ -577,7 +581,8 @@
       "occurrence": "0.10%"
     }
   ],
-  "Waist",[
+  "Waist",
+  [
     {
       "trait": "No Waist",
       "count": 7061,
@@ -644,7 +649,8 @@
       "occurrence": "1.00%"
     }
   ],
-  "Hand Right",[
+  "Hand Right",
+  [
     {
       "trait": "Fist",
       "count": 1792,
@@ -771,7 +777,8 @@
       "occurrence": "0.77%"
     }
   ],
-  "Neck",[
+  "Neck",
+  [
     {
       "trait": "High on Life",
       "count": 1000,
@@ -833,7 +840,8 @@
       "occurrence": "0.25%"
     }
   ],
-  "Head",[
+  "Head",
+  [
     {
       "trait": "Backwards Cap",
       "count": 269,
@@ -1310,7 +1318,8 @@
       "occurrence": "0.01%"
     }
   ],
-  "Hand Left",[
+  "Hand Left",
+  [
     {
       "trait": "Dropped Grenaaaade",
       "count": 663,
@@ -1457,7 +1466,8 @@
       "occurrence": "0.50%"
     }
   ],
-  "Eyes",[
+  "Eyes",
+  [
     {
       "trait": "Dizzy Jello Eyes",
       "count": 150,
@@ -1929,7 +1939,8 @@
       "occurrence": "0.30%"
     }
   ],
-  "Eye gear",[
+  "Eye gear",
+  [
     {
       "trait": "No Eye Gear",
       "count": 6060,
@@ -2006,7 +2017,8 @@
       "occurrence": "0.50%"
     }
   ],
-  "Mouth",[
+  "Mouth",
+  [
     {
       "trait": "Duct Tape",
       "count": 800,
@@ -2103,7 +2115,8 @@
       "occurrence": "0.50%"
     }
   ],
-  "Yolk Type",[
+  "Yolk Type",
+  [
     {
       "trait": "LPL",
       "count": 3964,
@@ -2139,5 +2152,5 @@
       "count": 110,
       "occurrence": "1.10%"
     }
-    ]
+  ]
 ]

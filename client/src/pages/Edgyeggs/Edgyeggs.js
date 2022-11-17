@@ -131,7 +131,7 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
           <h2>Raritys</h2>
         </div>
         <div className="bottomContainer-edgyegg">
-          <p>Mythic: {mintedRarities.Mythic}/20</p>
+          <p>Mythic: {mintedRarities.Mythic}/6</p>
           <p>Leggendary: {mintedRarities.Leggendary}/80 </p>
           <p>Eggotic: {mintedRarities.Eggotic}/500 </p>
           <p>Eggceptional: {mintedRarities.Eggceptional}/900 </p>
