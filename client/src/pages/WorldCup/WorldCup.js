@@ -331,14 +331,14 @@ export default function WorldCup({
             value={createEdgyeggForm.note}
             type="text"
             placeholder="Transaction Hash (Hidden)"
-            maxLength="50"
+            maxLength="100"
           />
           <input
             onChange={handleChangeCreateEdgyegg}
             name="discord"
             type="text"
             placeholder="Discord # (Hidden)"
-            maxLength="20"
+            maxLength="100"
             value={createEdgyeggForm.discord}
           />
           <button className="worldCup-btn" type="submit">
