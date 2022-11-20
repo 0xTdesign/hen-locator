@@ -342,8 +342,9 @@ export default function WorldCup({
             value={createEdgyeggForm.discord}
           />
           <button className="worldCup-btn" type="submit">
+            Sumbit
             {/* <span className="submit">⬇</span> */}
-            <img className="enter-btn" src={edgyegg} alt="EdgyEgg" />
+            {/* <img className="enter-btn" src={edgyegg} alt="EdgyEgg" /> */}
           </button>
         </form>
       </div>
