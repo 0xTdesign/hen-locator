@@ -1,16 +1,17 @@
 import React from "react";
 import "./FarmersMarket.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import Swap from "../../components/Swap/Swap";
 
 export default function FarmersMarket({ setpageClass }) {
-  useEffect(() => {
-    setpageClass("farmersmarket");
-  }, []);
+  // useEffect(() => {
+  //   setpageClass("farmersmarket");
+  // }, []);
 
   return (
     <div className="farmmarket">
       <div className="farm">
-        <h1>Farmers Market 🌾</h1>
+        <Swap />
       </div>
     </div>
   );

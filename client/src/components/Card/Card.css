@@ -17,6 +17,11 @@
   justify-content: center;
 }
 
+.worldCupImg {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
 /*************
 Media Queries
 **************/

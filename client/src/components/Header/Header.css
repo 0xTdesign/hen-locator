@@ -55,7 +55,8 @@ Other pages
 
 .create .bar,
 .coop .bar,
-.edgyeggs .bar {
+.edgyeggs .bar,
+.stadium .bar {
   box-shadow: 0px 2px 7px rgb(255, 255, 255);
 }
 
@@ -83,7 +84,7 @@ Desktop Nav
 .DESKTOP-MENU {
   cursor: pointer;
   background-color: var(--backgroundContainer);
-  border-radius: 15px;
+  border-radius: 8px;
   display: flex;
   padding: 1rem;
   color: var(--text);

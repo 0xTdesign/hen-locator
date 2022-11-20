@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Header.css";
 import logo from "../../assets/logo.svg";
 import logoWhite from "../../assets/logoWhite.svg";
+import Connect from "../ConnectButton/Connect";
 
 export default function Header({ pageClass }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -19,7 +20,8 @@ export default function Header({ pageClass }) {
                 {pageClass === "edgyeggs" && <img className="bar pulse" src={logo} alt="Logo" />}
                 {pageClass === "create" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
                 {pageClass === "coop" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
-
+                {pageClass === "worldCup" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
+                {pageClass === "stadium" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
                 <p className="menu">Menu</p>
               </div>
 
@@ -60,6 +62,12 @@ export default function Header({ pageClass }) {
                   {/* <li className="border-b  my-8 uppercase">
                     <a href="/FarmersMarket">Farmers Market</a>
                   </li> */}
+                  <li className="border-b  my-8 uppercase">
+                    <a href="/WorldCuP">Entry World Cup</a>
+                  </li>
+                  <li className="border-b  my-8 uppercase">
+                    <a href="/Stadium">Stadium</a>
+                  </li>
                 </ul>
               </div>
             </section>
@@ -85,6 +93,14 @@ export default function Header({ pageClass }) {
               {/* <li>
                 <a href="/FarmersMarket">Farmers Market</a>
               </li> */}
+              <li>
+                <a href="/WorldCup">Entry World Cup</a>
+              </li>
+              <li>
+                <a href="/Stadium">Stadium</a>
+              </li>
+
+              {/* <Connect /> */}
             </ul>
           </nav>
         </div>

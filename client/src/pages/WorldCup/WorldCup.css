@@ -1,0 +1,48 @@
+.worldCup {
+  background: url(../../assets/doha.webp) no-repeat center center fixed;
+  border-radius: 40px;
+  background-position: 25% 36%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.howToPlay {
+  color: var(--text);
+  margin-top: 8px;
+}
+
+.select {
+  height: 32px;
+  margin-top: 2px;
+  width: 80%;
+  border: 1px solid var(--border);
+}
+.worldCup-btn {
+  margin-top: -8px;
+}
+
+.submit {
+  color: var(--text);
+}
+
+.rules {
+  border: 1px solid var(--border);
+  padding: 8px;
+}
+
+.rules:hover {
+  background-color: var(--card);
+}
+
+.private {
+  grid-area: 4 / 2 / -1 / 4;
+  color: var(--text);
+}
+
+@media only screen and (min-width: 999px) {
+  .worldCup-btn {
+    margin-top: 4px;
+  }
+}

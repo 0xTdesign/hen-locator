@@ -15,7 +15,7 @@ General Elements
 .links {
   margin-bottom: 10px;
   background-color: var(--lightBackground);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .links i {
@@ -46,6 +46,13 @@ Other pages
 }
 
 .farmersmarket .links i {
+  color: var(--text);
+}
+.stadium .links i {
+  color: var(--text);
+}
+
+.worldCup .links i {
   color: var(--text);
 }
 
@@ -102,6 +109,10 @@ Media Queries
 
   .coop footer {
     bottom: 4.5rem;
+  }
+
+  .worldCup footer {
+    top: 6.5rem;
   }
 
   .footericon-rights {

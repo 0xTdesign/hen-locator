@@ -6,13 +6,13 @@ export default function Footer({ pageClass }) {
     <footer>
       <div className="footer-icons">
         <div className="links">
-          <a href="https://twitter.com/chikn_nft" target="__blank">
+          <a href="https://twitter.com/EdgyEggsAvax" target="__blank">
             <i className="fa-brands fa-twitter fa-1x"></i>
           </a>
-          <a href="https://discord.gg/zPadKQKkna" target="__blank">
+          <a href="https://discord.gg/6YEu462WDJ" target="__blank">
             <i className="fab fa-discord fa-1x"></i>
           </a>
-          <a href="https://chikn.farm/" target="__blank">
+          <a href="https://www.edgyeggs.wtf/" target="__blank">
             <i className="fa-solid fa-earth-asia"></i>
           </a>
 

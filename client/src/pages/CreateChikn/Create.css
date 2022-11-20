@@ -12,10 +12,10 @@
   display: block;
   margin: 0.8rem auto;
   width: 96%;
-  height: 350px;
+  height: 380px;
   max-width: 350px;
   background-color: var(--backgroundContainer);
-  border-radius: 12px;
+  border-radius: 4px;
   text-align: center;
   padding: 15px;
   border: 1px solid var(--border);
@@ -25,10 +25,10 @@
   display: block;
   margin: 0.8rem auto;
   width: 96%;
-  height: 350px;
+  height: 380px;
   max-width: 350px;
   background-color: var(--backgroundContainer);
-  border-radius: 12px;
+  border-radius: 4px;
   text-align: center;
   padding: 15px;
   border: 1px solid var(--border);
@@ -79,7 +79,7 @@ Recent added Coqs
   width: 96%;
   max-width: 360px;
   background-color: var(--backgroundContainer);
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 15px;
   margin-bottom: 100px;
   border: 1px solid var(--border);
@@ -91,7 +91,7 @@ Recent added Coqs
   padding: 10px;
   margin-top: 20px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 4px;
   width: 96%;
 }
 
@@ -119,6 +119,7 @@ Recent added Coqs
   border: 1px solid var(--text);
   padding: 10px;
   background-color: var(--card);
+  margin-left: 10px;
 }
 
 .coop-btn:hover {
@@ -146,7 +147,7 @@ Media Queries
     max-width: 350px;
     height: 500px;
     background-color: var(--backgroundContainer);
-    border-radius: 12px;
+    border-radius: 4px;
     text-align: center;
     padding: 15px;
     margin: 0.8rem auto;
@@ -156,7 +157,7 @@ Media Queries
     grid-area: 4 / 3 / 4 / 3;
     position: relative;
     right: 70px;
-    margin: 20px -10px;
+    margin: 40px -80px;
     bottom: 0px;
   }
 }

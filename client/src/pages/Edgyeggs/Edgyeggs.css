@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+  display: block;
 }
 
 .edgyegg-search input {
@@ -29,9 +30,9 @@
   margin: 0.8rem auto;
   width: 96%;
   max-width: 350px;
-  height: 200px;
+  height: 220px;
   background-color: var(--backgroundContainer);
-  border-radius: 12px;
+  border-radius: 4px;
   text-align: center;
 }
 
@@ -41,7 +42,7 @@
   max-width: 350px;
   height: 345px;
   background-color: var(--backgroundContainer);
-  border-radius: 12px;
+  border-radius: 4px;
   text-align: center;
 }
 
@@ -68,9 +69,9 @@
   max-width: 350px;
   height: 300px;
   background-color: var(--backgroundContainer);
-  border-radius: 12px;
+  border-radius: 4px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 
 .bottomContainer-edgyegg {
@@ -84,6 +85,11 @@
   font-size: 1.3rem;
 }
 
+.traitBreakdown {
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+}
+
 @media only screen and (min-width: 999px) {
   .searchEdgyegg {
     grid-area: 1 / 1 / 5 / 4;
@@ -91,7 +97,7 @@
     width: 96%;
     height: 200px;
     max-width: 350px;
-    border-radius: 15px;
+    border-radius: 4px;
     align-items: center;
     align-self: center;
   }
@@ -101,7 +107,7 @@
     max-width: 600px;
     height: 440px;
     max-height: 500px;
-    border-radius: 15px;
+    border-radius: 4px;
     text-align: center;
     align-items: center;
     align-self: center;
@@ -121,7 +127,7 @@
     width: 96%;
     height: 100%;
     max-width: 500px;
-    border-radius: 15px;
+    border-radius: 4px;
     align-items: center;
     position: relative;
     top: 67px;
@@ -152,12 +158,13 @@
   }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1439px) {
   .searchEdgyegg {
     grid-area: 1 / 1 / 5 / 4;
     margin: 0 auto;
     width: 96%;
-    height: 130px;
+    height: 180px;
+    margin-bottom: 2rem;
   }
 
   .form-search {

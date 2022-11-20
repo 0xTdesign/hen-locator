@@ -16,7 +16,7 @@ General Elements
 
 .tokens ol {
   background-color: var(--lightBackground);
-  border-radius: 10px;
+  border-radius: 4px;
   display: flex;
 }
 
@@ -61,6 +61,13 @@ Other pages
 }
 
 .farmersmarket .price {
+  color: var(--text);
+}
+
+.stadium .price {
+  color: var(--text);
+}
+.worldCup .price {
   color: var(--text);
 }
 /*************

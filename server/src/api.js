@@ -4,10 +4,12 @@ const mongoose = require("mongoose");
 const axios = require("axios");
 const bp = require("body-parser");
 const serverless = require("serverless-http");
+const dotenv = require("dotenv");
 require("dotenv").config();
 
 const Chikn = require("./Models/chikn");
 const Roostr = require("./Models/roostr");
+const EdgyEgg = require("./Models/edgyegg");
 
 const app = express();
 app.use(cors());
@@ -45,6 +47,17 @@ app.get("/.netlify/functions/api/roostr", async (req, res) => {
   }
 });
 
+// Display EdgyEggs
+app.get("/.netlify/functions/api/edgyegg", async (req, res) => {
+  try {
+    const allEdgyEgg = await EdgyEgg.find();
+    res.status(200).json(allEdgyEgg);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 // Create Chikn
 app.post("/.netlify/functions/api/chikn", async (req, res) => {
   try {
@@ -61,6 +74,17 @@ app.post("/.netlify/functions/api/roostr", async (req, res) => {
   try {
     const newRoostr = await Roostr.create(req.body);
     res.status(200).json(newRoostr);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+//Create EdgyEgg
+app.post("/.netlify/functions/api/edgyegg", async (req, res) => {
+  try {
+    const newEdgyegg = await EdgyEgg.create(req.body);
+    res.status(200).json(newEdgyegg);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

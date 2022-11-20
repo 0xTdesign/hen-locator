@@ -3,8 +3,9 @@ import "./Edgyeggs.css";
 import { useEffect, useState } from "react";
 import edgyegg from "../../assets/logo-white.svg";
 import SelectedEdgyegg from "../../components/SelectedEdgyEgg/SelectedEdgyegg";
-// import axios from "axios";
+import axios from "axios";
 import mintedEggs from "../../mintedeggs.json";
+import rarityBreakdown from "../../rarityBreakdown.json";
 
 export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpageClass, formEdgyeggSearch, edgyeggSearch }) {
   useEffect(() => {
@@ -25,6 +26,10 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
     Eggcelent: 0,
     Eggspendable: 0,
   });
+
+  const [showModalRarity, setshowModalRarity] = useState(false);
+
+  const [rarityBreakdown, setrarityBreakdown] = useState({});
 
   const handleModalEdgyegg = (e) => {
     e.preventDefault();
@@ -75,6 +80,7 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
           break;
       }
     });
+
     // set state to be the counts
     setmintedRarities({
       Mythic,
@@ -86,6 +92,8 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
       Eggspendable,
     });
   };
+
+  const getRarityBreakdown = async () => {};
 
   return (
     <>
@@ -107,6 +115,23 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
               <img className="enter-btn" src={edgyegg} alt="Edgyegg" />
             </button>
           </form>
+          {/* <div className="bottomContainer">
+            <form>
+              <select name="traitBreakdown" onChange={"handleFilter"}>
+                <option value="">Trait Selector</option>
+                <option value="Background">Background</option>
+                <option value="Shell">Shell</option>
+                <option value="Shell Extras">Shell Extras</option>
+                <option value="Waist">Waist</option>
+                <option value="Hand Right">Hand Right</option>
+                <option value="Head">Head</option>
+                <option value="Hand Left">Hand Left</option>
+                <option value="Eyes">Eyes</option>
+                <option value="Eye gear">Eye gear</option>
+                <option value="Mouth">Mouth</option>
+              </select>
+            </form>
+          </div> */}
         </div>
       </div>
       <div className={`edgyeggimageShow ${edgyeggSearch.image ? "" : "hide"}`}>

@@ -14,10 +14,17 @@ import Edgyeggs from "./pages/Edgyeggs/Edgyeggs";
 import Create from "./pages/CreateChikn/Create";
 import Coop from "./pages/Coop/Coop";
 
+import { createClient, WagmiConfig, configureChains } from "wagmi";
+import { ConnectKitProvider, getDefaultClient } from "connectkit";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+
 import { SEARCH_API, DETAILS_API, REPORT_API, API_URL } from "./api";
 import FarmersMarket from "./pages/FarmersMarket/FarmersMarket";
+import WorldCup from "./pages/WorldCup/WorldCup";
+import Stadium from "./pages/Stadium/Stadium";
 
-function App() {
+function App({ changeModalWorldCup }) {
+  console.log(window.location.href.replace("http://localhost:3000/", "").replace("https://hen-locator.netlify.app/", ""));
   /**************
   usestate Chikn API 
   *************/
@@ -94,6 +101,7 @@ function App() {
   useEffect(() => {
     getReports();
     getAllBirds();
+    getAllWorldCupEntrys();
   }, []);
 
   /**************
@@ -168,14 +176,6 @@ function App() {
     } else {
       alert("There was a problem deleteing that Bird");
     }
-  };
-
-  const updateRooster = async (e) => {
-    e.preventDefault();
-  };
-
-  const updateChikn = async (e) => {
-    e.preventDefault();
   };
 
   /**************
@@ -262,6 +262,35 @@ function App() {
     tokenId: "",
   });
 
+  const [worldCupEgg, setworldCupEgg] = useState([]);
+
+  const [createEdgyeggForm, setcreateEdgyeggForm] = useState({
+    tokenId: "",
+    winningCountry: "",
+    discord: "",
+    note: "",
+  });
+
+  const handleChangeCreateEdgyegg = (e) => {
+    setcreateEdgyeggForm({ ...createEdgyeggForm, [e.target.name]: e.target.value });
+  };
+
+  const createWorldCupEgg = async (e) => {
+    const APIIMAGE = `https://s3.wasabisys.com/metadata.edgyeggs.wtf/${createEdgyeggForm.tokenId}.json`;
+    const APIIMAGERES = await axios.get(APIIMAGE);
+    const API = `${API_URL}/edgyegg`;
+    const res = await axios.post(API, { ...createEdgyeggForm, image: APIIMAGERES.data.image });
+    console.log(res);
+    setcreateEdgyeggForm({ tokenId: "", winningCountry: "", discord: "", note: "" });
+    setworldCupEgg([res.data, ...worldCupEgg]);
+  };
+
+  const getAllWorldCupEntrys = async () => {
+    const API = `${API_URL}/edgyegg`;
+    const res = await axios.get(API);
+    setworldCupEgg(res.data);
+  };
+
   const handleSearchEdgyegg = (e) => {
     setformEdgyeggSearch({ ...formEdgyeggSearch, [e.target.name]: e.target.value });
     console.log(formEdgyeggSearch);
@@ -277,89 +306,148 @@ function App() {
     setformEdgyeggSearch({ ...formEdgyeggSearch, tokenId: "" });
   };
 
+  /**************
+Farmers Market Swap
+   *************/
+
+  const avalancheChain = {
+    id: 43_114,
+    name: "Avalanche",
+    network: "avalanche",
+    nativeCurrency: {
+      decimals: 18,
+      name: "Avalanche",
+      symbol: "AVAX",
+    },
+    rpcUrls: {
+      default: "https://avalanche-mainnet.infura.io/v3/",
+    },
+    blockExplorers: {
+      default: { name: "SnowTrace", url: "https://snowtrace.io" },
+    },
+    testnet: false,
+  };
+
+  const { chains } = configureChains(
+    [avalancheChain],
+    [
+      jsonRpcProvider({
+        rpc: (chain) => {
+          if (chain.id !== avalancheChain.id) return null;
+          return { http: chain.rpcUrls.default };
+        },
+      }),
+    ]
+  );
+
+  const wagmiClient = createClient(
+    getDefaultClient({
+      chains,
+    })
+  );
+
   return (
     <BrowserRouter>
-      <p className="design">
-        <a target="_blank" href="https://www.freepik.com">
-          Image designed by Upklyak - Freepik.com
-        </a>
-      </p>
-      <div className={`App mainContainer ${pageClass}`}>
-        <Header pageClass={pageClass} />
-        <Price pageClass={pageClass} reports={reports} />
-        <Content />
-        <Footer pageClass={pageClass} />
-        <Routes>
-          <Route path="/" element={<Home setpageClass={setpageClass} />} />
-          <Route path="/About" element={<About setpageClass={setpageClass} />} />
-          <Route
-            path="/Chikn"
-            element={
-              <Chikn
-                setpageClass={setpageClass}
-                handleSearch={handleSearch}
-                getSearchRoostr={getSearchRoostr}
-                getSearchChikn={getSearchChikn}
-                chiknSearch={chiknSearch}
-                roostrSearch={roostrSearch}
-                formChiknSearch={formChiknSearch}
-                reports={reports}
-                chiknDetails={chiknDetails}
-                getDetailsChikn={getDetailsChikn}
-                getDetailsRooster={getDetailsRooster}
-                roostrDetails={roostrDetails}
+      <WagmiConfig client={wagmiClient}>
+        <ConnectKitProvider>
+          <p className="design">
+            <a target="_blank" href="https://www.freepik.com">
+              Image designed by Upklyak - Freepik.com
+            </a>
+          </p>
+          <div className={`App mainContainer ${pageClass}`}>
+            <Header pageClass={pageClass} />
+            <Price pageClass={pageClass} reports={reports} />
+            <Content />
+            <Footer pageClass={pageClass} />
+            <Routes>
+              <Route path="/" element={<Home setpageClass={setpageClass} />} />
+              <Route path="/About" element={<About setpageClass={setpageClass} />} />
+              <Route
+                path="/Chikn"
+                element={
+                  <Chikn
+                    setpageClass={setpageClass}
+                    handleSearch={handleSearch}
+                    getSearchRoostr={getSearchRoostr}
+                    getSearchChikn={getSearchChikn}
+                    chiknSearch={chiknSearch}
+                    roostrSearch={roostrSearch}
+                    formChiknSearch={formChiknSearch}
+                    reports={reports}
+                    chiknDetails={chiknDetails}
+                    getDetailsChikn={getDetailsChikn}
+                    getDetailsRooster={getDetailsRooster}
+                    roostrDetails={roostrDetails}
+                  />
+                }
               />
-            }
-          />
-          <Route
-            path="/Edgyeggs"
-            element={
-              <Edgyeggs
-                getSearchEdgyegg={getSearchEdgyegg}
-                handleSearchEdgyegg={handleSearchEdgyegg}
-                setpageClass={setpageClass}
-                formEdgyeggSearch={formEdgyeggSearch}
-                edgyeggSearch={edgyeggSearch}
+              <Route
+                path="/Edgyeggs"
+                element={
+                  <Edgyeggs
+                    getSearchEdgyegg={getSearchEdgyegg}
+                    handleSearchEdgyegg={handleSearchEdgyegg}
+                    setpageClass={setpageClass}
+                    formEdgyeggSearch={formEdgyeggSearch}
+                    edgyeggSearch={edgyeggSearch}
+                  />
+                }
               />
-            }
-          />
-          <Route
-            path="/Create"
-            element={
-              <Create
-                setpageClass={setpageClass}
-                getSearchRoostr={getSearchRoostr}
-                getSearchChikn={getSearchChikn}
-                formChiknSearch={formChiknSearch}
-                handleChangeCreateChikn={handleChangeCreateChikn}
-                createNewChikn={createNewChikn}
-                createNewRoostr={createNewRoostr}
-                createChiknForm={createChiknForm}
-                createRoostrForm={createRoostrForm}
-                handleSearch={handleSearch}
-                offersRoostr={offersRoostr}
-                offersChikn={offersChikn}
-                handleChangeCreateRoostr={handleChangeCreateRoostr}
-                deleteChikn={deleteChikn}
-                deleteRoostr={deleteRoostr}
+              <Route
+                path="/Create"
+                element={
+                  <Create
+                    setpageClass={setpageClass}
+                    getSearchRoostr={getSearchRoostr}
+                    getSearchChikn={getSearchChikn}
+                    formChiknSearch={formChiknSearch}
+                    handleChangeCreateChikn={handleChangeCreateChikn}
+                    createNewChikn={createNewChikn}
+                    createNewRoostr={createNewRoostr}
+                    createChiknForm={createChiknForm}
+                    createRoostrForm={createRoostrForm}
+                    handleSearch={handleSearch}
+                    offersRoostr={offersRoostr}
+                    offersChikn={offersChikn}
+                    handleChangeCreateRoostr={handleChangeCreateRoostr}
+                    deleteChikn={deleteChikn}
+                    deleteRoostr={deleteRoostr}
+                  />
+                }
               />
-            }
-          />
-          <Route
-            path="/Coop"
-            element={
-              <Coop
-                setpageClass={setpageClass}
-                offersChikn={offersChikn}
-                offersRoostr={offersRoostr}
-                deleteChikn={deleteChikn}
-                deleteRoostr={deleteRoostr}
+              <Route
+                path="/Coop"
+                element={
+                  <Coop
+                    setpageClass={setpageClass}
+                    offersChikn={offersChikn}
+                    offersRoostr={offersRoostr}
+                    deleteChikn={deleteChikn}
+                    deleteRoostr={deleteRoostr}
+                  />
+                }
               />
-            }
-          />
-          <Route path="/FarmersMarket" element={<FarmersMarket setpageClass={setpageClass} />} />
-        </Routes>
-      </div>
+              <Route path="/FarmersMarket" element={<FarmersMarket setpageClass={setpageClass} />} />
+              <Route
+                path="/WorldCup"
+                element={
+                  <WorldCup
+                    setpageClass={setpageClass}
+                    createWorldCupEgg={createWorldCupEgg}
+                    worldCupEgg={worldCupEgg}
+                    createEdgyeggForm={createEdgyeggForm}
+                    handleChangeCreateEdgyegg={handleChangeCreateEdgyegg}
+                    changeModalWorldCup={changeModalWorldCup}
+                    API_URL={API_URL}
+                  />
+                }
+              />
+              <Route path="/Stadium" element={<Stadium setpageClass={setpageClass} worldCupEgg={worldCupEgg} />} />
+            </Routes>
+          </div>
+        </ConnectKitProvider>
+      </WagmiConfig>
     </BrowserRouter>
   );
 }
