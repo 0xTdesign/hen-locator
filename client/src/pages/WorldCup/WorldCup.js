@@ -264,7 +264,7 @@ export default function WorldCup({
           <h2>Pick your Team</h2>
         </div>
         <form className="form-create" onSubmit={submitCreateEdgyegg}>
-          <p className="private">Discord and Transaction information will remain private</p>
+          <p className="private">To enter the draw the Egg needs to minted from the 20th of Nov onwards.</p>
 
           <input
             onChange={handleChangeCreateEdgyegg}
@@ -344,7 +344,7 @@ export default function WorldCup({
           <button className="worldCup-btn" type="submit">
             Submit
             {/* <span className="submit">⬇</span> */}
-            {/* <img className="enter-btn" src={edgyegg} alt="EdgyEgg" /> */}
+            <img className="enter-btn" src={edgyegg} alt="EdgyEgg" />
           </button>
         </form>
       </div>
