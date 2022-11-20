@@ -10,11 +10,11 @@ export default function Rules({ changeModalWorldCup }) {
             <p className="rule-title">Rules</p>
             <br />
             <h2 className="snap">
-              There will be a <span className="snapRed">SNAPSHOT</span> taken to Check all entrys!
+              There will be a <span className="snapRed">SNAPSHOT</span> taken to Check all entries!
             </h2>
             <br />
             <ul>
-              <li>⚽ 1 mint is 1 ticket. There is no cap on entrys.</li>
+              <li>⚽ 1 mint is 1 ticket. There is no cap on entries.</li>
               <br />
               <li>⚽ All participants will be entered in a raffle draw for $500 USDC</li>
               <br />
