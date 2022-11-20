@@ -342,7 +342,7 @@ export default function WorldCup({
             value={createEdgyeggForm.discord}
           />
           <button className="worldCup-btn" type="submit">
-            Sumbit
+            Submit
             {/* <span className="submit">⬇</span> */}
             {/* <img className="enter-btn" src={edgyegg} alt="EdgyEgg" /> */}
           </button>
@@ -382,7 +382,7 @@ export default function WorldCup({
 
       <div className="button-coop">
         <a href="/Stadium">
-          <button className="coop-btn">Enter the games</button>
+          <button className="coop-btn">Stadium</button>
         </a>
         <button onClick={changeModalWorldCupTeams} className="coop-btn">
           Country count
