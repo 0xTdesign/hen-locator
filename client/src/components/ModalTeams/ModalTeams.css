@@ -4,3 +4,10 @@
   margin-left: 5px;
   margin-top: 5px;
 }
+
+.totalCount {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--text);
+  font-size: 1.2rem;
+}

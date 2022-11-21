@@ -70,6 +70,7 @@ export default function WorldCup({
     Ghana: 0,
     Uruguay: 0,
     KoreaRepublic: 0,
+    total: 0,
   });
 
   const getCountryVotes = async () => {
@@ -108,6 +109,7 @@ export default function WorldCup({
     let Ghana = 0;
     let Uruguay = 0;
     let KoreaRepublic = 0;
+    let total = 0;
 
     // res.data.forEach((egg) => { // we want to use the response from an API call, but we don't have it yet
     res.data.forEach((country) => {
@@ -115,72 +117,95 @@ export default function WorldCup({
       switch (country.winningTeam) {
         case "Qatar 🇶🇦":
           Qatar++;
+          total++;
           break;
         case "Ecuador 🇪🇨":
           Ecuador++;
+          total++;
           break;
         case "Senegal 🇸🇳":
           Senegal++;
+          total++;
           break;
         case "The Netherlands 🇳🇱":
           Netherlands++;
+          total++;
           break;
         case "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿":
           England++;
+          total++;
           break;
         case "IR Iran 🇮🇷":
           Iran++;
+          total++;
           break;
         case "USA 🇺🇸":
           USA++;
+          total++;
           break;
         case "Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿":
           Wales++;
+          total++;
           break;
         case "Argentina 🇦🇷":
           Argentina++;
+          total++;
           break;
         case "Saudi-Arabia 🇸🇦":
           SaudiArabia++;
+          total++;
           break;
         case "Mexico 🇲🇽":
           Mexico++;
+          total++;
           break;
         case "Poland 🇵🇱":
           Poland++;
+          total++;
           break;
         case "France 🇫🇷":
           France++;
+          total++;
           break;
         case "Australia 🇦🇺":
           Australia++;
+          total++;
           break;
         case "Denmark 🇩🇰":
           Denmark++;
+          total++;
           break;
         case "Tunisia 🇹🇳":
           Tunisia++;
+          total++;
           break;
         case "Spain 🇪🇸":
           Spain++;
+          total++;
           break;
         case "Costa Rica 🇨🇷":
           CostaRica++;
+          total++;
           break;
         case "Germany 🇩🇪":
           Germany++;
+          total++;
           break;
         case "Japan 🇯🇵":
           Japan++;
+          total++;
           break;
         case "Belgium 🇧🇪":
           Belgium++;
+          total++;
           break;
         case "Canada 🇨🇦":
           Canada++;
+          total++;
           break;
         case "Morocco 🇲🇦":
           Morocco++;
+          total++;
           break;
         case "Croatia 🇭🇷":
           Croatia++;
@@ -196,18 +221,23 @@ export default function WorldCup({
           break;
         case "Cameroon 🇨🇲":
           Cameroon++;
+          total++;
           break;
         case "Portugal 🇵🇹":
           Portugal++;
+          total++;
           break;
         case "Ghana 🇬🇭":
           Ghana++;
+          total++;
           break;
         case "Uruguay 🇺🇾":
           Uruguay++;
+          total++;
           break;
         case "Korea Republic 🇰🇷":
           KoreaRepublic++;
+          total++;
           break;
         default:
           break;
@@ -248,6 +278,7 @@ export default function WorldCup({
       Ghana,
       Uruguay,
       KoreaRepublic,
+      total,
     });
   };
 

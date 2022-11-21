@@ -51,6 +51,7 @@ export default function ModalTeam({ changeModalWorldCupTeams, worldcupTeams, get
               <li>Korea Republic:{worldcupTeams.KoreaRepublic}</li>
             </ul>
           </div>
+          <p className="totalCount">Total:{worldcupTeams.total}</p>
           <br />
           <button className="modal__btn modalClose" onClick={changeModalWorldCupTeams}>
             close
