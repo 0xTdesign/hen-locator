@@ -135,6 +135,10 @@ Buttons
   box-shadow: 0px 2px 7px rgb(231, 107, 73);
 }
 
+.enter-btn:hover {
+  background-color: var(--background);
+}
+
 /*************
 Image show
 **************/

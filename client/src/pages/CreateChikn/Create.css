@@ -123,7 +123,7 @@ Recent added Coqs
 }
 
 .coop-btn:hover {
-  color: var(--icons);
+  background-color: var(--background);
 }
 
 /*************
@@ -157,7 +157,7 @@ Media Queries
     grid-area: 4 / 3 / 4 / 3;
     position: relative;
     right: 70px;
-    margin: 40px -80px;
+    margin: 50px -55px;
     bottom: 0px;
   }
 }
