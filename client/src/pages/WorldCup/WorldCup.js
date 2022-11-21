@@ -411,7 +411,7 @@ export default function WorldCup({
       </div>
       <div className="showCreate">
         <div className="topContainer">
-          <h2>Recent Added Entrys</h2>
+          <h2>Recent added entries</h2>
         </div>
 
         <CardWorldCup worldCupEgg={worldCupEgg} />
