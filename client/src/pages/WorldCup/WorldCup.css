@@ -45,9 +45,24 @@
 .howToPlay p {
   font-size: 1.5rem;
 }
+.games {
+  margin: 0 auto;
+  color: var(--text);
+  text-align: center;
+  position: relative;
+  bottom: 82px;
+}
+.today {
+  margin-top: 10px;
+}
 
 @media only screen and (min-width: 999px) {
   .worldCup-btn {
     /* margin-top: 4px; */
+  }
+  .games {
+    grid-area: 4 / 2 / 4 / 3;
+    position: sticky;
+    bottom: 0px;
   }
 }

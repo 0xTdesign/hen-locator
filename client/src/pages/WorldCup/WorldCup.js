@@ -22,11 +22,13 @@ export default function WorldCup({
   useEffect(() => {
     setpageClass("worldCup");
     getCountryVotes();
+    todaysGames();
   }, []);
 
   const [showModalWorldCup, setshowModalWorldCup] = useState(false);
   const [showModalWorldCupTeam, setshowModalWorldCupTeam] = useState(false);
 
+  const [todaysmatches, settodaysmatches] = useState([]);
   const changeModalWorldCup = () => {
     setshowModalWorldCup(!showModalWorldCup);
   };
@@ -249,6 +251,12 @@ export default function WorldCup({
     });
   };
 
+  const todaysGames = async () => {
+    const API = `https://worldcupjson.net/matches/today`;
+    const res = await axios.get(API);
+    settodaysmatches(res.data);
+  };
+
   return (
     <>
       {showModalWorldCup && <Rules changeModalWorldCup={changeModalWorldCup} />}
@@ -385,6 +393,23 @@ export default function WorldCup({
         <button onClick={changeModalWorldCupTeams} className="coop-btn">
           Country Entries
         </button>
+      </div>
+
+      <div className="games">
+        <div className="topContainer">
+          <h2>Today's Games</h2>
+        </div>
+        {todaysmatches?.map((game, idx) => {
+          return (
+            <>
+              <div className="today" key={idx}>
+                <p>
+                  {game.home_team.name} {game.home_team.goals} vs {game.home_team.goals} {game.away_team.name}
+                </p>
+              </div>
+            </>
+          );
+        })}
       </div>
     </>
   );

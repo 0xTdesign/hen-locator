@@ -155,9 +155,9 @@ Media Queries
 
   .button-coop {
     grid-area: 4 / 3 / 4 / 3;
-    position: relative;
+    /* position: relative;
     right: 70px;
-    margin: 50px -55px;
+    margin: 50px -55px; */
     bottom: 0px;
   }
 }
