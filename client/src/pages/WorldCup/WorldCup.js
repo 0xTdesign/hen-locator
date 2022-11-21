@@ -435,7 +435,7 @@ export default function WorldCup({
             <>
               <div className="today" key={idx}>
                 <p>
-                  {game.home_team.name} {game.home_team.goals} vs {game.home_team.goals} {game.away_team.name}
+                  {game.home_team.name} {game.home_team.goals} vs {game.away_team.goals} {game.away_team.name}
                 </p>
               </div>
             </>
