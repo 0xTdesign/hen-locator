@@ -30,6 +30,7 @@
 .rules {
   border: 1px solid var(--border);
   padding: 8px;
+  background-color: var(--background);
 }
 
 .rules:hover {
@@ -39,6 +40,10 @@
 .private {
   grid-area: 4 / 2 / -1 / 4;
   color: var(--text);
+}
+
+.howToPlay p {
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 999px) {

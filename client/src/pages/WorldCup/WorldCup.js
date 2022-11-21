@@ -352,11 +352,10 @@ export default function WorldCup({
           <h2>How to Play</h2>
         </div>
         <p className="howToPlay">
-          <br />
+          <p>Read the Rules</p>
           <button onClick={changeModalWorldCup} className="rules">
             ⮕ Rules ⬅
           </button>
-          <br />
           <br />
           <div className="topContainer">
             <h2>Prizes</h2>
