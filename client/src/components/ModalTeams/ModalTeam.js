@@ -14,7 +14,7 @@ export default function ModalTeam({ changeModalWorldCupTeams, worldcupTeams, get
           <div className="rules-tab">
             <p className="rule-title"></p>
             <div className="topContainer">
-              <h2>Team Entrys</h2>
+              <h2>Team Entries</h2>
             </div>
             <ul className="list">
               <li>Qatar:{worldcupTeams.Qatar}</li>

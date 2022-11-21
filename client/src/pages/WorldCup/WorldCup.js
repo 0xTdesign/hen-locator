@@ -384,7 +384,7 @@ export default function WorldCup({
           <button className="coop-btn">Stadium</button>
         </a>
         <button onClick={changeModalWorldCupTeams} className="coop-btn">
-          Country count
+          Country Entries
         </button>
       </div>
     </>
