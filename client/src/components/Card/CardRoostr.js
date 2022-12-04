@@ -30,9 +30,9 @@ export default function CardRoostr({ offersRoostr, deleteRoostr }) {
                   </span>
                   {roostrObj.contact}
                 </p>
-                <button className="delete-btn" onClick={() => deleteRoostr(roostrObj)}>
+                {/* <button className="delete-btn" onClick={() => deleteRoostr(roostrObj)}>
                   Delete
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

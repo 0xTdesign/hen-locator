@@ -31,9 +31,9 @@ export default function CardChikn({ offersChikn, deleteChikn }) {
                   </span>
                   {chiknObj.contact}
                 </p>
-                <button className="delete-btn" onClick={() => deleteChikn(chiknObj)}>
+                {/* <button className="delete-btn" onClick={() => deleteChikn(chiknObj)}>
                   Delete
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

@@ -5,7 +5,8 @@ import edgyegg from "../../assets/logo-white.svg";
 import SelectedEdgyegg from "../../components/SelectedEdgyEgg/SelectedEdgyegg";
 import axios from "axios";
 import mintedEggs from "../../mintedeggs.json";
-import rarityBreakdown from "../../rarityBreakdown.json";
+import rarityBreakdownJson from "../../rarityBreakdown.json";
+import SelectedTrait from "../../components/SelectedTrait/SelectedTrait";
 
 export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpageClass, formEdgyeggSearch, edgyeggSearch }) {
   useEffect(() => {
@@ -29,7 +30,34 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
 
   const [showModalRarity, setshowModalRarity] = useState(false);
 
-  const [rarityBreakdown, setrarityBreakdown] = useState({});
+  const [activeTrait, setActiveTrait] = useState({});
+
+  const [traitData, setTraitData] = useState(rarityBreakdownJson);
+
+  const handleTraitModal = (e) => {
+    e.preventDefault();
+    setshowModalRarity(!showModalRarity);
+    setActiveTrait(traitData);
+    console.log(activeTrait);
+  };
+
+  const [selectedOption, setSelectedOption] = useState("none");
+  const options = [
+    { value: "", label: "Trait Selector" },
+    { value: "Background", label: "Background" },
+    { value: "right", label: "Open Right" },
+    {
+      value: "tilt,left",
+      label: "Tilf and Open Left",
+    },
+    {
+      value: "tilt,right",
+      label: "Tilf and Open Right",
+    },
+  ];
+  const handleTypeSelect = (e) => {
+    setSelectedOption(e.value);
+  };
 
   const handleModalEdgyegg = (e) => {
     e.preventDefault();
@@ -93,11 +121,12 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
     });
   };
 
-  const getRarityBreakdown = async () => {};
-
   return (
     <>
       {showModalEdgyegg && <SelectedEdgyegg activeEdgyegg={activeEdgyegg} handleModalEdgyegg={handleModalEdgyegg} />}
+      {showModalRarity && (
+        <SelectedTrait traitData={traitData} handleTraitModal={handleTraitModal} activeTrait={activeTrait} />
+      )}
       <div className="searchEdgyegg">
         <div className="topContainer">
           <h2>Rarity Checker</h2>
@@ -115,22 +144,24 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
               <img className="enter-btn" src={edgyegg} alt="Edgyegg" />
             </button>
           </form>
-          {/* <div className="bottomContainer">
-            <form>
-              <select name="traitBreakdown" onChange={"handleFilter"}>
-                <option value="">Trait Selector</option>
-                <option value="Background">Background</option>
-                <option value="Shell">Shell</option>
-                <option value="Shell Extras">Shell Extras</option>
-                <option value="Waist">Waist</option>
-                <option value="Hand Right">Hand Right</option>
-                <option value="Head">Head</option>
-                <option value="Hand Left">Hand Left</option>
-                <option value="Eyes">Eyes</option>
-                <option value="Eye gear">Eye gear</option>
-                <option value="Mouth">Mouth</option>
-              </select>
-            </form>
+          {/* <div className="bottomContainer-trait">
+            {
+              <form>
+                <select className="traitcontainer" name="traitBreakdown" onChange={handleTraitModal} value={activeTrait}>
+                  <option value="">Trait Selector</option>
+                  <option value="Background">Background</option>
+                  <option value="Shell">Shell</option>
+                  <option value="Shell Extras">Shell Extras</option>
+                  <option value="Waist">Waist</option>
+                  <option value="Hand Right">Hand Right</option>
+                  <option value="Head">Head</option>
+                  <option value="Hand Left">Hand Left</option>
+                  <option value="Eyes">Eyes</option>
+                  <option value="Eye gear">Eye gear</option>
+                  <option value="Mouth">Mouth</option>
+                </select>
+              </form>
+            }
           </div> */}
         </div>
       </div>
@@ -149,6 +180,14 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
               </div>
             </div>
           </div>
+          {/* <div className="traits-view">
+            <div className="top">
+              <h2>Traits</h2>
+            </div>
+            <div className="traits-Show">
+              <img src={edgyeggSearch.image} alt="EdgyEgg NFT" />
+            </div>
+          </div> */}
         </div>
       </div>
       <div className="edgyegg-rank">

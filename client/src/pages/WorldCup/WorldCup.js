@@ -20,6 +20,7 @@ export default function WorldCup({
     createWorldCupEgg();
   };
   useEffect(() => {
+    // alert("Grand Prize entries close on the 8th Dec");
     setpageClass("worldCup");
     getCountryVotes();
     todaysGames();
@@ -330,37 +331,37 @@ export default function WorldCup({
             <option value="" disabled selected>
               Select your Team
             </option>
-            <option value="Qatar 🇶🇦">Qatar 🇶🇦</option>
-            <option value="Ecuador 🇪🇨">Ecuador 🇪🇨</option>
+            {/* <option value="Qatar 🇶🇦">Qatar 🇶🇦</option>s */}
+            {/* <option value="Ecuador 🇪🇨">Ecuador 🇪🇨</option> */}
             <option value="Senegal 🇸🇳">Senegal 🇸🇳</option>
             <option value="The Netherlands 🇳🇱">The Netherlands 🇳🇱</option>
             <option value="England 🏴󠁧󠁢󠁥󠁮󠁧󠁿">England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-            <option value="IR Iran 🇮🇷">Iran 🇮🇷 </option>
-            <option value="USA 🇺🇸">USA 🇺🇸</option>
-            <option value="Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿">Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿</option>
+            {/* <option value="IR Iran 🇮🇷">Iran 🇮🇷 </option> */}
+            {/* <option value="USA 🇺🇸">USA 🇺🇸</option> */}
+            {/* <option value="Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿">Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿</option> */}
             <option value="Argentina 🇦🇷">Argentina 🇦🇷</option>
-            <option value="Saudi-Arabia 🇸🇦">Saudi Arabia 🇸🇦</option>
-            <option value="Mexico 🇲🇽">Mexico 🇲🇽</option>
-            <option value="Poland 🇵🇱">Poland 🇵🇱</option>
+            {/* <option value="Saudi-Arabia 🇸🇦">Saudi Arabia 🇸🇦</option> */}
+            {/* <option value="Mexico 🇲🇽">Mexico 🇲🇽</option> */}
+            {/* <option value="Poland 🇵🇱">Poland 🇵🇱</option> */}
             <option value="France 🇫🇷">France 🇫🇷</option>
-            <option value="Australia 🇦🇺">Australia 🇦🇺</option>
+            {/* <option value="Australia 🇦🇺">Australia 🇦🇺</option> */}
             <option value="Denmark 🇩🇰">Denmark 🇩🇰</option>
-            <option value="Tunisia 🇹🇳">Tunisia 🇹🇳</option>
+            {/* <option value="Tunisia 🇹🇳">Tunisia 🇹🇳</option> */}
             <option value="Spain 🇪🇸">Spain 🇪🇸</option>
-            <option value="Costa Rica 🇨🇷">Costa Rica 🇨🇷</option>
-            <option value="Germany 🇩🇪">Germany 🇩🇪</option>
+            {/* <option value="Costa Rica 🇨🇷">Costa Rica 🇨🇷</option> */}
+            {/* <option value="Germany 🇩🇪">Germany 🇩🇪</option> */}
             <option value="Japan 🇯🇵">Japan 🇯🇵</option>
-            <option value="Belgium 🇧🇪">Belgium 🇧🇪</option>
-            <option value="Canada 🇨🇦">Canada 🇨🇦</option>
+            {/* <option value="Belgium 🇧🇪">Belgium 🇧🇪</option> */}
+            {/* <option value="Canada 🇨🇦">Canada 🇨🇦</option> */}
             <option value="Morocco 🇲🇦">Morocco 🇲🇦</option>
             <option value="Croatia 🇭🇷">Croatia 🇭🇷</option>
             <option value="Brazil 🇧🇷">Brazil 🇧🇷</option>
-            <option value="Serbia 🇷🇸">Serbia 🇷🇸</option>
+            {/* <option value="Serbia 🇷🇸">Serbia 🇷🇸</option> */}
             <option value="Switzerland 🇨🇭">Switzerland 🇨🇭</option>
-            <option value="Cameroon 🇨🇲">Cameroon 🇨🇲</option>
+            {/* <option value="Cameroon 🇨🇲">Cameroon 🇨🇲</option> */}
             <option value="Portugal 🇵🇹">Portugal 🇵🇹</option>
-            <option value="Ghana 🇬🇭">Ghana 🇬🇭</option>
-            <option value="Uruguay 🇺🇾">Uruguay 🇺🇾</option>
+            {/* <option value="Ghana 🇬🇭">Ghana 🇬🇭</option> */}
+            {/* <option value="Uruguay 🇺🇾">Uruguay 🇺🇾</option> */}
             <option value="Korea Republic 🇰🇷">Korea Republic 🇰🇷</option>
           </select>
 
@@ -399,7 +400,6 @@ export default function WorldCup({
           <div className="topContainer">
             <h2>Prizes</h2>
           </div>
-          <br />
           <span>iPhone 14</span>
           <br />
           <span>PS5 Digital</span>
@@ -408,6 +408,11 @@ export default function WorldCup({
           <br />
           Raffle $500 USDC
         </p>
+        <button className="mint-btn">
+          <a href="https://www.edgyeggs.wtf//#mint" target="__blank">
+            Mint EdgyEggs
+          </a>
+        </button>
       </div>
       <div className="showCreate">
         <div className="topContainer">
@@ -418,9 +423,9 @@ export default function WorldCup({
       </div>
 
       <div className="button-coop">
-        <a href="/Stadium">
+        {/* <a href="/Stadium">
           <button className="coop-btn">Stadium</button>
-        </a>
+        </a> */}
         <button onClick={changeModalWorldCupTeams} className="coop-btn">
           Country Entries
         </button>

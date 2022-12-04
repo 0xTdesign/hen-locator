@@ -1,2156 +1,2169 @@
 [
-  "1 of 1",
-  [
-    {
-      "trait": "Special 1",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 2",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 3",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 4",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 5",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 6",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 7",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 8",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 9",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 10",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 11",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 12",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 13",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 14",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 15",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 16",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 17",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 18",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 19",
-      "count": 1,
-      "occurrence": "0.01%"
-    },
-    {
-      "trait": "Special 20",
-      "count": 1,
-      "occurrence": "0.01%"
-    }
-  ],
-  "Background",
-  [
-    {
-      "trait": "Retro Auburn",
-      "count": 180,
-      "occurrence": "1.80%"
-    },
-    {
-      "trait": "Green Screen",
-      "count": 250,
-      "occurrence": "2.50%"
-    },
-    {
-      "trait": "Plain Olive",
-      "count": 498,
-      "occurrence": "4.98%"
-    },
-    {
-      "trait": "Retro Avocado",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Midnight Blue",
-      "count": 499,
-      "occurrence": "4.99%"
-    },
-    {
-      "trait": "Fuschia",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Deep Purple",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Plain Red",
-      "count": 598,
-      "occurrence": "5.98%"
-    },
-    {
-      "trait": "Mustang Bullitt",
-      "count": 80,
-      "occurrence": "0.80%"
-    },
-    {
-      "trait": "Bokeh Kitchen",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Graffiti",
-      "count": 183,
-      "occurrence": "1.83%"
-    },
-    {
-      "trait": "Yolk Wallpaper",
-      "count": 250,
-      "occurrence": "2.50%"
-    },
-    {
-      "trait": "Yolk",
-      "count": 311,
-      "occurrence": "3.11%"
-    },
-    {
-      "trait": "Retro Seaside",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Butter 'n' Toast",
-      "count": 260,
-      "occurrence": "2.60%"
-    },
-    {
-      "trait": "Blue Egg Wallpaper",
-      "count": 290,
-      "occurrence": "2.90%"
-    },
-    {
-      "trait": "Plain Black",
-      "count": 607,
-      "occurrence": "6.07%"
-    },
-    {
-      "trait": "Plain Purple",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Green Egg Wallpaper",
-      "count": 298,
-      "occurrence": "2.98%"
-    },
-    {
-      "trait": "Happy Breakfast",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Plain Teal",
-      "count": 498,
-      "occurrence": "4.98%"
-    },
-    {
-      "trait": "Edgy Eggs",
-      "count": 88,
-      "occurrence": "0.88%"
-    },
-    {
-      "trait": "Comic Wallpaper",
-      "count": 90,
-      "occurrence": "0.90%"
-    },
-    {
-      "trait": "Retro Autumn Harvest",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Fried Wallpaper",
-      "count": 230,
-      "occurrence": "2.30%"
-    },
-    {
-      "trait": "Acid Green",
-      "count": 497,
-      "occurrence": "4.97%"
-    },
-    {
-      "trait": "Bokeh Woodland Disco",
-      "count": 90,
-      "occurrence": "0.90%"
-    },
-    {
-      "trait": "Ocean",
-      "count": 65,
-      "occurrence": "0.65%"
-    },
-    {
-      "trait": "Avacado Toast",
-      "count": 70,
-      "occurrence": "0.70%"
-    },
-    {
-      "trait": "Cuphead",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Bokeh Restaurant",
-      "count": 60,
-      "occurrence": "0.60%"
-    },
-    {
-      "trait": "Rainbow",
-      "count": 350,
-      "occurrence": "3.50%"
-    },
-    {
-      "trait": "Bokeh California",
-      "count": 80,
-      "occurrence": "0.80%"
-    },
-    {
-      "trait": "Plain Blue",
-      "count": 499,
-      "occurrence": "4.99%"
-    },
-    {
-      "trait": "Bokeh Cafe",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Retro Sunset",
-      "count": 199,
-      "occurrence": "1.99%"
-    },
-    {
-      "trait": "Bokeh Hillside",
-      "count": 95,
-      "occurrence": "0.95%"
-    },
-    {
-      "trait": "Beach Studio",
-      "count": 145,
-      "occurrence": "1.45%"
-    },
-    {
-      "trait": "Moon Studio",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Bokeh Garden",
-      "count": 95,
-      "occurrence": "0.95%"
-    },
-    {
-      "trait": "Bokeh Desktop",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Bokeh City Skyline",
-      "count": 25,
-      "occurrence": "0.25%"
-    },
-    {
-      "trait": "Bokeh Seaside",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Bokeh Barn",
-      "count": 65,
-      "occurrence": "0.65%"
-    },
-    {
-      "trait": "Bokeh Treetop",
-      "count": 15,
-      "occurrence": "0.15%"
-    }
-  ],
-  "Shell",
-  [
-    {
-      "trait": "Full Black Shell",
-      "count": 665,
-      "occurrence": "6.65%"
-    },
-    {
-      "trait": "Cracked White",
-      "count": 665,
-      "occurrence": "6.65%"
-    },
-    {
-      "trait": "Open Chocolate Egg",
-      "count": 166,
-      "occurrence": "1.66%"
-    },
-    {
-      "trait": "Cracked Easter",
-      "count": 65,
-      "occurrence": "0.65%"
-    },
-    {
-      "trait": "Cracked Rainbow",
-      "count": 333,
-      "occurrence": "3.33%"
-    },
-    {
-      "trait": "Full Egg",
-      "count": 813,
-      "occurrence": "8.13%"
-    },
-    {
-      "trait": "Full Golden Egg",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "Open Egg",
-      "count": 915,
-      "occurrence": "9.15%"
-    },
-    {
-      "trait": "Cracked Egg",
-      "count": 815,
-      "occurrence": "8.15%"
-    },
-    {
-      "trait": "Full Artsy",
-      "count": 70,
-      "occurrence": "0.70%"
-    },
-    {
-      "trait": "Cracked Black Shell",
-      "count": 663,
-      "occurrence": "6.63%"
-    },
-    {
-      "trait": "Open White",
-      "count": 663,
-      "occurrence": "6.63%"
-    },
-    {
-      "trait": "Open 2D",
-      "count": 137,
-      "occurrence": "1.37%"
-    },
-    {
-      "trait": "Full White",
-      "count": 762,
-      "occurrence": "7.62%"
-    },
-    {
-      "trait": "Cracked Chocolate Egg",
-      "count": 167,
-      "occurrence": "1.67%"
-    },
-    {
-      "trait": "Full Rainbow",
-      "count": 334,
-      "occurrence": "3.34%"
-    },
-    {
-      "trait": "Cracked Rotten",
-      "count": 223,
-      "occurrence": "2.23%"
-    },
-    {
-      "trait": "Open Rainbow",
-      "count": 334,
-      "occurrence": "3.34%"
-    },
-    {
-      "trait": "Open Jello Egg",
-      "count": 198,
-      "occurrence": "1.98%"
-    },
-    {
-      "trait": "Open Black Shell",
-      "count": 664,
-      "occurrence": "6.64%"
-    },
-    {
-      "trait": "Full Chocolate Egg",
-      "count": 266,
-      "occurrence": "2.66%"
-    },
-    {
-      "trait": "Full 2D",
-      "count": 137,
-      "occurrence": "1.37%"
-    },
-    {
-      "trait": "Full Jello Egg",
-      "count": 69,
-      "occurrence": "0.69%"
-    },
-    {
-      "trait": "Open Easter",
-      "count": 115,
-      "occurrence": "1.15%"
-    },
-    {
-      "trait": "Full Easter",
-      "count": 110,
-      "occurrence": "1.10%"
-    },
-    {
-      "trait": "Cracked 2D",
-      "count": 137,
-      "occurrence": "1.37%"
-    },
-    {
-      "trait": "Cracked Jello Egg",
-      "count": 168,
-      "occurrence": "1.68%"
-    },
-    {
-      "trait": "Cracked Golden Egg",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "Cracked Artsy",
-      "count": 70,
-      "occurrence": "0.70%"
-    },
-    {
-      "trait": "Full Rotten",
-      "count": 70,
-      "occurrence": "0.70%"
-    },
-    {
-      "trait": "Open Artsy",
-      "count": 39,
-      "occurrence": "0.39%"
-    },
-    {
-      "trait": "Open Rotten",
-      "count": 74,
-      "occurrence": "0.74%"
-    },
-    {
-      "trait": "Open Glass",
-      "count": 12,
-      "occurrence": "0.12%"
-    },
-    {
-      "trait": "Open Golden Egg",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "Cracked Glass",
-      "count": 12,
-      "occurrence": "0.12%"
-    },
-    {
-      "trait": "Full Glass",
-      "count": 19,
-      "occurrence": "0.19%"
-    }
-  ],
-  "Shell Extras",
-  [
-    {
-      "trait": "Clean Shell",
-      "count": 7905,
-      "occurrence": "79.05%"
-    },
-    {
-      "trait": "Tally",
-      "count": 1100,
-      "occurrence": "11.00%"
-    },
-    {
-      "trait": "Cracked",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Tattoo",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Crack Repair",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "CH-1-KN",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "CCL-19",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "Edgy Eggs Logo",
-      "count": 5,
-      "occurrence": "0.05%"
-    },
-    {
-      "trait": "APOA-1",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "FABP-3",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "CYP-19-A",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "OSMR",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "LPL",
-      "count": 10,
-      "occurrence": "0.10%"
-    }
-  ],
-  "Waist",
-  [
-    {
-      "trait": "No Waist",
-      "count": 7061,
-      "occurrence": "70.61%"
-    },
-    {
-      "trait": "Floaty",
-      "count": 350,
-      "occurrence": "3.50%"
-    },
-    {
-      "trait": "WWE",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Stud",
-      "count": 350,
-      "occurrence": "3.50%"
-    },
-    {
-      "trait": "Locked Up",
-      "count": 600,
-      "occurrence": "6.00%"
-    },
-    {
-      "trait": "Violent Violet Bow",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Speakeasy",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Not a Floor Dumper",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Jello",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Movie Night",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Fried",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Bullion Bow",
-      "count": 69,
-      "occurrence": "0.69%"
-    },
-    {
-      "trait": "Zombie Bow",
-      "count": 100,
-      "occurrence": "1.00%"
-    }
-  ],
-  "Hand Right",
-  [
-    {
-      "trait": "Fist",
-      "count": 1792,
-      "occurrence": "17.92%"
-    },
-    {
-      "trait": "Ashoka Chakra",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Avax Balloon",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Grenade",
-      "count": 666,
-      "occurrence": "6.66%"
-    },
-    {
-      "trait": "The Finger",
-      "count": 2011,
-      "occurrence": "20.11%"
-    },
-    {
-      "trait": "No Dumping",
-      "count": 332,
-      "occurrence": "3.32%"
-    },
-    {
-      "trait": "Lollipoop",
-      "count": 400,
-      "occurrence": "4.00%"
-    },
-    {
-      "trait": "Ameerrriiiccaaaa!!",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Avalanche Flag",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Floor Dumper",
-      "count": 600,
-      "occurrence": "6.00%"
-    },
-    {
-      "trait": "Fidget Spinner",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Thumbs",
-      "count": 271,
-      "occurrence": "2.71%"
-    },
-    {
-      "trait": "Wave",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Boxer",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Kink",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Shoot",
-      "count": 800,
-      "occurrence": "8.00%"
-    },
-    {
-      "trait": "No Right Hand",
-      "count": 184,
-      "occurrence": "1.84%"
-    },
-    {
-      "trait": "Egg Balloon",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "The Great Bloodaxe",
-      "count": 69,
-      "occurrence": "0.69%"
-    },
-    {
-      "trait": "Eggemite",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Chikn Balloon",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Say Eggggg!",
-      "count": 128,
-      "occurrence": "1.28%"
-    },
-    {
-      "trait": "Bok Bok",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Exoskelegg",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Flamey Thing",
-      "count": 77,
-      "occurrence": "0.77%"
-    }
-  ],
-  "Neck",
-  [
-    {
-      "trait": "High on Life",
-      "count": 1000,
-      "occurrence": "10.00%"
-    },
-    {
-      "trait": "Beads",
-      "count": 900,
-      "occurrence": "9.00%"
-    },
-    {
-      "trait": "No Neck",
-      "count": 4425,
-      "occurrence": "44.25%"
-    },
-    {
-      "trait": "Barbed",
-      "count": 2050,
-      "occurrence": "20.50%"
-    },
-    {
-      "trait": "Xmas",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Golden Pearls",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Yolk ID",
-      "count": 511,
-      "occurrence": "5.11%"
-    },
-    {
-      "trait": "Pearls",
-      "count": 250,
-      "occurrence": "2.50%"
-    },
-    {
-      "trait": "Dr",
-      "count": 250,
-      "occurrence": "2.50%"
-    },
-    {
-      "trait": "Avax Gold",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "VIE",
-      "count": 69,
-      "occurrence": "0.69%"
-    },
-    {
-      "trait": "Diamond Egg",
-      "count": 25,
-      "occurrence": "0.25%"
-    }
-  ],
-  "Head",
-  [
-    {
-      "trait": "Backwards Cap",
-      "count": 269,
-      "occurrence": "2.69%"
-    },
-    {
-      "trait": "Rice Hat",
-      "count": 112,
-      "occurrence": "1.12%"
-    },
-    {
-      "trait": "Popcorn Brain",
-      "count": 44,
-      "occurrence": "0.44%"
-    },
-    {
-      "trait": "Clown",
-      "count": 222,
-      "occurrence": "2.22%"
-    },
-    {
-      "trait": "Beanie",
-      "count": 399,
-      "occurrence": "3.99%"
-    },
-    {
-      "trait": "Freedom Burger",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Sheikh",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "No Hat",
-      "count": 815,
-      "occurrence": "8.15%"
-    },
-    {
-      "trait": "Beats by Egg",
-      "count": 222,
-      "occurrence": "2.22%"
-    },
-    {
-      "trait": "Brains",
-      "count": 116,
-      "occurrence": "1.16%"
-    },
-    {
-      "trait": "Knives Out",
-      "count": 111,
-      "occurrence": "1.11%"
-    },
-    {
-      "trait": "Donuts",
-      "count": 165,
-      "occurrence": "1.65%"
-    },
-    {
-      "trait": "Bananas",
-      "count": 111,
-      "occurrence": "1.11%"
-    },
-    {
-      "trait": "Sun Hat",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Bucket",
-      "count": 120,
-      "occurrence": "1.20%"
-    },
-    {
-      "trait": "Toque",
-      "count": 102,
-      "occurrence": "1.02%"
-    },
-    {
-      "trait": "Hollow Bucket",
-      "count": 60,
-      "occurrence": "0.60%"
-    },
-    {
-      "trait": "Oil Sheikh",
-      "count": 99,
-      "occurrence": "0.99%"
-    },
-    {
-      "trait": "Punk Green",
-      "count": 134,
-      "occurrence": "1.34%"
-    },
-    {
-      "trait": "Ducks Ducks Ducks",
-      "count": 74,
-      "occurrence": "0.74%"
-    },
-    {
-      "trait": "Brain Flies",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Punk Blue",
-      "count": 134,
-      "occurrence": "1.34%"
-    },
-    {
-      "trait": "Helmet",
-      "count": 146,
-      "occurrence": "1.46%"
-    },
-    {
-      "trait": "Traffic Cone",
-      "count": 80,
-      "occurrence": "0.80%"
-    },
-    {
-      "trait": "Rasta",
-      "count": 160,
-      "occurrence": "1.60%"
-    },
-    {
-      "trait": "Flies",
-      "count": 199,
-      "occurrence": "1.99%"
-    },
-    {
-      "trait": "Coney",
-      "count": 166,
-      "occurrence": "1.66%"
-    },
-    {
-      "trait": "Punk Pink",
-      "count": 134,
-      "occurrence": "1.34%"
-    },
-    {
-      "trait": "YMCA",
-      "count": 70,
-      "occurrence": "0.70%"
-    },
-    {
-      "trait": "Cowboy",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Rasta Knit",
-      "count": 66,
-      "occurrence": "0.66%"
-    },
-    {
-      "trait": "No Head",
-      "count": 203,
-      "occurrence": "2.03%"
-    },
-    {
-      "trait": "Dreads",
-      "count": 322,
-      "occurrence": "3.22%"
-    },
-    {
-      "trait": "Donuts Donuts Donuts",
-      "count": 43,
-      "occurrence": "0.43%"
-    },
-    {
-      "trait": "Beats by Yolk",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Beats by Egg White",
-      "count": 222,
-      "occurrence": "2.22%"
-    },
-    {
-      "trait": "Cap",
-      "count": 236,
-      "occurrence": "2.36%"
-    },
-    {
-      "trait": "Egg Cap",
-      "count": 116,
-      "occurrence": "1.16%"
-    },
-    {
-      "trait": "Knives In",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Grass",
-      "count": 160,
-      "occurrence": "1.60%"
-    },
-    {
-      "trait": "Brain Freeze",
-      "count": 82,
-      "occurrence": "0.82%"
-    },
-    {
-      "trait": "Air Head Backwards Cap",
-      "count": 133,
-      "occurrence": "1.33%"
-    },
-    {
-      "trait": "Duck",
-      "count": 148,
-      "occurrence": "1.48%"
-    },
-    {
-      "trait": "Echo Beats by Egg",
-      "count": 110,
-      "occurrence": "1.10%"
-    },
-    {
-      "trait": "Blue Hair",
-      "count": 67,
-      "occurrence": "0.67%"
-    },
-    {
-      "trait": "Hello Sailor",
-      "count": 53,
-      "occurrence": "0.53%"
-    },
-    {
-      "trait": "TNT",
-      "count": 78,
-      "occurrence": "0.78%"
-    },
-    {
-      "trait": "Duck Dynasty",
-      "count": 58,
-      "occurrence": "0.58%"
-    },
-    {
-      "trait": "Eggy P.D",
-      "count": 66,
-      "occurrence": "0.66%"
-    },
-    {
-      "trait": "Collapsed Skull",
-      "count": 106,
-      "occurrence": "1.06%"
-    },
-    {
-      "trait": "Viking Berserker",
-      "count": 159,
-      "occurrence": "1.59%"
-    },
-    {
-      "trait": "Bright Future",
-      "count": 32,
-      "occurrence": "0.32%"
-    },
-    {
-      "trait": "Town Shell",
-      "count": 34,
-      "occurrence": "0.34%"
-    },
-    {
-      "trait": "Dreadlocks",
-      "count": 155,
-      "occurrence": "1.55%"
-    },
-    {
-      "trait": "Construction Egg",
-      "count": 131,
-      "occurrence": "1.31%"
-    },
-    {
-      "trait": "Crown",
-      "count": 32,
-      "occurrence": "0.32%"
-    },
-    {
-      "trait": "Hard Hat Egg",
-      "count": 69,
-      "occurrence": "0.69%"
-    },
-    {
-      "trait": "Anatidaephobia",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Chef",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Doepler Effect",
-      "count": 80,
-      "occurrence": "0.80%"
-    },
-    {
-      "trait": "Nuggets of Knowledge",
-      "count": 16,
-      "occurrence": "0.16%"
-    },
-    {
-      "trait": "Bunny Ears",
-      "count": 23,
-      "occurrence": "0.23%"
-    },
-    {
-      "trait": "Floppy Hat",
-      "count": 99,
-      "occurrence": "0.99%"
-    },
-    {
-      "trait": "Halo",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "Witches Head",
-      "count": 40,
-      "occurrence": "0.40%"
-    },
-    {
-      "trait": "Hercule Poirot",
-      "count": 22,
-      "occurrence": "0.22%"
-    },
-    {
-      "trait": "Extra Protection",
-      "count": 74,
-      "occurrence": "0.74%"
-    },
-    {
-      "trait": "Not a Sedge Hat",
-      "count": 56,
-      "occurrence": "0.56%"
-    },
-    {
-      "trait": "Gentleman",
-      "count": 66,
-      "occurrence": "0.66%"
-    },
-    {
-      "trait": "Bunny",
-      "count": 46,
-      "occurrence": "0.46%"
-    },
-    {
-      "trait": "What's Under the Hat",
-      "count": 33,
-      "occurrence": "0.33%"
-    },
-    {
-      "trait": "Queen's Guard",
-      "count": 66,
-      "occurrence": "0.66%"
-    },
-    {
-      "trait": "Sailor",
-      "count": 106,
-      "occurrence": "1.06%"
-    },
-    {
-      "trait": "Clown Wig",
-      "count": 111,
-      "occurrence": "1.11%"
-    },
-    {
-      "trait": "Tastes like Purple",
-      "count": 40,
-      "occurrence": "0.40%"
-    },
-    {
-      "trait": "Burger Brain",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Golden Beats by Yolk",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Punk Red",
-      "count": 134,
-      "occurrence": "1.34%"
-    },
-    {
-      "trait": "Camper",
-      "count": 29,
-      "occurrence": "0.29%"
-    },
-    {
-      "trait": "Holy Egg",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "Kippah",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Eggemite Hat",
-      "count": 46,
-      "occurrence": "0.46%"
-    },
-    {
-      "trait": "Yarmulke",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Wormy",
-      "count": 25,
-      "occurrence": "0.25%"
-    },
-    {
-      "trait": "Eggemite Cache",
-      "count": 23,
-      "occurrence": "0.23%"
-    },
-    {
-      "trait": "Echo Beats by Egg White",
-      "count": 111,
-      "occurrence": "1.11%"
-    },
-    {
-      "trait": "Lizard Egg",
-      "count": 3,
-      "occurrence": "0.03%"
-    },
-    {
-      "trait": "Royal Egg",
-      "count": 15,
-      "occurrence": "0.15%"
-    },
-    {
-      "trait": "Worm",
-      "count": 15,
-      "occurrence": "0.15%"
-    },
-    {
-      "trait": "Potassium Brain",
-      "count": 56,
-      "occurrence": "0.56%"
-    },
-    {
-      "trait": "Detective",
-      "count": 44,
-      "occurrence": "0.44%"
-    },
-    {
-      "trait": "Third Eye",
-      "count": 11,
-      "occurrence": "0.11%"
-    },
-    {
-      "trait": "Quackers",
-      "count": 22,
-      "occurrence": "0.22%"
-    },
-    {
-      "trait": "Sneaky Chameleon",
-      "count": 2,
-      "occurrence": "0.02%"
-    },
-    {
-      "trait": "Unicorn",
-      "count": 1,
-      "occurrence": "0.01%"
-    }
-  ],
-  "Hand Left",
-  [
-    {
-      "trait": "Dropped Grenaaaade",
-      "count": 663,
-      "occurrence": "6.63%"
-    },
-    {
-      "trait": "Blowtorch",
-      "count": 77,
-      "occurrence": "0.77%"
-    },
-    {
-      "trait": "Boxer Left",
-      "count": 1217,
-      "occurrence": "12.17%"
-    },
-    {
-      "trait": "Avax Balloon Left",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Handcuffs",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Fish",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Blue Moon",
-      "count": 794,
-      "occurrence": "7.94%"
-    },
-    {
-      "trait": "No Dumping Please",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Skater",
-      "count": 250,
-      "occurrence": "2.50%"
-    },
-    {
-      "trait": "Purple Moon",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Battle Fork ",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Egg Balloon Left",
-      "count": 399,
-      "occurrence": "3.99%"
-    },
-    {
-      "trait": "Floor Dumper Left",
-      "count": 797,
-      "occurrence": "7.97%"
-    },
-    {
-      "trait": "No Left Hand",
-      "count": 104,
-      "occurrence": "1.04%"
-    },
-    {
-      "trait": "Blue Fidget Spinner",
-      "count": 749,
-      "occurrence": "7.49%"
-    },
-    {
-      "trait": "Don't Shoot",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Muricaland Flag",
-      "count": 350,
-      "occurrence": "3.50%"
-    },
-    {
-      "trait": "Eggson Guitar",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Green Moon",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Chicken",
-      "count": 80,
-      "occurrence": "0.80%"
-    },
-    {
-      "trait": "Here's Eggy",
-      "count": 250,
-      "occurrence": "2.50%"
-    },
-    {
-      "trait": "Chikn Balloon Left",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Avalanche Flag Left",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Blue Lollipop",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Surfer",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Tricolour",
-      "count": 450,
-      "occurrence": "4.50%"
-    },
-    {
-      "trait": "Salty",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Robot",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Eggemite Spread",
-      "count": 50,
-      "occurrence": "0.50%"
-    }
-  ],
-  "Eyes",
-  [
-    {
-      "trait": "Dizzy Jello Eyes",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Suspicious Egg Eyes",
-      "count": 80,
-      "occurrence": "0.80%"
-    },
-    {
-      "trait": "Beaten Egg",
-      "count": 149,
-      "occurrence": "1.49%"
-    },
-    {
-      "trait": "Crazy Black",
-      "count": 304,
-      "occurrence": "3.04%"
-    },
-    {
-      "trait": "Cute Daemon Golden",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Crazy Chocolate",
-      "count": 350,
-      "occurrence": "3.50%"
-    },
-    {
-      "trait": "Murder Eyes Purple",
-      "count": 220,
-      "occurrence": "2.20%"
-    },
-    {
-      "trait": "Dizzy Artsy Eyes",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Suspicious Easter Eyes",
-      "count": 69,
-      "occurrence": "0.69%"
-    },
-    {
-      "trait": "Suspicious Golden Eyes",
-      "count": 60,
-      "occurrence": "0.60%"
-    },
-    {
-      "trait": "Crazy Golden",
-      "count": 199,
-      "occurrence": "1.99%"
-    },
-    {
-      "trait": "Cute Daemon Purple",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Beaten Plain",
-      "count": 70,
-      "occurrence": "0.70%"
-    },
-    {
-      "trait": "Wired Artsy Eyes",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Beaten Chocolate",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Crazy Purple",
-      "count": 299,
-      "occurrence": "2.99%"
-    },
-    {
-      "trait": "No Sleep Egg Eyes",
-      "count": 140,
-      "occurrence": "1.40%"
-    },
-    {
-      "trait": "Suspicious Black Eyes",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Murder Eyes Chocolate",
-      "count": 249,
-      "occurrence": "2.49%"
-    },
-    {
-      "trait": "Murder Eyes Plain",
-      "count": 210,
-      "occurrence": "2.10%"
-    },
-    {
-      "trait": "Murder Eyes Easter",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Wired Jello Eyes",
-      "count": 60,
-      "occurrence": "0.60%"
-    },
-    {
-      "trait": "Cute Daemon Plain",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Crazy Artsy",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Cute Daemon Chocolate",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Murder Eyes Egg",
-      "count": 249,
-      "occurrence": "2.49%"
-    },
-    {
-      "trait": "Closed Purple Eyes",
-      "count": 90,
-      "occurrence": "0.90%"
-    },
-    {
-      "trait": "Crazy Egg",
-      "count": 247,
-      "occurrence": "2.47%"
-    },
-    {
-      "trait": "Dizzy Golden Eyes",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Evil Eyes",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Cute Daemon Artsy",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Beaten Easter",
-      "count": 120,
-      "occurrence": "1.20%"
-    },
-    {
-      "trait": "Dizzy Chocolate Eyes",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Murder Eyes Black",
-      "count": 246,
-      "occurrence": "2.46%"
-    },
-    {
-      "trait": "Beaten Black",
-      "count": 99,
-      "occurrence": "0.99%"
-    },
-    {
-      "trait": "Wired White Eyes",
-      "count": 89,
-      "occurrence": "0.89%"
-    },
-    {
-      "trait": "Closed Chocolate Eyes",
-      "count": 90,
-      "occurrence": "0.90%"
-    },
-    {
-      "trait": "Laser Eyes",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Cute Daemon Egg",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Crazy Easter",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Closed Black Eyes",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Murder Eyes Jello",
-      "count": 250,
-      "occurrence": "2.50%"
-    },
-    {
-      "trait": "Crazy Plain",
-      "count": 199,
-      "occurrence": "1.99%"
-    },
-    {
-      "trait": "Suspicious Plain Eyes",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Scared Bitcoin Egg",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Murder Eyes Golden",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Wired Easter Eyes",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Beaten Jello",
-      "count": 70,
-      "occurrence": "0.70%"
-    },
-    {
-      "trait": "Crazy Jello",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Scared Purple Bitcoin Eyes",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Wired Golden Eyes",
-      "count": 60,
-      "occurrence": "0.60%"
-    },
-    {
-      "trait": "Closed Jello Eyes",
-      "count": 19,
-      "occurrence": "0.19%"
-    },
-    {
-      "trait": "Suspicious Jello Eyes",
-      "count": 60,
-      "occurrence": "0.60%"
-    },
-    {
-      "trait": "Wired Chocolate Eyes",
-      "count": 90,
-      "occurrence": "0.90%"
-    },
-    {
-      "trait": "Beaten Golden",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Scared Bitcoin Golden Eyes",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Jello Evil Eyes",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "No Sleep Black Eyes",
-      "count": 149,
-      "occurrence": "1.49%"
-    },
-    {
-      "trait": "Scared Bitcoin Chocolate Eyes",
-      "count": 40,
-      "occurrence": "0.40%"
-    },
-    {
-      "trait": "Scared Bitcoin Plain Eyes",
-      "count": 40,
-      "occurrence": "0.40%"
-    },
-    {
-      "trait": "Dizzy Purple Eyes",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Closed Easter Eyes",
-      "count": 90,
-      "occurrence": "0.90%"
-    },
-    {
-      "trait": "Scared Jello Bitcoin Eyes",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Dizzy Easter Eyes",
-      "count": 119,
-      "occurrence": "1.19%"
-    },
-    {
-      "trait": "Purple Evil Eyes",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Dizzy Egg Eyes",
-      "count": 120,
-      "occurrence": "1.20%"
-    },
-    {
-      "trait": "Dizzy Black Eyes",
-      "count": 120,
-      "occurrence": "1.20%"
-    },
-    {
-      "trait": "Suspicious Artsy Eyes",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Beaten Purple",
-      "count": 105,
-      "occurrence": "1.05%"
-    },
-    {
-      "trait": "Closed Golden Eyes",
-      "count": 80,
-      "occurrence": "0.80%"
-    },
-    {
-      "trait": "Suspicious Chocolate Eyes",
-      "count": 60,
-      "occurrence": "0.60%"
-    },
-    {
-      "trait": "Murder Eyes Artsy",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Cute Daemon Jello",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Dizzy Plain Eyes",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Beaten Artsy",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Cute Daemon Black",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Closed Egg Eyes",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Wired Purple Eyes",
-      "count": 90,
-      "occurrence": "0.90%"
-    },
-    {
-      "trait": "Closed Plain Eyes",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Closed Artsy Eyes",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Scared Bitcoin Black",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "None",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "Chocolate Evil Eyes",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Scared Bitcoin Easter Eyes",
-      "count": 40,
-      "occurrence": "0.40%"
-    },
-    {
-      "trait": "Suspicious Purple Eyes",
-      "count": 60,
-      "occurrence": "0.60%"
-    },
-    {
-      "trait": "Evil Eyes Black",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Artsy Evil Eyes",
-      "count": 10,
-      "occurrence": "0.10%"
-    },
-    {
-      "trait": "Dead Egg",
-      "count": 30,
-      "occurrence": "0.30%"
-    },
-    {
-      "trait": "Seen Too Much",
-      "count": 15,
-      "occurrence": "0.15%"
-    },
-    {
-      "trait": "Golden Evil Eyes",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Cute Daemon Easter",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Scared Artsy Bitcoin Eyes",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Albino Evil Eyes",
-      "count": 15,
-      "occurrence": "0.15%"
-    },
-    {
-      "trait": "Easter Evil Eyes",
-      "count": 30,
-      "occurrence": "0.30%"
-    }
-  ],
-  "Eye gear",
-  [
-    {
-      "trait": "No Eye Gear",
-      "count": 6060,
-      "occurrence": "60.60%"
-    },
-    {
-      "trait": "Neon Red Rave Glasses",
-      "count": 700,
-      "occurrence": "7.00%"
-    },
-    {
-      "trait": "EggBeer Glasses",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Neon Blue Rave Glasses",
-      "count": 600,
-      "occurrence": "6.00%"
-    },
-    {
-      "trait": "Pirate Patch",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Neon Green Rave Glasses",
-      "count": 600,
-      "occurrence": "6.00%"
-    },
-    {
-      "trait": "Neon Yolk Rave Glasses",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Lenon Glasses",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "VR",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Censored",
-      "count": 350,
-      "occurrence": "3.50%"
-    },
-    {
-      "trait": "Monocle",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Golden Deal With It",
-      "count": 50,
-      "occurrence": "0.50%"
-    },
-    {
-      "trait": "Egg Shades",
-      "count": 250,
-      "occurrence": "2.50%"
-    },
-    {
-      "trait": "Deal With It",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "3D glasses",
-      "count": 50,
-      "occurrence": "0.50%"
-    }
-  ],
-  "Mouth",
-  [
-    {
-      "trait": "Duct Tape",
-      "count": 800,
-      "occurrence": "8.00%"
-    },
-    {
-      "trait": "No Mouth",
-      "count": 3241,
-      "occurrence": "32.41%"
-    },
-    {
-      "trait": "Smoker",
-      "count": 401,
-      "occurrence": "4.01%"
-    },
-    {
-      "trait": "Mustache",
-      "count": 2350,
-      "occurrence": "23.50%"
-    },
-    {
-      "trait": "The Chordettes",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Fork",
-      "count": 380,
-      "occurrence": "3.80%"
-    },
-    {
-      "trait": "Gag",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Pacifier",
-      "count": 400,
-      "occurrence": "4.00%"
-    },
-    {
-      "trait": "Dynamite",
-      "count": 99,
-      "occurrence": "0.99%"
-    },
-    {
-      "trait": "Joint",
-      "count": 300,
-      "occurrence": "3.00%"
-    },
-    {
-      "trait": "Lips",
-      "count": 120,
-      "occurrence": "1.20%"
-    },
-    {
-      "trait": "Donut",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Rose",
-      "count": 69,
-      "occurrence": "0.69%"
-    },
-    {
-      "trait": "Snorkel",
-      "count": 200,
-      "occurrence": "2.00%"
-    },
-    {
-      "trait": "Cigar",
-      "count": 100,
-      "occurrence": "1.00%"
-    },
-    {
-      "trait": "Whistle",
-      "count": 500,
-      "occurrence": "5.00%"
-    },
-    {
-      "trait": "Flu",
-      "count": 150,
-      "occurrence": "1.50%"
-    },
-    {
-      "trait": "Asthma",
-      "count": 20,
-      "occurrence": "0.20%"
-    },
-    {
-      "trait": "Pipe",
-      "count": 50,
-      "occurrence": "0.50%"
-    }
-  ],
-  "Yolk Type",
-  [
-    {
-      "trait": "LPL",
-      "count": 3964,
-      "occurrence": "39.64%"
-    },
-    {
-      "trait": "APOA-1",
-      "count": 806,
-      "occurrence": "8.06%"
-    },
-    {
-      "trait": "OSMR",
-      "count": 1797,
-      "occurrence": "17.97%"
-    },
-    {
-      "trait": "CYP-19-A",
-      "count": 2194,
-      "occurrence": "21.94%"
-    },
-    {
-      "trait": "FABP-3",
-      "count": 901,
-      "occurrence": "9.01%"
-    },
-    {
-      "trait": "CCL-19",
-      "count": 208,
-      "occurrence": "2.08%"
-    },
-    {
-      "trait": "CH-1-KN",
-      "count": 110,
-      "occurrence": "1.10%"
-    }
-  ]
+  {
+    "1 of 1": [
+      {
+        "trait": "Special 1",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 2",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 3",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 4",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 5",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 6",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 7",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 8",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 9",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 10",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 11",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 12",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 13",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 14",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 15",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 16",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 17",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 18",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 19",
+        "count": 1,
+        "occurrence": "0.01%"
+      },
+      {
+        "trait": "Special 20",
+        "count": 1,
+        "occurrence": "0.01%"
+      }
+    ]
+  },
+  {
+    "Background": [
+      {
+        "trait": "Retro Auburn",
+        "count": 180,
+        "occurrence": "1.80%"
+      },
+      {
+        "trait": "Green Screen",
+        "count": 250,
+        "occurrence": "2.50%"
+      },
+      {
+        "trait": "Plain Olive",
+        "count": 498,
+        "occurrence": "4.98%"
+      },
+      {
+        "trait": "Retro Avocado",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Midnight Blue",
+        "count": 499,
+        "occurrence": "4.99%"
+      },
+      {
+        "trait": "Fuschia",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Deep Purple",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Plain Red",
+        "count": 598,
+        "occurrence": "5.98%"
+      },
+      {
+        "trait": "Mustang Bullitt",
+        "count": 80,
+        "occurrence": "0.80%"
+      },
+      {
+        "trait": "Bokeh Kitchen",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Graffiti",
+        "count": 183,
+        "occurrence": "1.83%"
+      },
+      {
+        "trait": "Yolk Wallpaper",
+        "count": 250,
+        "occurrence": "2.50%"
+      },
+      {
+        "trait": "Yolk",
+        "count": 311,
+        "occurrence": "3.11%"
+      },
+      {
+        "trait": "Retro Seaside",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Butter 'n' Toast",
+        "count": 260,
+        "occurrence": "2.60%"
+      },
+      {
+        "trait": "Blue Egg Wallpaper",
+        "count": 290,
+        "occurrence": "2.90%"
+      },
+      {
+        "trait": "Plain Black",
+        "count": 607,
+        "occurrence": "6.07%"
+      },
+      {
+        "trait": "Plain Purple",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Green Egg Wallpaper",
+        "count": 298,
+        "occurrence": "2.98%"
+      },
+      {
+        "trait": "Happy Breakfast",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Plain Teal",
+        "count": 498,
+        "occurrence": "4.98%"
+      },
+      {
+        "trait": "Edgy Eggs",
+        "count": 88,
+        "occurrence": "0.88%"
+      },
+      {
+        "trait": "Comic Wallpaper",
+        "count": 90,
+        "occurrence": "0.90%"
+      },
+      {
+        "trait": "Retro Autumn Harvest",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Fried Wallpaper",
+        "count": 230,
+        "occurrence": "2.30%"
+      },
+      {
+        "trait": "Acid Green",
+        "count": 497,
+        "occurrence": "4.97%"
+      },
+      {
+        "trait": "Bokeh Woodland Disco",
+        "count": 90,
+        "occurrence": "0.90%"
+      },
+      {
+        "trait": "Ocean",
+        "count": 65,
+        "occurrence": "0.65%"
+      },
+      {
+        "trait": "Avacado Toast",
+        "count": 70,
+        "occurrence": "0.70%"
+      },
+      {
+        "trait": "Cuphead",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Bokeh Restaurant",
+        "count": 60,
+        "occurrence": "0.60%"
+      },
+      {
+        "trait": "Rainbow",
+        "count": 350,
+        "occurrence": "3.50%"
+      },
+      {
+        "trait": "Bokeh California",
+        "count": 80,
+        "occurrence": "0.80%"
+      },
+      {
+        "trait": "Plain Blue",
+        "count": 499,
+        "occurrence": "4.99%"
+      },
+      {
+        "trait": "Bokeh Cafe",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Retro Sunset",
+        "count": 199,
+        "occurrence": "1.99%"
+      },
+      {
+        "trait": "Bokeh Hillside",
+        "count": 95,
+        "occurrence": "0.95%"
+      },
+      {
+        "trait": "Beach Studio",
+        "count": 145,
+        "occurrence": "1.45%"
+      },
+      {
+        "trait": "Moon Studio",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Bokeh Garden",
+        "count": 95,
+        "occurrence": "0.95%"
+      },
+      {
+        "trait": "Bokeh Desktop",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Bokeh City Skyline",
+        "count": 25,
+        "occurrence": "0.25%"
+      },
+      {
+        "trait": "Bokeh Seaside",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Bokeh Barn",
+        "count": 65,
+        "occurrence": "0.65%"
+      },
+      {
+        "trait": "Bokeh Treetop",
+        "count": 15,
+        "occurrence": "0.15%"
+      }
+    ]
+  },
+  {
+    "Shell": [
+      {
+        "trait": "Full Black Shell",
+        "count": 665,
+        "occurrence": "6.65%"
+      },
+      {
+        "trait": "Cracked White",
+        "count": 665,
+        "occurrence": "6.65%"
+      },
+      {
+        "trait": "Open Chocolate Egg",
+        "count": 166,
+        "occurrence": "1.66%"
+      },
+      {
+        "trait": "Cracked Easter",
+        "count": 65,
+        "occurrence": "0.65%"
+      },
+      {
+        "trait": "Cracked Rainbow",
+        "count": 333,
+        "occurrence": "3.33%"
+      },
+      {
+        "trait": "Full Egg",
+        "count": 813,
+        "occurrence": "8.13%"
+      },
+      {
+        "trait": "Full Golden Egg",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "Open Egg",
+        "count": 915,
+        "occurrence": "9.15%"
+      },
+      {
+        "trait": "Cracked Egg",
+        "count": 815,
+        "occurrence": "8.15%"
+      },
+      {
+        "trait": "Full Artsy",
+        "count": 70,
+        "occurrence": "0.70%"
+      },
+      {
+        "trait": "Cracked Black Shell",
+        "count": 663,
+        "occurrence": "6.63%"
+      },
+      {
+        "trait": "Open White",
+        "count": 663,
+        "occurrence": "6.63%"
+      },
+      {
+        "trait": "Open 2D",
+        "count": 137,
+        "occurrence": "1.37%"
+      },
+      {
+        "trait": "Full White",
+        "count": 762,
+        "occurrence": "7.62%"
+      },
+      {
+        "trait": "Cracked Chocolate Egg",
+        "count": 167,
+        "occurrence": "1.67%"
+      },
+      {
+        "trait": "Full Rainbow",
+        "count": 334,
+        "occurrence": "3.34%"
+      },
+      {
+        "trait": "Cracked Rotten",
+        "count": 223,
+        "occurrence": "2.23%"
+      },
+      {
+        "trait": "Open Rainbow",
+        "count": 334,
+        "occurrence": "3.34%"
+      },
+      {
+        "trait": "Open Jello Egg",
+        "count": 198,
+        "occurrence": "1.98%"
+      },
+      {
+        "trait": "Open Black Shell",
+        "count": 664,
+        "occurrence": "6.64%"
+      },
+      {
+        "trait": "Full Chocolate Egg",
+        "count": 266,
+        "occurrence": "2.66%"
+      },
+      {
+        "trait": "Full 2D",
+        "count": 137,
+        "occurrence": "1.37%"
+      },
+      {
+        "trait": "Full Jello Egg",
+        "count": 69,
+        "occurrence": "0.69%"
+      },
+      {
+        "trait": "Open Easter",
+        "count": 115,
+        "occurrence": "1.15%"
+      },
+      {
+        "trait": "Full Easter",
+        "count": 110,
+        "occurrence": "1.10%"
+      },
+      {
+        "trait": "Cracked 2D",
+        "count": 137,
+        "occurrence": "1.37%"
+      },
+      {
+        "trait": "Cracked Jello Egg",
+        "count": 168,
+        "occurrence": "1.68%"
+      },
+      {
+        "trait": "Cracked Golden Egg",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "Cracked Artsy",
+        "count": 70,
+        "occurrence": "0.70%"
+      },
+      {
+        "trait": "Full Rotten",
+        "count": 70,
+        "occurrence": "0.70%"
+      },
+      {
+        "trait": "Open Artsy",
+        "count": 39,
+        "occurrence": "0.39%"
+      },
+      {
+        "trait": "Open Rotten",
+        "count": 74,
+        "occurrence": "0.74%"
+      },
+      {
+        "trait": "Open Glass",
+        "count": 12,
+        "occurrence": "0.12%"
+      },
+      {
+        "trait": "Open Golden Egg",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "Cracked Glass",
+        "count": 12,
+        "occurrence": "0.12%"
+      },
+      {
+        "trait": "Full Glass",
+        "count": 19,
+        "occurrence": "0.19%"
+      }
+    ]
+  },
+  {
+    "Shell Extras": [
+      {
+        "trait": "Clean Shell",
+        "count": 7905,
+        "occurrence": "79.05%"
+      },
+      {
+        "trait": "Tally",
+        "count": 1100,
+        "occurrence": "11.00%"
+      },
+      {
+        "trait": "Cracked",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Tattoo",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Crack Repair",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "CH-1-KN",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "CCL-19",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "Edgy Eggs Logo",
+        "count": 5,
+        "occurrence": "0.05%"
+      },
+      {
+        "trait": "APOA-1",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "FABP-3",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "CYP-19-A",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "OSMR",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "LPL",
+        "count": 10,
+        "occurrence": "0.10%"
+      }
+    ]
+  },
+  {
+    "Waist": [
+      {
+        "trait": "No Waist",
+        "count": 7061,
+        "occurrence": "70.61%"
+      },
+      {
+        "trait": "Floaty",
+        "count": 350,
+        "occurrence": "3.50%"
+      },
+      {
+        "trait": "WWE",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Stud",
+        "count": 350,
+        "occurrence": "3.50%"
+      },
+      {
+        "trait": "Locked Up",
+        "count": 600,
+        "occurrence": "6.00%"
+      },
+      {
+        "trait": "Violent Violet Bow",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Speakeasy",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Not a Floor Dumper",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Jello",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Movie Night",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Fried",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Bullion Bow",
+        "count": 69,
+        "occurrence": "0.69%"
+      },
+      {
+        "trait": "Zombie Bow",
+        "count": 100,
+        "occurrence": "1.00%"
+      }
+    ]
+  },
+  {
+    "Hand Right": [
+      {
+        "trait": "Fist",
+        "count": 1792,
+        "occurrence": "17.92%"
+      },
+      {
+        "trait": "Ashoka Chakra",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Avax Balloon",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Grenade",
+        "count": 666,
+        "occurrence": "6.66%"
+      },
+      {
+        "trait": "The Finger",
+        "count": 2011,
+        "occurrence": "20.11%"
+      },
+      {
+        "trait": "No Dumping",
+        "count": 332,
+        "occurrence": "3.32%"
+      },
+      {
+        "trait": "Lollipoop",
+        "count": 400,
+        "occurrence": "4.00%"
+      },
+      {
+        "trait": "Ameerrriiiccaaaa!!",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Avalanche Flag",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Floor Dumper",
+        "count": 600,
+        "occurrence": "6.00%"
+      },
+      {
+        "trait": "Fidget Spinner",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Thumbs",
+        "count": 271,
+        "occurrence": "2.71%"
+      },
+      {
+        "trait": "Wave",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Boxer",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Kink",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Shoot",
+        "count": 800,
+        "occurrence": "8.00%"
+      },
+      {
+        "trait": "No Right Hand",
+        "count": 184,
+        "occurrence": "1.84%"
+      },
+      {
+        "trait": "Egg Balloon",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "The Great Bloodaxe",
+        "count": 69,
+        "occurrence": "0.69%"
+      },
+      {
+        "trait": "Eggemite",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Chikn Balloon",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Say Eggggg!",
+        "count": 128,
+        "occurrence": "1.28%"
+      },
+      {
+        "trait": "Bok Bok",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Exoskelegg",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Flamey Thing",
+        "count": 77,
+        "occurrence": "0.77%"
+      }
+    ]
+  },
+  {
+    "Neck": [
+      {
+        "trait": "High on Life",
+        "count": 1000,
+        "occurrence": "10.00%"
+      },
+      {
+        "trait": "Beads",
+        "count": 900,
+        "occurrence": "9.00%"
+      },
+      {
+        "trait": "No Neck",
+        "count": 4425,
+        "occurrence": "44.25%"
+      },
+      {
+        "trait": "Barbed",
+        "count": 2050,
+        "occurrence": "20.50%"
+      },
+      {
+        "trait": "Xmas",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Golden Pearls",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Yolk ID",
+        "count": 511,
+        "occurrence": "5.11%"
+      },
+      {
+        "trait": "Pearls",
+        "count": 250,
+        "occurrence": "2.50%"
+      },
+      {
+        "trait": "Dr",
+        "count": 250,
+        "occurrence": "2.50%"
+      },
+      {
+        "trait": "Avax Gold",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "VIE",
+        "count": 69,
+        "occurrence": "0.69%"
+      },
+      {
+        "trait": "Diamond Egg",
+        "count": 25,
+        "occurrence": "0.25%"
+      }
+    ]
+  },
+  {
+    "Head": [
+      {
+        "trait": "Backwards Cap",
+        "count": 269,
+        "occurrence": "2.69%"
+      },
+      {
+        "trait": "Rice Hat",
+        "count": 112,
+        "occurrence": "1.12%"
+      },
+      {
+        "trait": "Popcorn Brain",
+        "count": 44,
+        "occurrence": "0.44%"
+      },
+      {
+        "trait": "Clown",
+        "count": 222,
+        "occurrence": "2.22%"
+      },
+      {
+        "trait": "Beanie",
+        "count": 399,
+        "occurrence": "3.99%"
+      },
+      {
+        "trait": "Freedom Burger",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Sheikh",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "No Hat",
+        "count": 815,
+        "occurrence": "8.15%"
+      },
+      {
+        "trait": "Beats by Egg",
+        "count": 222,
+        "occurrence": "2.22%"
+      },
+      {
+        "trait": "Brains",
+        "count": 116,
+        "occurrence": "1.16%"
+      },
+      {
+        "trait": "Knives Out",
+        "count": 111,
+        "occurrence": "1.11%"
+      },
+      {
+        "trait": "Donuts",
+        "count": 165,
+        "occurrence": "1.65%"
+      },
+      {
+        "trait": "Bananas",
+        "count": 111,
+        "occurrence": "1.11%"
+      },
+      {
+        "trait": "Sun Hat",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Bucket",
+        "count": 120,
+        "occurrence": "1.20%"
+      },
+      {
+        "trait": "Toque",
+        "count": 102,
+        "occurrence": "1.02%"
+      },
+      {
+        "trait": "Hollow Bucket",
+        "count": 60,
+        "occurrence": "0.60%"
+      },
+      {
+        "trait": "Oil Sheikh",
+        "count": 99,
+        "occurrence": "0.99%"
+      },
+      {
+        "trait": "Punk Green",
+        "count": 134,
+        "occurrence": "1.34%"
+      },
+      {
+        "trait": "Ducks Ducks Ducks",
+        "count": 74,
+        "occurrence": "0.74%"
+      },
+      {
+        "trait": "Brain Flies",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Punk Blue",
+        "count": 134,
+        "occurrence": "1.34%"
+      },
+      {
+        "trait": "Helmet",
+        "count": 146,
+        "occurrence": "1.46%"
+      },
+      {
+        "trait": "Traffic Cone",
+        "count": 80,
+        "occurrence": "0.80%"
+      },
+      {
+        "trait": "Rasta",
+        "count": 160,
+        "occurrence": "1.60%"
+      },
+      {
+        "trait": "Flies",
+        "count": 199,
+        "occurrence": "1.99%"
+      },
+      {
+        "trait": "Coney",
+        "count": 166,
+        "occurrence": "1.66%"
+      },
+      {
+        "trait": "Punk Pink",
+        "count": 134,
+        "occurrence": "1.34%"
+      },
+      {
+        "trait": "YMCA",
+        "count": 70,
+        "occurrence": "0.70%"
+      },
+      {
+        "trait": "Cowboy",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Rasta Knit",
+        "count": 66,
+        "occurrence": "0.66%"
+      },
+      {
+        "trait": "No Head",
+        "count": 203,
+        "occurrence": "2.03%"
+      },
+      {
+        "trait": "Dreads",
+        "count": 322,
+        "occurrence": "3.22%"
+      },
+      {
+        "trait": "Donuts Donuts Donuts",
+        "count": 43,
+        "occurrence": "0.43%"
+      },
+      {
+        "trait": "Beats by Yolk",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Beats by Egg White",
+        "count": 222,
+        "occurrence": "2.22%"
+      },
+      {
+        "trait": "Cap",
+        "count": 236,
+        "occurrence": "2.36%"
+      },
+      {
+        "trait": "Egg Cap",
+        "count": 116,
+        "occurrence": "1.16%"
+      },
+      {
+        "trait": "Knives In",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Grass",
+        "count": 160,
+        "occurrence": "1.60%"
+      },
+      {
+        "trait": "Brain Freeze",
+        "count": 82,
+        "occurrence": "0.82%"
+      },
+      {
+        "trait": "Air Head Backwards Cap",
+        "count": 133,
+        "occurrence": "1.33%"
+      },
+      {
+        "trait": "Duck",
+        "count": 148,
+        "occurrence": "1.48%"
+      },
+      {
+        "trait": "Echo Beats by Egg",
+        "count": 110,
+        "occurrence": "1.10%"
+      },
+      {
+        "trait": "Blue Hair",
+        "count": 67,
+        "occurrence": "0.67%"
+      },
+      {
+        "trait": "Hello Sailor",
+        "count": 53,
+        "occurrence": "0.53%"
+      },
+      {
+        "trait": "TNT",
+        "count": 78,
+        "occurrence": "0.78%"
+      },
+      {
+        "trait": "Duck Dynasty",
+        "count": 58,
+        "occurrence": "0.58%"
+      },
+      {
+        "trait": "Eggy P.D",
+        "count": 66,
+        "occurrence": "0.66%"
+      },
+      {
+        "trait": "Collapsed Skull",
+        "count": 106,
+        "occurrence": "1.06%"
+      },
+      {
+        "trait": "Viking Berserker",
+        "count": 159,
+        "occurrence": "1.59%"
+      },
+      {
+        "trait": "Bright Future",
+        "count": 32,
+        "occurrence": "0.32%"
+      },
+      {
+        "trait": "Town Shell",
+        "count": 34,
+        "occurrence": "0.34%"
+      },
+      {
+        "trait": "Dreadlocks",
+        "count": 155,
+        "occurrence": "1.55%"
+      },
+      {
+        "trait": "Construction Egg",
+        "count": 131,
+        "occurrence": "1.31%"
+      },
+      {
+        "trait": "Crown",
+        "count": 32,
+        "occurrence": "0.32%"
+      },
+      {
+        "trait": "Hard Hat Egg",
+        "count": 69,
+        "occurrence": "0.69%"
+      },
+      {
+        "trait": "Anatidaephobia",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Chef",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Doepler Effect",
+        "count": 80,
+        "occurrence": "0.80%"
+      },
+      {
+        "trait": "Nuggets of Knowledge",
+        "count": 16,
+        "occurrence": "0.16%"
+      },
+      {
+        "trait": "Bunny Ears",
+        "count": 23,
+        "occurrence": "0.23%"
+      },
+      {
+        "trait": "Floppy Hat",
+        "count": 99,
+        "occurrence": "0.99%"
+      },
+      {
+        "trait": "Halo",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "Witches Head",
+        "count": 40,
+        "occurrence": "0.40%"
+      },
+      {
+        "trait": "Hercule Poirot",
+        "count": 22,
+        "occurrence": "0.22%"
+      },
+      {
+        "trait": "Extra Protection",
+        "count": 74,
+        "occurrence": "0.74%"
+      },
+      {
+        "trait": "Not a Sedge Hat",
+        "count": 56,
+        "occurrence": "0.56%"
+      },
+      {
+        "trait": "Gentleman",
+        "count": 66,
+        "occurrence": "0.66%"
+      },
+      {
+        "trait": "Bunny",
+        "count": 46,
+        "occurrence": "0.46%"
+      },
+      {
+        "trait": "What's Under the Hat",
+        "count": 33,
+        "occurrence": "0.33%"
+      },
+      {
+        "trait": "Queen's Guard",
+        "count": 66,
+        "occurrence": "0.66%"
+      },
+      {
+        "trait": "Sailor",
+        "count": 106,
+        "occurrence": "1.06%"
+      },
+      {
+        "trait": "Clown Wig",
+        "count": 111,
+        "occurrence": "1.11%"
+      },
+      {
+        "trait": "Tastes like Purple",
+        "count": 40,
+        "occurrence": "0.40%"
+      },
+      {
+        "trait": "Burger Brain",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Golden Beats by Yolk",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Punk Red",
+        "count": 134,
+        "occurrence": "1.34%"
+      },
+      {
+        "trait": "Camper",
+        "count": 29,
+        "occurrence": "0.29%"
+      },
+      {
+        "trait": "Holy Egg",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "Kippah",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Eggemite Hat",
+        "count": 46,
+        "occurrence": "0.46%"
+      },
+      {
+        "trait": "Yarmulke",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Wormy",
+        "count": 25,
+        "occurrence": "0.25%"
+      },
+      {
+        "trait": "Eggemite Cache",
+        "count": 23,
+        "occurrence": "0.23%"
+      },
+      {
+        "trait": "Echo Beats by Egg White",
+        "count": 111,
+        "occurrence": "1.11%"
+      },
+      {
+        "trait": "Lizard Egg",
+        "count": 3,
+        "occurrence": "0.03%"
+      },
+      {
+        "trait": "Royal Egg",
+        "count": 15,
+        "occurrence": "0.15%"
+      },
+      {
+        "trait": "Worm",
+        "count": 15,
+        "occurrence": "0.15%"
+      },
+      {
+        "trait": "Potassium Brain",
+        "count": 56,
+        "occurrence": "0.56%"
+      },
+      {
+        "trait": "Detective",
+        "count": 44,
+        "occurrence": "0.44%"
+      },
+      {
+        "trait": "Third Eye",
+        "count": 11,
+        "occurrence": "0.11%"
+      },
+      {
+        "trait": "Quackers",
+        "count": 22,
+        "occurrence": "0.22%"
+      },
+      {
+        "trait": "Sneaky Chameleon",
+        "count": 2,
+        "occurrence": "0.02%"
+      },
+      {
+        "trait": "Unicorn",
+        "count": 1,
+        "occurrence": "0.01%"
+      }
+    ]
+  },
+  {
+    "Hand Left": [
+      {
+        "trait": "Dropped Grenaaaade",
+        "count": 663,
+        "occurrence": "6.63%"
+      },
+      {
+        "trait": "Blowtorch",
+        "count": 77,
+        "occurrence": "0.77%"
+      },
+      {
+        "trait": "Boxer Left",
+        "count": 1217,
+        "occurrence": "12.17%"
+      },
+      {
+        "trait": "Avax Balloon Left",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Handcuffs",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Fish",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Blue Moon",
+        "count": 794,
+        "occurrence": "7.94%"
+      },
+      {
+        "trait": "No Dumping Please",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Skater",
+        "count": 250,
+        "occurrence": "2.50%"
+      },
+      {
+        "trait": "Purple Moon",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Battle Fork ",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Egg Balloon Left",
+        "count": 399,
+        "occurrence": "3.99%"
+      },
+      {
+        "trait": "Floor Dumper Left",
+        "count": 797,
+        "occurrence": "7.97%"
+      },
+      {
+        "trait": "No Left Hand",
+        "count": 104,
+        "occurrence": "1.04%"
+      },
+      {
+        "trait": "Blue Fidget Spinner",
+        "count": 749,
+        "occurrence": "7.49%"
+      },
+      {
+        "trait": "Don't Shoot",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Muricaland Flag",
+        "count": 350,
+        "occurrence": "3.50%"
+      },
+      {
+        "trait": "Eggson Guitar",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Green Moon",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Chicken",
+        "count": 80,
+        "occurrence": "0.80%"
+      },
+      {
+        "trait": "Here's Eggy",
+        "count": 250,
+        "occurrence": "2.50%"
+      },
+      {
+        "trait": "Chikn Balloon Left",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Avalanche Flag Left",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Blue Lollipop",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Surfer",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Tricolour",
+        "count": 450,
+        "occurrence": "4.50%"
+      },
+      {
+        "trait": "Salty",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Robot",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Eggemite Spread",
+        "count": 50,
+        "occurrence": "0.50%"
+      }
+    ]
+  },
+  {
+    "Eyes": [
+      {
+        "trait": "Dizzy Jello Eyes",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Suspicious Egg Eyes",
+        "count": 80,
+        "occurrence": "0.80%"
+      },
+      {
+        "trait": "Beaten Egg",
+        "count": 149,
+        "occurrence": "1.49%"
+      },
+      {
+        "trait": "Crazy Black",
+        "count": 304,
+        "occurrence": "3.04%"
+      },
+      {
+        "trait": "Cute Daemon Golden",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Crazy Chocolate",
+        "count": 350,
+        "occurrence": "3.50%"
+      },
+      {
+        "trait": "Murder Eyes Purple",
+        "count": 220,
+        "occurrence": "2.20%"
+      },
+      {
+        "trait": "Dizzy Artsy Eyes",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Suspicious Easter Eyes",
+        "count": 69,
+        "occurrence": "0.69%"
+      },
+      {
+        "trait": "Suspicious Golden Eyes",
+        "count": 60,
+        "occurrence": "0.60%"
+      },
+      {
+        "trait": "Crazy Golden",
+        "count": 199,
+        "occurrence": "1.99%"
+      },
+      {
+        "trait": "Cute Daemon Purple",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Beaten Plain",
+        "count": 70,
+        "occurrence": "0.70%"
+      },
+      {
+        "trait": "Wired Artsy Eyes",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Beaten Chocolate",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Crazy Purple",
+        "count": 299,
+        "occurrence": "2.99%"
+      },
+      {
+        "trait": "No Sleep Egg Eyes",
+        "count": 140,
+        "occurrence": "1.40%"
+      },
+      {
+        "trait": "Suspicious Black Eyes",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Murder Eyes Chocolate",
+        "count": 249,
+        "occurrence": "2.49%"
+      },
+      {
+        "trait": "Murder Eyes Plain",
+        "count": 210,
+        "occurrence": "2.10%"
+      },
+      {
+        "trait": "Murder Eyes Easter",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Wired Jello Eyes",
+        "count": 60,
+        "occurrence": "0.60%"
+      },
+      {
+        "trait": "Cute Daemon Plain",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Crazy Artsy",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Cute Daemon Chocolate",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Murder Eyes Egg",
+        "count": 249,
+        "occurrence": "2.49%"
+      },
+      {
+        "trait": "Closed Purple Eyes",
+        "count": 90,
+        "occurrence": "0.90%"
+      },
+      {
+        "trait": "Crazy Egg",
+        "count": 247,
+        "occurrence": "2.47%"
+      },
+      {
+        "trait": "Dizzy Golden Eyes",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Evil Eyes",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Cute Daemon Artsy",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Beaten Easter",
+        "count": 120,
+        "occurrence": "1.20%"
+      },
+      {
+        "trait": "Dizzy Chocolate Eyes",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Murder Eyes Black",
+        "count": 246,
+        "occurrence": "2.46%"
+      },
+      {
+        "trait": "Beaten Black",
+        "count": 99,
+        "occurrence": "0.99%"
+      },
+      {
+        "trait": "Wired White Eyes",
+        "count": 89,
+        "occurrence": "0.89%"
+      },
+      {
+        "trait": "Closed Chocolate Eyes",
+        "count": 90,
+        "occurrence": "0.90%"
+      },
+      {
+        "trait": "Laser Eyes",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Cute Daemon Egg",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Crazy Easter",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Closed Black Eyes",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Murder Eyes Jello",
+        "count": 250,
+        "occurrence": "2.50%"
+      },
+      {
+        "trait": "Crazy Plain",
+        "count": 199,
+        "occurrence": "1.99%"
+      },
+      {
+        "trait": "Suspicious Plain Eyes",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Scared Bitcoin Egg",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Murder Eyes Golden",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Wired Easter Eyes",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Beaten Jello",
+        "count": 70,
+        "occurrence": "0.70%"
+      },
+      {
+        "trait": "Crazy Jello",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Scared Purple Bitcoin Eyes",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Wired Golden Eyes",
+        "count": 60,
+        "occurrence": "0.60%"
+      },
+      {
+        "trait": "Closed Jello Eyes",
+        "count": 19,
+        "occurrence": "0.19%"
+      },
+      {
+        "trait": "Suspicious Jello Eyes",
+        "count": 60,
+        "occurrence": "0.60%"
+      },
+      {
+        "trait": "Wired Chocolate Eyes",
+        "count": 90,
+        "occurrence": "0.90%"
+      },
+      {
+        "trait": "Beaten Golden",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Scared Bitcoin Golden Eyes",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Jello Evil Eyes",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "No Sleep Black Eyes",
+        "count": 149,
+        "occurrence": "1.49%"
+      },
+      {
+        "trait": "Scared Bitcoin Chocolate Eyes",
+        "count": 40,
+        "occurrence": "0.40%"
+      },
+      {
+        "trait": "Scared Bitcoin Plain Eyes",
+        "count": 40,
+        "occurrence": "0.40%"
+      },
+      {
+        "trait": "Dizzy Purple Eyes",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Closed Easter Eyes",
+        "count": 90,
+        "occurrence": "0.90%"
+      },
+      {
+        "trait": "Scared Jello Bitcoin Eyes",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Dizzy Easter Eyes",
+        "count": 119,
+        "occurrence": "1.19%"
+      },
+      {
+        "trait": "Purple Evil Eyes",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Dizzy Egg Eyes",
+        "count": 120,
+        "occurrence": "1.20%"
+      },
+      {
+        "trait": "Dizzy Black Eyes",
+        "count": 120,
+        "occurrence": "1.20%"
+      },
+      {
+        "trait": "Suspicious Artsy Eyes",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Beaten Purple",
+        "count": 105,
+        "occurrence": "1.05%"
+      },
+      {
+        "trait": "Closed Golden Eyes",
+        "count": 80,
+        "occurrence": "0.80%"
+      },
+      {
+        "trait": "Suspicious Chocolate Eyes",
+        "count": 60,
+        "occurrence": "0.60%"
+      },
+      {
+        "trait": "Murder Eyes Artsy",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Cute Daemon Jello",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Dizzy Plain Eyes",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Beaten Artsy",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Cute Daemon Black",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Closed Egg Eyes",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Wired Purple Eyes",
+        "count": 90,
+        "occurrence": "0.90%"
+      },
+      {
+        "trait": "Closed Plain Eyes",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Closed Artsy Eyes",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Scared Bitcoin Black",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "None",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "Chocolate Evil Eyes",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Scared Bitcoin Easter Eyes",
+        "count": 40,
+        "occurrence": "0.40%"
+      },
+      {
+        "trait": "Suspicious Purple Eyes",
+        "count": 60,
+        "occurrence": "0.60%"
+      },
+      {
+        "trait": "Evil Eyes Black",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Artsy Evil Eyes",
+        "count": 10,
+        "occurrence": "0.10%"
+      },
+      {
+        "trait": "Dead Egg",
+        "count": 30,
+        "occurrence": "0.30%"
+      },
+      {
+        "trait": "Seen Too Much",
+        "count": 15,
+        "occurrence": "0.15%"
+      },
+      {
+        "trait": "Golden Evil Eyes",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Cute Daemon Easter",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Scared Artsy Bitcoin Eyes",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Albino Evil Eyes",
+        "count": 15,
+        "occurrence": "0.15%"
+      },
+      {
+        "trait": "Easter Evil Eyes",
+        "count": 30,
+        "occurrence": "0.30%"
+      }
+    ]
+  },
+  {
+    "Eye gear": [
+      {
+        "trait": "No Eye Gear",
+        "count": 6060,
+        "occurrence": "60.60%"
+      },
+      {
+        "trait": "Neon Red Rave Glasses",
+        "count": 700,
+        "occurrence": "7.00%"
+      },
+      {
+        "trait": "EggBeer Glasses",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Neon Blue Rave Glasses",
+        "count": 600,
+        "occurrence": "6.00%"
+      },
+      {
+        "trait": "Pirate Patch",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Neon Green Rave Glasses",
+        "count": 600,
+        "occurrence": "6.00%"
+      },
+      {
+        "trait": "Neon Yolk Rave Glasses",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Lenon Glasses",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "VR",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Censored",
+        "count": 350,
+        "occurrence": "3.50%"
+      },
+      {
+        "trait": "Monocle",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Golden Deal With It",
+        "count": 50,
+        "occurrence": "0.50%"
+      },
+      {
+        "trait": "Egg Shades",
+        "count": 250,
+        "occurrence": "2.50%"
+      },
+      {
+        "trait": "Deal With It",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "3D glasses",
+        "count": 50,
+        "occurrence": "0.50%"
+      }
+    ]
+  },
+  {
+    "Mouth": [
+      {
+        "trait": "Duct Tape",
+        "count": 800,
+        "occurrence": "8.00%"
+      },
+      {
+        "trait": "No Mouth",
+        "count": 3241,
+        "occurrence": "32.41%"
+      },
+      {
+        "trait": "Smoker",
+        "count": 401,
+        "occurrence": "4.01%"
+      },
+      {
+        "trait": "Mustache",
+        "count": 2350,
+        "occurrence": "23.50%"
+      },
+      {
+        "trait": "The Chordettes",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Fork",
+        "count": 380,
+        "occurrence": "3.80%"
+      },
+      {
+        "trait": "Gag",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Pacifier",
+        "count": 400,
+        "occurrence": "4.00%"
+      },
+      {
+        "trait": "Dynamite",
+        "count": 99,
+        "occurrence": "0.99%"
+      },
+      {
+        "trait": "Joint",
+        "count": 300,
+        "occurrence": "3.00%"
+      },
+      {
+        "trait": "Lips",
+        "count": 120,
+        "occurrence": "1.20%"
+      },
+      {
+        "trait": "Donut",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Rose",
+        "count": 69,
+        "occurrence": "0.69%"
+      },
+      {
+        "trait": "Snorkel",
+        "count": 200,
+        "occurrence": "2.00%"
+      },
+      {
+        "trait": "Cigar",
+        "count": 100,
+        "occurrence": "1.00%"
+      },
+      {
+        "trait": "Whistle",
+        "count": 500,
+        "occurrence": "5.00%"
+      },
+      {
+        "trait": "Flu",
+        "count": 150,
+        "occurrence": "1.50%"
+      },
+      {
+        "trait": "Asthma",
+        "count": 20,
+        "occurrence": "0.20%"
+      },
+      {
+        "trait": "Pipe",
+        "count": 50,
+        "occurrence": "0.50%"
+      }
+    ]
+  },
+  {
+    "Yolk Type": [
+      {
+        "trait": "LPL",
+        "count": 3964,
+        "occurrence": "39.64%"
+      },
+      {
+        "trait": "APOA-1",
+        "count": 806,
+        "occurrence": "8.06%"
+      },
+      {
+        "trait": "OSMR",
+        "count": 1797,
+        "occurrence": "17.97%"
+      },
+      {
+        "trait": "CYP-19-A",
+        "count": 2194,
+        "occurrence": "21.94%"
+      },
+      {
+        "trait": "FABP-3",
+        "count": 901,
+        "occurrence": "9.01%"
+      },
+      {
+        "trait": "CCL-19",
+        "count": 208,
+        "occurrence": "2.08%"
+      },
+      {
+        "trait": "CH-1-KN",
+        "count": 110,
+        "occurrence": "1.10%"
+      }
+    ]
+  }
 ]

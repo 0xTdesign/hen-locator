@@ -17,37 +17,37 @@ export default function ModalTeam({ changeModalWorldCupTeams, worldcupTeams, get
               <h2>Team Entries</h2>
             </div>
             <ul className="list">
-              <li>Qatar:{worldcupTeams.Qatar}</li>
-              <li>Ecuador:{worldcupTeams.Ecuador}</li>
+              <li className="out">Qatar:{worldcupTeams.Qatar}</li>
+              <li className="out">Ecuador:{worldcupTeams.Ecuador}</li>
               <li>Senegal:{worldcupTeams.Senegal}</li>
               <li>The Netherlands:{worldcupTeams.Netherlands}</li>
               <li>England:{worldcupTeams.England}</li>
-              <li>Iran:{worldcupTeams.Iran}</li>
-              <li>USA:{worldcupTeams.USA}</li>
-              <li>Wales:{worldcupTeams.Wales}</li>
+              <li className="out">Iran:{worldcupTeams.Iran}</li>
+              <li className="out">USA:{worldcupTeams.USA}</li>
+              <li className="out">Wales:{worldcupTeams.Wales}</li>
               <li>Argentina:{worldcupTeams.Argentina}</li>
-              <li>Saudi Arabia:{worldcupTeams.SaudiArabia}</li>
-              <li>Mexico:{worldcupTeams.Mexico}</li>
-              <li>Poland:{worldcupTeams.Poland}</li>
+              <li className="out">Saudi Arabia:{worldcupTeams.SaudiArabia}</li>
+              <li className="out">Mexico:{worldcupTeams.Mexico}</li>
+              <li className="out">Poland:{worldcupTeams.Poland}</li>
               <li>France:{worldcupTeams.France}</li>
-              <li>Australia:{worldcupTeams.Australia}</li>
+              <li className="out">Australia:{worldcupTeams.Australia}</li>
               <li>Denmark:{worldcupTeams.Denmark}</li>
-              <li>Tunisia:{worldcupTeams.Tunisia}</li>
+              <li className="out">Tunisia:{worldcupTeams.Tunisia}</li>
               <li>Spain:{worldcupTeams.Spain}</li>
-              <li>Costa Rica:{worldcupTeams.CostaRica}</li>
-              <li>Germany:{worldcupTeams.Germany}</li>
+              <li className="out">Costa Rica:{worldcupTeams.CostaRica}</li>
+              <li className="out">Germany:{worldcupTeams.Germany}</li>
               <li>Japan:{worldcupTeams.Japan}</li>
-              <li>Belgium:{worldcupTeams.Belgium}</li>
-              <li>Canada:{worldcupTeams.Canada}</li>
+              <li className="out">Belgium:{worldcupTeams.Belgium}</li>
+              <li className="out">Canada:{worldcupTeams.Canada}</li>
               <li>Morocco:{worldcupTeams.Morocco}</li>
               <li>Croatia:{worldcupTeams.Croatia}</li>
               <li>Brazil:{worldcupTeams.Brazil}</li>
-              <li>Serbia:{worldcupTeams.Serbia}</li>
+              <li className="out">Serbia:{worldcupTeams.Serbia}</li>
               <li>Switzerland:{worldcupTeams.Switzerland}</li>
-              <li>Cameroon:{worldcupTeams.Cameroon}</li>
+              <li className="out">Cameroon:{worldcupTeams.Cameroon}</li>
               <li>Portugal:{worldcupTeams.Portugal}</li>
-              <li>Ghana:{worldcupTeams.Ghana}</li>
-              <li>Uruguay:{worldcupTeams.Uruguay}</li>
+              <li className="out">Ghana:{worldcupTeams.Ghana}</li>
+              <li className="out">Uruguay:{worldcupTeams.Uruguay}</li>
               <li>Korea Republic:{worldcupTeams.KoreaRepublic}</li>
             </ul>
           </div>

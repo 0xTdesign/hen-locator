@@ -39,7 +39,7 @@ Form
 **************/
 
 .form-create {
-  margin-top: 10px;
+  margin-top: 14px;
   display: block;
 }
 
@@ -155,9 +155,7 @@ Media Queries
 
   .button-coop {
     grid-area: 4 / 3 / 4 / 3;
-    /* position: relative;
-    right: 70px;
-    margin: 50px -55px; */
     bottom: 0px;
+    margin-top: 60px;
   }
 }
