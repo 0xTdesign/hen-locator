@@ -331,38 +331,17 @@ export default function WorldCup({
             <option value="" disabled selected>
               Select your Team
             </option>
-            {/* <option value="Qatar 🇶🇦">Qatar 🇶🇦</option>s */}
-            {/* <option value="Ecuador 🇪🇨">Ecuador 🇪🇨</option> */}
-            <option value="Senegal 🇸🇳">Senegal 🇸🇳</option>
             <option value="The Netherlands 🇳🇱">The Netherlands 🇳🇱</option>
             <option value="England 🏴󠁧󠁢󠁥󠁮󠁧󠁿">England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-            {/* <option value="IR Iran 🇮🇷">Iran 🇮🇷 </option> */}
-            {/* <option value="USA 🇺🇸">USA 🇺🇸</option> */}
-            {/* <option value="Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿">Wales 🏴󠁧󠁢󠁷󠁬󠁳󠁿</option> */}
             <option value="Argentina 🇦🇷">Argentina 🇦🇷</option>
-            {/* <option value="Saudi-Arabia 🇸🇦">Saudi Arabia 🇸🇦</option> */}
-            {/* <option value="Mexico 🇲🇽">Mexico 🇲🇽</option> */}
-            {/* <option value="Poland 🇵🇱">Poland 🇵🇱</option> */}
             <option value="France 🇫🇷">France 🇫🇷</option>
-            {/* <option value="Australia 🇦🇺">Australia 🇦🇺</option> */}
             <option value="Denmark 🇩🇰">Denmark 🇩🇰</option>
-            {/* <option value="Tunisia 🇹🇳">Tunisia 🇹🇳</option> */}
             <option value="Spain 🇪🇸">Spain 🇪🇸</option>
-            {/* <option value="Costa Rica 🇨🇷">Costa Rica 🇨🇷</option> */}
-            {/* <option value="Germany 🇩🇪">Germany 🇩🇪</option> */}
-            <option value="Japan 🇯🇵">Japan 🇯🇵</option>
-            {/* <option value="Belgium 🇧🇪">Belgium 🇧🇪</option> */}
-            {/* <option value="Canada 🇨🇦">Canada 🇨🇦</option> */}
             <option value="Morocco 🇲🇦">Morocco 🇲🇦</option>
             <option value="Croatia 🇭🇷">Croatia 🇭🇷</option>
             <option value="Brazil 🇧🇷">Brazil 🇧🇷</option>
-            {/* <option value="Serbia 🇷🇸">Serbia 🇷🇸</option> */}
             <option value="Switzerland 🇨🇭">Switzerland 🇨🇭</option>
-            {/* <option value="Cameroon 🇨🇲">Cameroon 🇨🇲</option> */}
             <option value="Portugal 🇵🇹">Portugal 🇵🇹</option>
-            {/* <option value="Ghana 🇬🇭">Ghana 🇬🇭</option> */}
-            {/* <option value="Uruguay 🇺🇾">Uruguay 🇺🇾</option> */}
-            <option value="Korea Republic 🇰🇷">Korea Republic 🇰🇷</option>
           </select>
 
           <input
