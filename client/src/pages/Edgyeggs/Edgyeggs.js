@@ -144,25 +144,25 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
               <img className="enter-btn" src={edgyegg} alt="Edgyegg" />
             </button>
           </form>
-          {/* <div className="bottomContainer-trait">
+          <div className="bottomContainer-trait">
             {
-              <form>
-                <select className="traitcontainer" name="traitBreakdown" onChange={handleTraitModal} value={activeTrait}>
-                  <option value="">Trait Selector</option>
-                  <option value="Background">Background</option>
-                  <option value="Shell">Shell</option>
-                  <option value="Shell Extras">Shell Extras</option>
-                  <option value="Waist">Waist</option>
-                  <option value="Hand Right">Hand Right</option>
-                  <option value="Head">Head</option>
-                  <option value="Hand Left">Hand Left</option>
-                  <option value="Eyes">Eyes</option>
-                  <option value="Eye gear">Eye gear</option>
-                  <option value="Mouth">Mouth</option>
-                </select>
-              </form>
+              // <form>
+              //   <select className="traitcontainer" name="traitBreakdown" onChange={handleTraitModal} value={activeTrait}>
+              //     <option value="">Trait Selector</option>
+              //     <option value="Background">Background</option>
+              //     <option value="Shell">Shell</option>
+              //     <option value="Shell Extras">Shell Extras</option>
+              //     <option value="Waist">Waist</option>
+              //     <option value="Hand Right">Hand Right</option>
+              //     <option value="Head">Head</option>
+              //     <option value="Hand Left">Hand Left</option>
+              //     <option value="Eyes">Eyes</option>
+              //     <option value="Eye gear">Eye gear</option>
+              //     <option value="Mouth">Mouth</option>
+              //   </select>
+              // </form>
             }
-          </div> */}
+          </div>
         </div>
       </div>
       <div className={`edgyeggimageShow ${edgyeggSearch.image ? "" : "hide"}`}>
