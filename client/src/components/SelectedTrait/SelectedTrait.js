@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SelectedTrait({ handleTraitModal, activeTrait }) {
+export default function SelectedTrait({ handleTraitModal, traitData }) {
   return (
     <div className="modal">
       <div className="modal__box">
@@ -10,7 +10,7 @@ export default function SelectedTrait({ handleTraitModal, activeTrait }) {
               <h2>Traits</h2>
 
               <div>
-                {activeTrait?.map((trait, idx) => {
+                {traitData.map((trait, idx) => {
                   console.log(trait);
                   return (
                     <div key={idx}>

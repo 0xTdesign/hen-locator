@@ -335,11 +335,9 @@ export default function WorldCup({
             <option value="England 🏴󠁧󠁢󠁥󠁮󠁧󠁿">England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
             <option value="Argentina 🇦🇷">Argentina 🇦🇷</option>
             <option value="France 🇫🇷">France 🇫🇷</option>
-            <option value="Denmark 🇩🇰">Denmark 🇩🇰</option>
             <option value="Morocco 🇲🇦">Morocco 🇲🇦</option>
             <option value="Croatia 🇭🇷">Croatia 🇭🇷</option>
             <option value="Brazil 🇧🇷">Brazil 🇧🇷</option>
-            <option value="Switzerland 🇨🇭">Switzerland 🇨🇭</option>
             <option value="Portugal 🇵🇹">Portugal 🇵🇹</option>
           </select>
 

@@ -31,7 +31,7 @@ export default function ModalTeam({ changeModalWorldCupTeams, worldcupTeams, get
               <li className="out">Poland:{worldcupTeams.Poland}</li>
               <li>France:{worldcupTeams.France}</li>
               <li className="out">Australia:{worldcupTeams.Australia}</li>
-              <li>Denmark:{worldcupTeams.Denmark}</li>
+              <li className="out">Denmark:{worldcupTeams.Denmark}</li>
               <li className="out">Tunisia:{worldcupTeams.Tunisia}</li>
               <li className="out">Spain:{worldcupTeams.Spain}</li>
               <li className="out">Costa Rica:{worldcupTeams.CostaRica}</li>
@@ -43,7 +43,7 @@ export default function ModalTeam({ changeModalWorldCupTeams, worldcupTeams, get
               <li>Croatia:{worldcupTeams.Croatia}</li>
               <li>Brazil:{worldcupTeams.Brazil}</li>
               <li className="out">Serbia:{worldcupTeams.Serbia}</li>
-              <li>Switzerland:{worldcupTeams.Switzerland}</li>
+              <li className="out">Switzerland:{worldcupTeams.Switzerland}</li>
               <li className="out">Cameroon:{worldcupTeams.Cameroon}</li>
               <li>Portugal:{worldcupTeams.Portugal}</li>
               <li className="out">Ghana:{worldcupTeams.Ghana}</li>

@@ -32,31 +32,22 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
 
   const [activeTrait, setActiveTrait] = useState({});
 
-  const [traitData, setTraitData] = useState(rarityBreakdownJson);
+  // const [traitData, setTraitData] = useState(rarityBreakdownJson);
+
+  const traitData = rarityBreakdownJson;
 
   const handleTraitModal = (e) => {
     e.preventDefault();
     setshowModalRarity(!showModalRarity);
     setActiveTrait(traitData);
-    console.log(activeTrait);
-  };
 
-  const [selectedOption, setSelectedOption] = useState("none");
-  const options = [
-    { value: "", label: "Trait Selector" },
-    { value: "Background", label: "Background" },
-    { value: "right", label: "Open Right" },
-    {
-      value: "tilt,left",
-      label: "Tilf and Open Left",
-    },
-    {
-      value: "tilt,right",
-      label: "Tilf and Open Right",
-    },
-  ];
-  const handleTypeSelect = (e) => {
-    setSelectedOption(e.value);
+    const reqTraitData = e.target.value;
+    // traitData.filter(value === reqTraitData);
+
+    const myFilteredTraits = traitData.filter((trait) => trait.value === reqTraitData);
+    console.log("myFilteredTraits:", myFilteredTraits);
+    console.log("active traits:", activeTrait);
+    console.log("traitData:", traitData[0]);
   };
 
   const handleModalEdgyegg = (e) => {
@@ -144,25 +135,26 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
               <img className="enter-btn" src={edgyegg} alt="Edgyegg" />
             </button>
           </form>
-          <div className="bottomContainer-trait">
+          {/* <div className="bottomContainer-trait">
             {
-              // <form>
-              //   <select className="traitcontainer" name="traitBreakdown" onChange={handleTraitModal} value={activeTrait}>
-              //     <option value="">Trait Selector</option>
-              //     <option value="Background">Background</option>
-              //     <option value="Shell">Shell</option>
-              //     <option value="Shell Extras">Shell Extras</option>
-              //     <option value="Waist">Waist</option>
-              //     <option value="Hand Right">Hand Right</option>
-              //     <option value="Head">Head</option>
-              //     <option value="Hand Left">Hand Left</option>
-              //     <option value="Eyes">Eyes</option>
-              //     <option value="Eye gear">Eye gear</option>
-              //     <option value="Mouth">Mouth</option>
-              //   </select>
-              // </form>
+              <form>
+                <select className="traitcontainer" name="traitBreakdown" onChange={handleTraitModal} value={activeTrait}>
+                  <option value="">Trait Selector</option>
+                  <option value="Background">Background</option>
+                  <option value="Shell">Shell</option>
+                  <option value="Shell Extras">Shell Extras</option>
+                  <option value="Waist">Waist</option>
+                  <option value="Hand Right">Hand Right</option>
+                  <option value="Head">Head</option>
+                  <option value="Hand Left">Hand Left</option>
+                  <option value="Eyes">Eyes</option>
+                  <option value="Eye gear">Eye gear</option>
+                  <option value="Mouth">Mouth</option>
+                  <option value="Yolk Type">Yolk Type</option>
+                </select>
+              </form>
             }
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={`edgyeggimageShow ${edgyeggSearch.image ? "" : "hide"}`}>
