@@ -303,6 +303,17 @@ export default function WorldCup({
         <div className="topContainer">
           <h2>Pick your Team</h2>
         </div>
+        {/* <br></br>
+        <p className="private">
+          The entries for the grand prize has comes to an end. You can still enter to win the 500$ by minting an Egg up until
+          the final whisle of the WorldCup. Good luck!
+        </p>
+        <br />
+        <button className="mint-btn">
+          <a href="https://www.edgyeggs.wtf//#mint" target="__blank">
+            Mint EdgyEggs
+          </a>
+        </button> */}
         <form className="form-create" onSubmit={submitCreateEdgyegg}>
           <p className="private">To enter the draw the Egg needs to minted from the 20th of Nov onwards.</p>
 
@@ -314,14 +325,7 @@ export default function WorldCup({
             maxLength="20"
             value={createEdgyeggForm.tokenId}
           />
-          {/* <input
-            onChange={handleChangeCreateEdgyegg}
-            name="winningTeam"
-            value={createEdgyeggForm.winningTeam}
-            type="text"
-            placeholder="Winning Team"
-            maxLength="30"
-          /> */}
+
           <select
             className="select"
             value={createEdgyeggForm.winningTeam}
@@ -358,7 +362,6 @@ export default function WorldCup({
             value={createEdgyeggForm.discord}
           />
           <button className="worldCup-btn" type="submit">
-            {/* <span className="submit">⬇</span> */}
             <img className="enter-btn" src={edgyegg} alt="EdgyEgg" />
           </button>
         </form>

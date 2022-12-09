@@ -276,7 +276,7 @@ function App({ changeModalWorldCup }) {
   };
 
   const createWorldCupEgg = async (e) => {
-    const APIIMAGE = `https://s3.wasabisys.com/metadata.edgyeggs.wtf/${createEdgyeggForm.tokenId}.json`;
+    const APIIMAGE = `https://api.edgyeggs.wtf/metadata/${createEdgyeggForm.tokenId}`;
     const APIIMAGERES = await axios.get(APIIMAGE);
     const API = `${API_URL}/edgyegg`;
     const res = await axios.post(API, { ...createEdgyeggForm, image: APIIMAGERES.data.image });
@@ -298,7 +298,7 @@ function App({ changeModalWorldCup }) {
 
   const getSearchEdgyegg = async (e) => {
     e.preventDefault();
-    const API = `https://s3.wasabisys.com/metadata.edgyeggs.wtf/${formEdgyeggSearch.tokenId}.json`;
+    const API = `https://api.edgyeggs.wtf/metadata/${formEdgyeggSearch.tokenId}`;
     const res = await axios.get(API);
     console.log(res.data);
     setedgyeggSearch({ ...res.data, tokenId: formEdgyeggSearch.tokenId });
