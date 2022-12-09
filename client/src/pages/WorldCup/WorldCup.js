@@ -306,7 +306,7 @@ export default function WorldCup({
         <br></br>
         <p className="private">
           The entries for the grand prize have come to an end. You can still enter to win the $500 raffle by minting an Egg
-          up until the final whistle of the World Cup. Good luck!
+          up until 18th December 2022 5 minutes before the start of the final match. of the World Cup. Good luck!
         </p>
         <br />
         <button className="mint-btn">
