@@ -303,18 +303,18 @@ export default function WorldCup({
         <div className="topContainer">
           <h2>Pick your Team</h2>
         </div>
-        {/* <br></br>
+        <br></br>
         <p className="private">
-          The entries for the grand prize has comes to an end. You can still enter to win the 500$ by minting an Egg up until
-          the final whisle of the WorldCup. Good luck!
+          The entries for the grand prize have come to an end. You can still enter to win the $500 raffle by minting an Egg
+          up until the final whistle of the World Cup. Good luck!
         </p>
         <br />
         <button className="mint-btn">
           <a href="https://www.edgyeggs.wtf//#mint" target="__blank">
             Mint EdgyEggs
           </a>
-        </button> */}
-        <form className="form-create" onSubmit={submitCreateEdgyegg}>
+        </button>
+        {/* <form className="form-create" onSubmit={submitCreateEdgyegg}>
           <p className="private">To enter the draw the Egg needs to minted from the 20th of Nov onwards.</p>
 
           <input
@@ -364,7 +364,7 @@ export default function WorldCup({
           <button className="worldCup-btn" type="submit">
             <img className="enter-btn" src={edgyegg} alt="EdgyEgg" />
           </button>
-        </form>
+        </form> */}
       </div>
       <div className="createRooster space">
         <div className="topContainer">
@@ -379,6 +379,7 @@ export default function WorldCup({
           <div className="topContainer">
             <h2>Prizes</h2>
           </div>
+          <br />
           <span>iPhone 14</span>
           <br />
           <span>PS5 Digital</span>
@@ -387,11 +388,11 @@ export default function WorldCup({
           <br />
           Raffle $500 USDC
         </p>
-        <button className="mint-btn">
+        {/* <button className="mint-btn">
           <a href="https://www.edgyeggs.wtf//#mint" target="__blank">
             Mint EdgyEggs
           </a>
-        </button>
+        </button> */}
       </div>
       <div className="showCreate">
         <div className="topContainer">
