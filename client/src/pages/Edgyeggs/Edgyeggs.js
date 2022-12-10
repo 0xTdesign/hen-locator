@@ -192,7 +192,7 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
           <p>Eggotic: {mintedRarities.Eggotic}/500 </p>
           <p>Eggceptional: {mintedRarities.Eggceptional}/900 </p>
           <p>Eggstraordinary: {mintedRarities.Eggstraordinary}/1600 </p>
-          <p>Eggcelent: {mintedRarities.Eggcelent}/2500 </p>
+          <p>Eggcellent: {mintedRarities.Eggcelent}/2500 </p>
           <p>Eggspendable: {mintedRarities.Eggspendable}/4400 </p>
         </div>
       </div>
