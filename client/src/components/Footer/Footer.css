@@ -55,6 +55,9 @@ Other pages
 .worldCup .links i {
   color: var(--text);
 }
+.traits .links i {
+  color: var(--text);
+}
 
 .edgyeggs footer {
   flex-direction: column;

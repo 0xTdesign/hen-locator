@@ -1,0 +1,55 @@
+.traits {
+  background: url(../../assets/traits.jpg) no-repeat center center fixed;
+  border-radius: 40px;
+  background-position: 25% 75%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.showTrait {
+  display: block;
+  margin: 0 auto;
+  width: 96%;
+  max-width: 360px;
+  background-color: var(--backgroundContainer);
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
+.trait .item {
+  color: var(--text);
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.trait {
+  margin-top: 10px;
+  /* cursor: pointer; */
+}
+
+/* .item:hover {
+  color: var(--card);
+} */
+
+@media only screen and (min-width: 999px) {
+  .showTrait {
+    overflow: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* grid-area: 2 / 3 / 3 / 6; */
+    display: block;
+    max-width: 600px;
+    height: 500px;
+    background-color: var(--backgroundContainer);
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px;
+    margin: 1.8rem auto;
+  }
+}

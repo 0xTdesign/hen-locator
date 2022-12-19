@@ -22,6 +22,7 @@ export default function Header({ pageClass }) {
                 {pageClass === "coop" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
                 {pageClass === "worldCup" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
                 {pageClass === "stadium" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
+                {pageClass === "traits" && <img className="bar pulse" src={logoWhite} alt="Logo" />}
                 <p className="menu">Menu</p>
               </div>
 
@@ -51,22 +52,25 @@ export default function Header({ pageClass }) {
                     <a href="/Chikn">Coq Search</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
-                    <a href="/Edgyeggs">EdgyEggs</a>
-                  </li>
-                  <li className="border-b  my-8 uppercase">
                     <a href="/Create">Hen Creator</a>
                   </li>
-                  <li className="border-b  my-8 uppercase">
+                  {/* <li className="border-b  my-8 uppercase">
                     <a href="/Coop">Coop</a>
-                  </li>
+                  </li> */}
                   {/* <li className="border-b  my-8 uppercase">
                     <a href="/FarmersMarket">Farmers Market</a>
                   </li> */}
-                  <li className="border-b  my-8 uppercase">
+                  {/* <li className="border-b  my-8 uppercase">
                     <a href="/WorldCuP">Entry World Cup</a>
                   </li>
                   <li className="border-b  my-8 uppercase">
                     <a href="/Stadium">Stadium</a>
+                  </li> */}
+                  <li className="border-b  my-8 uppercase">
+                    <a href="/Edgyeggs">EdgyEggs</a>
+                  </li>
+                  <li className="border-b  my-8 uppercase">
+                    <a href="/traits">Traits</a>
                   </li>
                 </ul>
               </div>
@@ -82,22 +86,25 @@ export default function Header({ pageClass }) {
                 <a href="/Chikn">Coq Search</a>
               </li>
               <li>
-                <a href="/Edgyeggs">EdgyEggs</a>
-              </li>
-              <li>
                 <a href="/Create">Hen Creator </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/Coop">Coop</a>
-              </li>
+              </li> */}
               {/* <li>
                 <a href="/FarmersMarket">Farmers Market</a>
               </li> */}
-              <li>
+              {/* <li>
                 <a href="/WorldCup">Entry World Cup</a>
               </li>
               <li>
                 <a href="/Stadium">Stadium</a>
+              </li> */}
+              <li>
+                <a href="/Edgyeggs">EdgyEggs</a>
+              </li>
+              <li>
+                <a href="/Traits">Traits</a>
               </li>
 
               {/* <Connect /> */}

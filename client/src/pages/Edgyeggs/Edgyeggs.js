@@ -3,9 +3,7 @@ import "./Edgyeggs.css";
 import { useEffect, useState } from "react";
 import edgyegg from "../../assets/logo-white.svg";
 import SelectedEdgyegg from "../../components/SelectedEdgyEgg/SelectedEdgyegg";
-import axios from "axios";
 import mintedEggs from "../../mintedeggs.json";
-import rarityBreakdownJson from "../../rarityBreakdown.json";
 import SelectedTrait from "../../components/SelectedTrait/SelectedTrait";
 
 export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpageClass, formEdgyeggSearch, edgyeggSearch }) {
@@ -27,28 +25,6 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
     Eggcelent: 0,
     Eggspendable: 0,
   });
-
-  const [showModalRarity, setshowModalRarity] = useState(false);
-
-  const [activeTrait, setActiveTrait] = useState({});
-
-  // const [traitData, setTraitData] = useState(rarityBreakdownJson);
-
-  const traitData = rarityBreakdownJson;
-
-  const handleTraitModal = (e) => {
-    e.preventDefault();
-    setshowModalRarity(!showModalRarity);
-    setActiveTrait(traitData);
-
-    const reqTraitData = e.target.value;
-    // traitData.filter(value === reqTraitData);
-
-    const myFilteredTraits = traitData.filter((trait) => trait.value === reqTraitData);
-    console.log("myFilteredTraits:", myFilteredTraits);
-    console.log("active traits:", activeTrait);
-    console.log("traitData:", traitData[0]);
-  };
 
   const handleModalEdgyegg = (e) => {
     e.preventDefault();
@@ -115,9 +91,7 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
   return (
     <>
       {showModalEdgyegg && <SelectedEdgyegg activeEdgyegg={activeEdgyegg} handleModalEdgyegg={handleModalEdgyegg} />}
-      {showModalRarity && (
-        <SelectedTrait traitData={traitData} handleTraitModal={handleTraitModal} activeTrait={activeTrait} />
-      )}
+      {/* {showModalRarity && <SelectedTrait handleChange={handleChange} traits={traits} />} */}
       <div className="searchEdgyegg">
         <div className="topContainer">
           <h2>Rarity Checker</h2>
@@ -136,24 +110,17 @@ export default function Edgyeggs({ getSearchEdgyegg, handleSearchEdgyegg, setpag
             </button>
           </form>
           {/* <div className="bottomContainer-trait">
-            {
-              <form>
-                <select className="traitcontainer" name="traitBreakdown" onChange={handleTraitModal} value={activeTrait}>
-                  <option value="">Trait Selector</option>
-                  <option value="Background">Background</option>
-                  <option value="Shell">Shell</option>
-                  <option value="Shell Extras">Shell Extras</option>
-                  <option value="Waist">Waist</option>
-                  <option value="Hand Right">Hand Right</option>
-                  <option value="Head">Head</option>
-                  <option value="Hand Left">Hand Left</option>
-                  <option value="Eyes">Eyes</option>
-                  <option value="Eye gear">Eye gear</option>
-                  <option value="Mouth">Mouth</option>
-                  <option value="Yolk Type">Yolk Type</option>
-                </select>
-              </form>
-            }
+            <form>
+              <select onChange={handleChange}>
+                {dataItems.map((items, index) => {
+                  return (
+                    <option value={index} key={index}>
+                      {items}
+                    </option>
+                  );
+                })}
+              </select>
+            </form>
           </div> */}
         </div>
       </div>

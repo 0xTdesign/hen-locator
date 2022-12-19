@@ -30,7 +30,7 @@
   margin: 0.8rem auto;
   width: 96%;
   max-width: 350px;
-  height: 220px;
+  height: 140px;
   background-color: var(--backgroundContainer);
   border-radius: 4px;
   text-align: center;
@@ -181,7 +181,7 @@
     grid-area: 1 / 1 / 5 / 4;
     margin: 0 auto;
     width: 96%;
-    height: 220px;
+    height: 140px;
     margin-bottom: 2rem;
   }
 

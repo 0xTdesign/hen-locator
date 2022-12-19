@@ -22,6 +22,7 @@ import { SEARCH_API, DETAILS_API, REPORT_API, API_URL } from "./api";
 import FarmersMarket from "./pages/FarmersMarket/FarmersMarket";
 import WorldCup from "./pages/WorldCup/WorldCup";
 import Stadium from "./pages/Stadium/Stadium";
+import Traits from "./pages/Traits/Traits";
 
 function App({ changeModalWorldCup }) {
   console.log(window.location.href.replace("http://localhost:3000/", "").replace("https://hen-locator.netlify.app/", ""));
@@ -416,7 +417,7 @@ Farmers Market Swap
                   />
                 }
               />
-              <Route
+              {/* <Route
                 path="/Coop"
                 element={
                   <Coop
@@ -427,9 +428,9 @@ Farmers Market Swap
                     deleteRoostr={deleteRoostr}
                   />
                 }
-              />
-              <Route path="/FarmersMarket" element={<FarmersMarket setpageClass={setpageClass} />} />
-              <Route
+              /> */}
+              {/* <Route path="/FarmersMarket" element={<FarmersMarket setpageClass={setpageClass} />} /> */}
+              {/* <Route
                 path="/WorldCup"
                 element={
                   <WorldCup
@@ -442,8 +443,9 @@ Farmers Market Swap
                     API_URL={API_URL}
                   />
                 }
-              />
-              <Route path="/Stadium" element={<Stadium setpageClass={setpageClass} worldCupEgg={worldCupEgg} />} />
+              /> */}
+              {/* <Route path="/Stadium" element={<Stadium setpageClass={setpageClass} worldCupEgg={worldCupEgg} />} /> */}
+              <Route path="/Traits" element={<Traits setpageClass={setpageClass} />} />
             </Routes>
           </div>
         </ConnectKitProvider>

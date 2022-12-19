@@ -60,6 +60,10 @@ Other pages
   color: var(--text);
 }
 
+.traits .price {
+  color: var(--text);
+}
+
 .farmersmarket .price {
   color: var(--text);
 }
