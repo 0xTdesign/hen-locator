@@ -55,7 +55,7 @@ export default function Traits({ setpageClass }) {
             return (
               <div key={index}>
                 <span className="item">
-                  {items.trait}:{items.occurrence} - Count:{items.count}
+                  {items.trait}:{items.occurrence}
                 </span>
                 {/* <p>Count : {items.count}</p> */}
                 {/* <p>Occurence : {items.occurrence}</p> */}
